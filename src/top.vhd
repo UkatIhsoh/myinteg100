@@ -700,9 +700,9 @@ begin
 	);
 	
 	-- ** signal assignment
-	LED <= led_inner;
-	WING_A(15 downto 8) <= msr_wing_a(13 downto 6);
---	WING_A(15) <= dds_data;
+	LED <= msr_wing_a(15);
+	WING_A(14 downto 8) <= msr_wing_a(6 downto 0);
+	WING_A(15) <= msr_wing_a(15);
 --	WING_A(13) <= dds_fqud;
 --	WING_A(12) <= dds_reset;
 --	WING_A(14) <= dds_wclk1;

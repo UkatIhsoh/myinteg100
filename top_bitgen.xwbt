@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Igarashi\Desktop\integ100\src\top.ncd
-OUTFILE=C:\Users\Igarashi\Desktop\integ100\src\top.bit
-FAMILY=Spartan6
-PART=xc6slx9-2tqg144
-WORKINGDIR=C:\Users\Igarashi\Desktop\integ100\src
-LICENSE=WebPack
-USER_INFO=211521278_0_0_438

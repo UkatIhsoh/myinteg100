@@ -88,7 +88,7 @@ end data_fetch;
 
 architecture fetch of data_fetch is
 
-	type state_t is (idle, dt_wait, dt_aquire, prepare); --状態名（アイドル、データ待機、データ獲得、次への準備）
+	type state_t is (idle, dt_wait, loop_num, dt_aquire, prepare); --状態名（アイドル、データ待機、繰り返し数管理、データ獲得、次への準備）
 
 	type reg is record
 		data : std_logic_vector(63 downto 0);
@@ -101,6 +101,8 @@ architecture fetch of data_fetch is
 		start : std_logic; --msr_startに対応
 		finish : std_logic; --msr_finishに対応
 		fresh : std_logic; --最初にスタートアドレスを読み込めるため
+		locount : std_logic_vector(63 downto 0); --繰り返し数記録
+		lonum : std_logic; --繰り返し数読み込み用
 	end record;
 
 	signal p : reg;
@@ -120,19 +122,27 @@ begin
 	begin
 		n <= p;
 		
+		if msr_start = '1' then
+			n.start <= '1';
+		end if;
+		
 		if p.f_run = '0' then
-			if msr_start = '1' then
-				n.start <= '1';
-			else
-				if p.addr = end_adr then
-					n.start <= '0';
-					n.f_fin <= '0';
-					if p.finish = '0' then
-						n.finish <= '1';
-					else
-						n.finish <= '0';
-						n.fresh <= '0';
-						n.addr <= str_adr;
+			if p.lonum  =  '1' then
+				if p.locount = X"0000000000000000" then
+					if p.addr = end_adr then
+						n.start <= '0';
+						n.f_fin <= '0';
+						if p.finish = '0' then
+							n.finish <= '1';
+						else
+							n.finish <= '0';
+							n.fresh <= '0';
+						end if;
+					end if;
+				else
+					if p.addr = end_adr then
+						n.addr <= X"00011";
+						n.locount <= p.locount -1;
 					end if;
 				end if;
 			end if;
@@ -145,6 +155,7 @@ begin
 					n.addr <= str_adr;
 					n.d_req <= '1';	--ｓｄｒamへリクエスト
 					n.fresh <= '1';
+					n.lonum <= '0';
 				else
 					n.addr <= p.addr +1;
 					n.d_req <= '1';	--ｓｄｒamへリクエスト
@@ -154,11 +165,31 @@ begin
 				n.d_req <= '0';
 				case p.state is
 					when idle =>
-						null;
+						n.f_fin <= '0';
 						
 					when dt_wait =>
 						if sdr_fin = '1' then
-							n.state <= dt_aquire;
+							if p.lonum = '1' then
+								n.state <= dt_aquire;
+							else
+								n.state <= loop_num;
+							end if;
+						end if;
+					
+					when loop_num =>
+						if p.d_num = "00" then
+							n.locount(15 downto 0) <= sdr_data(15 downto 0);
+							n.d_num <= "01";
+						elsif p.d_num = "01" then
+							n.locount(31 downto 16) <= sdr_data(31 downto 16);
+							n.d_num <= "10";
+						elsif p.d_num = "10" then
+							n.locount(47 downto 32) <= sdr_data(47 downto 32);
+							n.d_num <= "11";
+						elsif p.d_num = "11" then
+							n.locount(63 downto 48) <= sdr_data(63 downto 48);
+							n.d_num <= "00";
+							n.state <= prepare;
 						end if;
 						
 					when dt_aquire => 
@@ -179,10 +210,20 @@ begin
 						end if;
 						
 					when prepare => 
-						if decode_en = '1' then
+						if p.lonum = '0' then
 							n.f_run <= '0';
-							n.f_fin <= '0';
+							n.lonum <= '1';
 							n.state <= idle;
+						else
+							if decode_en = '1' then
+								n.f_run <= '0';
+								n.f_fin <= '0';
+								n.state <= idle;
+							elsif p.finish = '1' then
+								n.f_run <= '0';
+								n.f_fin <= '0';
+								n.state <= idle;
+							end if;
 						end if;
 						
 					when others =>
@@ -199,12 +240,13 @@ begin
 			p.data <= (others => '0');
 			p.f_fin <= '0';
 			p.d_req <= '0';
-			p.addr <= (others => '0');
 			p.f_run <= '0';
 			p.state <= idle;
 			p.d_num <= "00";
 			p.start <= '0';
 			p.fresh <= '0';
+			p.locount <= (others => '0');
+			p.lonum <= '0';
 		elsif clk' event and clk = '1' then
 			p <= n;
 		end if;

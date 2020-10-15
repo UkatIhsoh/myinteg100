@@ -414,7 +414,8 @@ architecture measure of just_measurement is
 	cite_addr <= addr;
 	measure_output(2 downto 0) <= rf_out;
 	measure_output(5 downto 3) <= ad_out;
-	measure_output(15 downto 6) <= data40_2(9 downto 0);
+	measure_output(14 downto 6) <= data40_2(8 downto 0);
+	measure_output(15) <= led_blink1;
 --	measure_output(6) <= req_1;
 --	measure_output(7) <= fqud_sig;
 --	measure_output(8) <= wclk_sig;
@@ -434,6 +435,12 @@ architecture measure of just_measurement is
 --		end if;
 --	end process;
 	
+	process(c_data)
+	begin
+		if c_data(63) = '1' then
+			led_blink1 <= not led_blink1;
+		end if;
+	end process;
 	
 	test_dout(7 downto 0) <= data40_1(17 downto 10);
 	test_dout(8) <= d_wait;

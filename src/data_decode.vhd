@@ -147,7 +147,13 @@
  							n.data(47 downto 32) <= data64(47 downto 32);
  							n.d_num <= "11";
  						else
- 							n.data(63 downto 48) <= data64(63 downto 48);
+							if p.m_fin = '1' then
+								n.data(62 downto 48) <= data64(62 downto 48);
+								n.data(63) <= '1';
+								n.m_fin <= '0';
+							else
+								n.data(63 downto 48) <= data64(63 downto 48);
+							end if;
  							n.d_num <= "00";
 							n.loading <= '1';
  							if p.patt_counter = DDS_patt then
@@ -188,7 +194,6 @@
  			case p.state is
  				when idle =>
 					n.d_en <= '0';
-					--n.c_end <= '0';
 					
  				when count =>
  					if read_fin = '0' then --master_counterがデータを獲得するまで待機
@@ -200,10 +205,6 @@
  							n.d_fin_m <= '0';
  							n.loading <= '0';
  							n.d_en <= '1';
- 							if p.m_fin = '1' then --decodeが終了するので、master_counterも終了させる
- 								n.m_fin <= '0';
- 								--n.c_end <= '1';
- 							end if;
  							n.state <= idle;
  						end if;
  					end if;
@@ -256,282 +257,3 @@
 
  end decode;
 
---when second =>
--- 						if p.d_num = "00" then
--- 							n.data(15 downto 0) <= data64(15 downto 0);
--- 							n.d_num <= "01";
--- 						elsif p.d_num = "01" then
--- 							n.data(31 downto 16) <= data64(31 downto 16);
--- 							n.d_num <= "10";
--- 						elsif p.d_num = "10" then
--- 							n.data(47 downto 32) <= data64(47 downto 32);
--- 							n.d_num <= "11";
--- 						else
--- 							n.data(63 downto 48) <= data64(63 downto 48);
--- 							n.d_num <= "00";
--- 							if p.patt_counter = DDS_patt then
--- 								if p.change_counter = X"0" then
--- 									n.d_type <= first;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"1" then
--- 									n.d_type <= second;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"2" then
--- 									n.d_type <= third;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"3" then
--- 									n.d_type <= fourth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"4" then
--- 									n.d_type <= fifth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"5" then
--- 									n.d_type <= sixth;
--- 									n.change_counter <= p.change_counter +1;
--- 								else
--- 									n.d_type <= seventh;
--- 									n.change_counter <= X"0";
--- 								end if;
--- 								n.state <= count;
--- 							else
--- 								--n.d_type <= data64(43 downto 40);
--- 								n.state <= dds;
--- 								n.patt_counter <= p.patt_counter +1;
--- 							end if;		
--- 							n.sequence <= third;
--- 							n.loading <= '1';
--- 						end if;
---
--- 					when third =>
--- 						if p.d_num = "00" then
--- 							n.data(15 downto 0) <= data64(15 downto 0);
--- 							n.d_num <= "01";
--- 						elsif p.d_num = "01" then
--- 							n.data(31 downto 16) <= data64(31 downto 16);
--- 							n.d_num <= "10";
--- 						elsif p.d_num = "10" then
--- 							n.data(47 downto 32) <= data64(47 downto 32);
--- 							n.d_num <= "11";
--- 						else
--- 							n.data(63 downto 48) <= data64(63 downto 48);
--- 							n.d_num <= "00";
--- 							if p.patt_counter = DDS_patt then
--- 								if p.change_counter = X"0" then
--- 									n.d_type <= first;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"1" then
--- 									n.d_type <= second;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"2" then
--- 									n.d_type <= third;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"3" then
--- 									n.d_type <= fourth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"4" then
--- 									n.d_type <= fifth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"5" then
--- 									n.d_type <= sixth;
--- 									n.change_counter <= p.change_counter +1;
--- 								else
--- 									n.d_type <= seventh;
--- 									n.change_counter <= X"0";
--- 								end if;
--- 								n.state <= count;
--- 							else
--- 								--n.d_type <= data64(43 downto 40);
--- 								n.state <= dds;
--- 								n.patt_counter <= p.patt_counter +1;
--- 							end if;
--- 							n.sequence <= fourth;
--- 							n.loading <= '1';
--- 						end if;
---						
--- 					when fourth =>
--- 						if p.d_num = "00" then
--- 							n.data(15 downto 0) <= data64(15 downto 0);
--- 							n.d_num <= "01";
--- 						elsif p.d_num = "01" then
--- 							n.data(31 downto 16) <= data64(31 downto 16);
--- 							n.d_num <= "10";
--- 						elsif p.d_num = "10" then
--- 							n.data(47 downto 32) <= data64(47 downto 32);
--- 							n.d_num <= "11";
--- 						else
--- 							n.data(63 downto 48) <= data64(63 downto 48);
--- 							n.d_num <= "00";
--- 							if p.patt_counter = DDS_patt then
--- 								if p.change_counter = X"0" then
--- 									n.d_type <= first;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"1" then
--- 									n.d_type <= second;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"2" then
--- 									n.d_type <= third;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"3" then
--- 									n.d_type <= fourth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"4" then
--- 									n.d_type <= fifth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"5" then
--- 									n.d_type <= sixth;
--- 									n.change_counter <= p.change_counter +1;
--- 								else
--- 									n.d_type <= seventh;
--- 									n.change_counter <= X"0";
--- 								end if;
--- 								n.state <= count;
--- 							else
--- 						--n.d_type <= data64(43 downto 40);
--- 								n.state <= dds;
--- 								n.patt_counter <= p.patt_counter +1;
--- 							end if;
--- 							n.sequence <= fifth;
--- 							n.loading <= '1';
--- 						end if;
---						
--- 					when fifth =>
--- 						if p.d_num = "00" then
--- 							n.data(15 downto 0) <= data64(15 downto 0);
--- 							n.d_num <= "01";
--- 						elsif p.d_num = "01" then
--- 							n.data(31 downto 16) <= data64(31 downto 16);
--- 							n.d_num <= "10";
--- 						elsif p.d_num = "10" then
--- 							n.data(47 downto 32) <= data64(47 downto 32);
--- 							n.d_num <= "11";
--- 						else
--- 							n.data(63 downto 48) <= data64(63 downto 48);
--- 							n.d_num <= "00";
--- 							if p.patt_counter = DDS_patt then
--- 								if p.change_counter = X"0" then
--- 									n.d_type <= first;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"1" then
--- 									n.d_type <= second;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"2" then
--- 									n.d_type <= third;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"3" then
--- 									n.d_type <= fourth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"4" then
--- 									n.d_type <= fifth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"5" then
--- 									n.d_type <= sixth;
--- 									n.change_counter <= p.change_counter +1;
--- 								else
--- 									n.d_type <= seventh;
--- 									n.change_counter <= X"0";
--- 								end if;
--- 								n.state <= count;
--- 							else
--- 								--n.d_type <= data64(43 downto 40);
--- 								n.state <= dds;
--- 								n.patt_counter <= p.patt_counter +1;
--- 							end if;
--- 							n.sequence <= sixth;
--- 							n.loading <= '1';
--- 						end if;
---						
--- 					when sixth =>
--- 						if p.d_num = "00" then
--- 							n.data(15 downto 0) <= data64(15 downto 0);
--- 							n.d_num <= "01";
--- 						elsif p.d_num = "01" then
--- 							n.data(31 downto 16) <= data64(31 downto 16);
--- 							n.d_num <= "10";
--- 						elsif p.d_num = "10" then
--- 							n.data(47 downto 32) <= data64(47 downto 32);
--- 							n.d_num <= "11";
--- 						else
--- 							n.data(63 downto 48) <= data64(63 downto 48);
--- 							n.d_num <= "00";
--- 							if p.patt_counter = DDS_patt then
--- 								if p.change_counter = X"0" then
--- 									n.d_type <= first;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"1" then
--- 									n.d_type <= second;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"2" then
--- 									n.d_type <= third;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"3" then
--- 									n.d_type <= fourth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"4" then
--- 									n.d_type <= fifth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"5" then
--- 									n.d_type <= sixth;
--- 									n.change_counter <= p.change_counter +1;
--- 								else
--- 									n.d_type <= seventh;
--- 									n.change_counter <= X"0";
--- 								end if;
--- 								n.state <= count;
--- 							else
--- 								--n.d_type <= data64(43 downto 40);
--- 								n.state <= dds;
--- 								n.patt_counter <= p.patt_counter +1;
--- 							end if;
--- 							n.sequence <= seventh;
--- 							n.loading <= '1';
--- 						end if;
---						
--- 					when seventh =>
--- 						if p.d_num = "00" then
--- 							n.data(15 downto 0) <= data64(15 downto 0);
--- 							n.d_num <= "01";
--- 						elsif p.d_num = "01" then
--- 							n.data(31 downto 16) <= data64(31 downto 16);
--- 							n.d_num <= "10";
--- 						elsif p.d_num = "10" then
--- 							n.data(47 downto 32) <= data64(47 downto 32);
--- 							n.d_num <= "11";
--- 						else
--- 							n.data(63 downto 48) <= data64(63 downto 48);
--- 							n.d_num <= "00";
--- 							if p.patt_counter = DDS_patt then
--- 								if p.change_counter = X"0" then
--- 									n.d_type <= first;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"1" then
--- 									n.d_type <= second;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"2" then
--- 									n.d_type <= third;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"3" then
--- 									n.d_type <= fourth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"4" then
--- 									n.d_type <= fifth;
--- 									n.change_counter <= p.change_counter +1;
--- 								elsif p.change_counter = X"5" then
--- 									n.d_type <= sixth;
--- 									n.change_counter <= p.change_counter +1;
--- 								else
--- 									n.d_type <= seventh;
--- 									n.change_counter <= X"0";
--- 								end if;
--- 								n.state <= count;
--- 							else
--- 								--n.d_type <= data64(43 downto 40);
--- 								n.state <= dds;
--- 								n.patt_counter <= p.patt_counter +1;
--- 							end if;
--- 							n.sequence <= first;
--- 							n.loading <= '1';
--- 						end if;		
---					
--- 					when others =>
--- 						n.state <= idle;	
--- 				end case;

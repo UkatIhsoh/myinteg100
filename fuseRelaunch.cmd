@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/integ100/src/dds_test_isim_beh.exe" -prj "D:/integ100/src/dds_test_beh.prj" "work.dds_test" 
