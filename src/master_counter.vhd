@@ -172,7 +172,7 @@
 --				n.t_1 <= (others => '0'); n.t_2 <= (others => '0'); n.t_3 <= (others => '0'); n.t_4 <= (others => '0'); 
 --				n.t_5 <= (others => '0'); n.t_6 <= (others => '0'); n.t_7 <= (others => '0');
 -- 				dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
- 			if preset = '1' and count_end = '0' then --事前のデータセットが終わらなければカウントは始まらない
+ 			if preset = '1' then --事前のデータセットが終わらなければカウントは始まらない
  				if counter = p.t_1(31 downto 0) then	--データによって指定された時刻になったらイベントを起こす
  					rf_out <= p.t_1(34 downto 32);
  					dds_set_1 <= p.t_1(45 downto 38);
@@ -180,8 +180,9 @@
 					ad_out <= p.t_1(37 downto 35);
 					counter <= counter +1;
 					if p.t_1(63) = '1' then
-						count_end <= '1';
-						preset <= '0';
+--						count_end <= '1';
+						counter <= (others => '0');
+--						preset <= '0';
 					end if;
  				elsif counter = p.t_2(31 downto 0) then		
  					rf_out <= p.t_2(34 downto 32);
@@ -190,8 +191,9 @@
 					ad_out <= p.t_2(37 downto 35);
 					counter <= counter +1;
 					if p.t_2(63) = '1' then
-						count_end <= '1';
-						preset <= '0';
+--						count_end <= '1';
+						counter <= (others => '0');
+--						preset <= '0';
 					end if;
  				elsif counter = p.t_3(31 downto 0) then		
  					rf_out <= p.t_3(34 downto 32);
@@ -200,8 +202,9 @@
 					 ad_out <= p.t_3(37 downto 35);
 					 counter <= counter +1;
 					 if p.t_3(63) = '1' then
-						count_end <= '1';
-						preset <= '0';
+--						count_end <= '1';
+						counter <= (others => '0');
+--						preset <= '0';
 					end if;
  				elsif counter = p.t_4(31 downto 0) then		
  					rf_out <= p.t_4(34 downto 32);
@@ -210,8 +213,9 @@
 					 ad_out <= p.t_4(37 downto 35);
 					 counter <= counter +1;
 					 if p.t_4(63) = '1' then
-						count_end <= '1';
-						preset <= '0';
+--						count_end <= '1';
+						counter <= (others => '0');
+--						preset <= '0';
 					end if;
  				elsif counter = p.t_5(31 downto 0) then		
  					rf_out <= p.t_5(34 downto 32);
@@ -220,8 +224,9 @@
 					 ad_out <= p.t_5(37 downto 35);
 					 counter <= counter +1;
 					 if p.t_5(63) = '1' then
-						count_end <= '1';
-						preset <= '0';
+--						count_end <= '1';
+						counter <= (others => '0');
+--						preset <= '0';
 					end if;
  				elsif counter = p.t_6(31 downto 0) then	
  					rf_out <= p.t_6(34 downto 32);
@@ -230,8 +235,9 @@
 					 ad_out <= p.t_6(37 downto 35);
 					 counter <= counter +1;
 					 if p.t_6(63) = '1' then
-						count_end <= '1';
-						preset <= '0';
+--						count_end <= '1';
+						counter <= (others => '0');
+--						preset <= '0';
 					end if;
  				elsif counter = p.t_7(31 downto 0) -1 then
  					counter <= counter +1;
@@ -240,8 +246,9 @@
  					dds_set_2 <= p.t_7(53 downto 46);
  					ad_out <= p.t_7(37 downto 35);
 					if p.t_7(63) = '1' then
-						count_end <= '1';
-						preset <= '0';
+--						count_end <= '1';
+						counter <= (others => '0');
+--						preset <= '0';
 					end if;
 				elsif counter = p.t_7(31 downto 0) then	
 					counter <= counter +1;
@@ -300,7 +307,7 @@
  						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
  					end if;
  				end if;
- 			elsif preset = '0' and count_end = '0' then  --最初のデータセット
+ 			elsif preset = '0' then  --最初のデータセット
  				if d_fin = '1' then --decodeからのデータがavailableならデータをセットする
  					case d_type is
  						when first =>		
@@ -348,11 +355,11 @@
  						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
  					end if;
  				end if;
-			elsif preset = '0' and count_end = '1' then
-				counter <= (others => '0');
-				if d_fin = '1' then
-					count_end <= '0';
-				end if;
+--			elsif preset = '0' and count_end = '1' then
+--				counter <= (others => '0');
+--				if d_fin = '1' then
+--					count_end <= '0';
+--				end if;
  			end if;
  		end if;
 			

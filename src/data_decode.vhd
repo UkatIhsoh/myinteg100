@@ -147,13 +147,13 @@
  							n.data(47 downto 32) <= data64(47 downto 32);
  							n.d_num <= "11";
  						else
-							if p.m_fin = '1' then
-								n.data(62 downto 48) <= data64(62 downto 48);
-								n.data(63) <= '1';
-								n.m_fin <= '0';
-							else
+--							if p.m_fin = '1' then
+--								n.data(62 downto 48) <= data64(62 downto 48);
+--								n.data(63) <= '1';
+--								n.m_fin <= '0';
+--							else
 								n.data(63 downto 48) <= data64(63 downto 48);
-							end if;
+--							end if;
  							n.d_num <= "00";
 							n.loading <= '1';
  							if p.patt_counter = DDS_patt then
