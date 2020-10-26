@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-L548H6P::  Mon Oct 19 14:03:53 2020
+DESKTOP-L548H6P::  Mon Oct 26 15:58:57 2020
 
 par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
 
@@ -21,30 +21,30 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 3,537 out of  11,440   30%
-    Number used as Flip Flops:               3,355
+  Number of Slice Registers:                 3,152 out of  11,440   27%
+    Number used as Flip Flops:               2,970
     Number used as Latches:                    182
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      2,925 out of   5,720   51%
-    Number used as logic:                    2,741 out of   5,720   47%
-      Number using O6 output only:           1,621
+  Number of Slice LUTs:                      2,713 out of   5,720   47%
+    Number used as logic:                    2,533 out of   5,720   44%
+      Number using O6 output only:           1,648
       Number using O5 output only:             188
-      Number using O5 and O6:                  932
+      Number using O5 and O6:                  697
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
-    Number used exclusively as route-thrus:    184
-      Number with same-slice register load:    177
+    Number used exclusively as route-thrus:    180
+      Number with same-slice register load:    173
       Number with same-slice carry load:         7
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,284 out of   1,430   89%
-  Number of MUXCYs used:                       596 out of   2,860   20%
-  Number of LUT Flip Flop pairs used:        4,051
-    Number with an unused Flip Flop:           861 out of   4,051   21%
-    Number with an unused LUT:               1,126 out of   4,051   27%
-    Number of fully used LUT-FF pairs:       2,064 out of   4,051   50%
+  Number of occupied Slices:                 1,164 out of   1,430   81%
+  Number of MUXCYs used:                       556 out of   2,860   19%
+  Number of LUT Flip Flop pairs used:        3,708
+    Number with an unused Flip Flop:           855 out of   3,708   23%
+    Number with an unused LUT:                 995 out of   3,708   26%
+    Number of fully used LUT-FF pairs:       1,858 out of   3,708   50%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -136,29 +136,31 @@ WARNING:Par:288 - The signal WING_C<15>_IBUF has no load.  PAR will not attempt 
 Starting Router
 
 
-Phase  1  : 18205 unrouted;      REAL time: 5 secs 
+Phase  1  : 16687 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 15699 unrouted;      REAL time: 5 secs 
+Phase  2  : 14541 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 5474 unrouted;      REAL time: 13 secs 
+Phase  3  : 4907 unrouted;      REAL time: 12 secs 
 
-Phase  4  : 5520 unrouted; (Setup:33010, Hold:0, Component Switching Limit:0)     REAL time: 14 secs 
+Phase  4  : 4959 unrouted; (Setup:31661, Hold:0, Component Switching Limit:0)     REAL time: 13 secs 
 
 Updating file: top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:37014, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
+Phase  5  : 0 unrouted; (Setup:34494, Hold:0, Component Switching Limit:0)     REAL time: 21 secs 
 
-Phase  6  : 0 unrouted; (Setup:37014, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
+Phase  6  : 0 unrouted; (Setup:33301, Hold:0, Component Switching Limit:0)     REAL time: 23 secs 
 
-Phase  7  : 0 unrouted; (Setup:27594, Hold:296, Component Switching Limit:0)     REAL time: 34 secs 
+Updating file: top.ncd with current fully routed design.
 
-Phase  8  : 0 unrouted; (Setup:27594, Hold:296, Component Switching Limit:0)     REAL time: 34 secs 
+Phase  7  : 0 unrouted; (Setup:33301, Hold:0, Component Switching Limit:0)     REAL time: 29 secs 
 
-Phase  9  : 0 unrouted; (Setup:27594, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
+Phase  8  : 0 unrouted; (Setup:33301, Hold:0, Component Switching Limit:0)     REAL time: 29 secs 
 
-Phase 10  : 0 unrouted; (Setup:5721, Hold:0, Component Switching Limit:0)     REAL time: 35 secs 
-Total REAL time to Router completion: 35 secs 
-Total CPU time to Router completion: 37 secs 
+Phase  9  : 0 unrouted; (Setup:33301, Hold:0, Component Switching Limit:0)     REAL time: 29 secs 
+
+Phase 10  : 0 unrouted; (Setup:5047, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
+Total REAL time to Router completion: 30 secs 
+Total CPU time to Router completion: 31 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -176,47 +178,47 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|              clk100 |  BUFGMUX_X2Y2| No   | 1077 |  0.752     |  2.143      |
-+---------------------+--------------+------+------+------------+-------------+
-|measure/data_save/GN |              |      |      |            |             |
-|D_76_o_PWR_57_o_MUX_ |              |      |      |            |             |
-|         1650_o_BUFG | BUFGMUX_X2Y10| No   |   21 |  0.630     |  2.031      |
-+---------------------+--------------+------+------+------------+-------------+
-|measure/data_save/GN |              |      |      |            |             |
-|D_76_o_PWR_57_o_MUX_ |              |      |      |            |             |
-|         1313_o_BUFG |  BUFGMUX_X2Y4| No   |   20 |  0.094     |  1.502      |
+|              clk100 |  BUFGMUX_X2Y2| No   |  944 |  0.752     |  2.143      |
 +---------------------+--------------+------+------+------------+-------------+
 |rs232c_clk_gen/CLK96 |              |      |      |            |             |
-|             00_BUFG | BUFGMUX_X3Y13| No   |   52 |  0.074     |  1.470      |
+|             00_BUFG |  BUFGMUX_X2Y4| No   |   50 |  0.109     |  1.501      |
++---------------------+--------------+------+------+------------+-------------+
+|measure/data_save/GN |              |      |      |            |             |
+|D_76_o_PWR_57_o_MUX_ |              |      |      |            |             |
+|         1671_o_BUFG | BUFGMUX_X2Y10| No   |   21 |  0.634     |  2.031      |
 +---------------------+--------------+------+------+------------+-------------+
 |measure/DDS1/req_dds |              |      |      |            |             |
 |_p_rst_pend_AND_183_ |              |      |      |            |             |
-|              o_BUFG | BUFGMUX_X2Y12| No   |   10 |  0.091     |  1.493      |
+|              o_BUFG | BUFGMUX_X2Y12| No   |   10 |  0.046     |  1.499      |
 +---------------------+--------------+------+------+------------+-------------+
 |measure/DDS2/req_dds |              |      |      |            |             |
 |_p_rst_pend_AND_183_ |              |      |      |            |             |
-|              o_BUFG |  BUFGMUX_X2Y1| No   |   10 |  0.100     |  1.502      |
+|              o_BUFG |  BUFGMUX_X2Y1| No   |   10 |  0.093     |  1.493      |
 +---------------------+--------------+------+------+------------+-------------+
-|       outer_clk_buf |         Local|      |    4 |  0.849     |  3.353      |
+|measure/data_save/GN |              |      |      |            |             |
+|D_76_o_PWR_57_o_MUX_ |              |      |      |            |             |
+|         1334_o_BUFG | BUFGMUX_X3Y13| No   |   20 |  0.101     |  1.502      |
 +---------------------+--------------+------+------+------------+-------------+
-|      cmd_exe/RST_OP |         Local|      |  461 |  3.251     |  3.864      |
+|      cmd_exe/RST_OP |         Local|      |  332 |  1.929     |  3.363      |
++---------------------+--------------+------+------+------------+-------------+
+|sdram/statep[8]_GND_ |              |      |      |            |             |
+|       45_o_Mux_84_o |         Local|      |    8 |  0.764     |  1.346      |
++---------------------+--------------+------+------+------------+-------------+
+|read_sec/p_state_FSM |              |      |      |            |             |
+|               _FFd2 |         Local|      |    6 |  0.000     |  0.623      |
++---------------------+--------------+------+------+------------+-------------+
+|       outer_clk_buf |         Local|      |    4 |  0.610     |  2.887      |
++---------------------+--------------+------+------+------------+-------------+
+|measure/decode/p_dat |              |      |      |            |             |
+|               a<63> |         Local|      |    9 |  0.000     |  2.403      |
 +---------------------+--------------+------+------+------------+-------------+
 |measure/data_save/dd |              |      |      |            |             |
 |s1_data[7]_dds1_data |              |      |      |            |             |
-|        [7]_OR_288_o |         Local|      |    2 |  0.000     |  0.373      |
-+---------------------+--------------+------+------+------------+-------------+
-|measure/decode/p_dat |              |      |      |            |             |
-|               a<63> |         Local|      |   13 |  0.000     |  2.883      |
+|        [7]_OR_288_o |         Local|      |    2 |  0.000     |  0.584      |
 +---------------------+--------------+------+------+------------+-------------+
 |measure/data_save/dd |              |      |      |            |             |
 |s2_data[7]_dds2_data |              |      |      |            |             |
-|        [7]_OR_576_o |         Local|      |    1 |  0.000     |  0.769      |
-+---------------------+--------------+------+------+------------+-------------+
-|sdram/statep[8]_GND_ |              |      |      |            |             |
-|       45_o_Mux_84_o |         Local|      |    8 |  0.961     |  1.597      |
-+---------------------+--------------+------+------+------------+-------------+
-|read_sec/p_state_FSM |              |      |      |            |             |
-|               _FFd2 |         Local|      |    6 |  0.000     |  0.632      |
+|        [7]_OR_576_o |         Local|      |    1 |  0.000     |  0.578      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -227,7 +229,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 5721 (Setup: 5721, Hold: 0, Component Switching Limit: 0)
+Timing Score: 5047 (Setup: 5047, Hold: 0, Component Switching Limit: 0)
 
 WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
 
@@ -254,8 +256,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* PERIOD analysis for net "clk_gen/clkfx" d | SETUP       |    -1.340ns|    12.680ns|      23|        5721
-  erived from  NET "clk_gen/clkin1" PERIOD  | HOLD        |     0.380ns|            |       0|           0
+* PERIOD analysis for net "clk_gen/clkfx" d | SETUP       |    -0.906ns|    11.812ns|      27|        5047
+  erived from  NET "clk_gen/clkin1" PERIOD  | HOLD        |     0.359ns|            |       0|           0
   = 31.25 ns HIGH 50%                       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET "clk_gen/clkin1" PERIOD = 31.25 ns HI | MINLOWPULSE |    15.250ns|    16.000ns|       0|           0
@@ -273,8 +275,8 @@ Derived Constraints for clk_gen/clkin1
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|clk_gen/clkin1                 |     31.250ns|     16.000ns|     39.625ns|            0|           23|            0|       581263|
-| clk_gen/clkfx                 |     10.000ns|     12.680ns|          N/A|           23|            0|       581263|            0|
+|clk_gen/clkin1                 |     31.250ns|     16.000ns|     36.913ns|            0|           27|            0|       162062|
+| clk_gen/clkfx                 |     10.000ns|     11.812ns|          N/A|           27|            0|       162062|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 1 constraint not met.
@@ -286,14 +288,14 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 31 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 37 secs 
-Total CPU time to PAR completion: 38 secs 
+Total REAL time to PAR completion: 31 secs 
+Total CPU time to PAR completion: 32 secs 
 
 Peak Memory Usage:  4558 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
-Timing: Completed - 23 errors found.
+Timing: Completed - 27 errors found.
 
 Number of error messages: 0
 Number of warning messages: 34

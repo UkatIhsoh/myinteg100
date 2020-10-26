@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: top.prj
 
@@ -108,90 +108,90 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\ipcore_dir\fifo_trans.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ipcore_dir\fifo_trans.vhd" into library work
 Parsing entity <fifo_trans>.
 Parsing architecture <fifo_trans_a> of entity <fifo_trans>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\ipcore_dir\clk_generator.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ipcore_dir\clk_generator.vhd" into library work
 Parsing entity <clk_generator>.
 Parsing architecture <xilinx> of entity <clk_generator>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\data_types.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_types.vhd" into library work
 Parsing package <data_types>.
 Parsing package body <data_types>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" into library work
 Parsing package <ascii_pac>.
 Parsing package body <ascii_pac>.
-WARNING:HDLCompiler:797 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 216: Subprogram <hex2vec> does not conform with its declaration.
-INFO:HDLCompiler:1408 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 80. hex2vec is declared here
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\types.vhd" into library work
+WARNING:HDLCompiler:797 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 216: Subprogram <hex2vec> does not conform with its declaration.
+INFO:HDLCompiler:1408 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 80. hex2vec is declared here
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\types.vhd" into library work
 Parsing package <types>.
 Parsing package body <types>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\rs232c_8bit_transfer.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\rs232c_8bit_transfer.vhd" into library work
 Parsing entity <rs232c_8bit_transfer>.
 Parsing architecture <Behavioral> of entity <rs232c_8bit_transfer>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\rs232c_8bit_receive.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\rs232c_8bit_receive.vhd" into library work
 Parsing entity <rs232c_8bit_receive>.
 Parsing architecture <Behavioral> of entity <rs232c_8bit_receive>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\master_counter.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\master_counter.vhd" into library work
 Parsing entity <master_counter>.
 Parsing architecture <count_time> of entity <master_counter>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\ipcore_dir\fifo_receive.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ipcore_dir\fifo_receive.vhd" into library work
 Parsing entity <fifo_receive>.
 Parsing architecture <fifo_receive_a> of entity <fifo_receive>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" into library work
 Parsing entity <DDS_data_drive>.
 Parsing architecture <data_save> of entity <dds_data_drive>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\DDS_data.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data.vhd" into library work
 Parsing entity <DDS_data>.
 Parsing architecture <data_read> of entity <dds_data>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\data_fetch.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_fetch.vhd" into library work
 Parsing entity <data_fetch>.
 Parsing architecture <fetch> of entity <data_fetch>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\data_decode.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_decode.vhd" into library work
 Parsing entity <data_decode>.
 Parsing architecture <decode> of entity <data_decode>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\crlf_observer.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\crlf_observer.vhd" into library work
 Parsing entity <crlf_observer>.
 Parsing architecture <Behavioral> of entity <crlf_observer>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\AD9851_ctrl.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\AD9851_ctrl.vhd" into library work
 Parsing entity <AD9851_ctrl>.
 Parsing architecture <Behavioral> of entity <ad9851_ctrl>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\vector_mux.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\vector_mux.vhd" into library work
 Parsing entity <vector_mux>.
 Parsing architecture <Behavioral> of entity <vector_mux>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\transfer.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\transfer.vhd" into library work
 Parsing entity <transfer>.
 Parsing architecture <Behavioral> of entity <transfer>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\string_send.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\string_send.vhd" into library work
 Parsing entity <string_send>.
 Parsing architecture <Behavioral> of entity <string_send>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\state_machine.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\state_machine.vhd" into library work
 Parsing entity <state_machine>.
 Parsing architecture <Behavioral> of entity <state_machine>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\signal_auth_ctrl.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\signal_auth_ctrl.vhd" into library work
 Parsing entity <signal_auth_ctrl>.
 Parsing architecture <Behavioral> of entity <signal_auth_ctrl>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_wr.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_wr.vhd" into library work
 Parsing entity <SDRAM_wr>.
 Parsing architecture <write_sec> of entity <sdram_wr>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_rd.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_rd.vhd" into library work
 Parsing entity <SDRAM_rd>.
 Parsing architecture <read_sec> of entity <sdram_rd>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_ctrl.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_ctrl.vhd" into library work
 Parsing entity <SDRAM_ctrl>.
 Parsing architecture <Behavioral> of entity <sdram_ctrl>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\receive.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\receive.vhd" into library work
 Parsing entity <receive>.
 Parsing architecture <Behavioral> of entity <receive>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\just_measurement.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" into library work
 Parsing entity <just_measurement>.
 Parsing architecture <measure> of entity <just_measurement>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\command_execute.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\command_execute.vhd" into library work
 Parsing entity <command_execute>.
 Parsing architecture <Behavioral> of entity <command_execute>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\clk_gen_rs232c.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\clk_gen_rs232c.vhd" into library work
 Parsing entity <clk_gen_rs232c>.
 Parsing architecture <Behavioral> of entity <clk_gen_rs232c>.
-Parsing VHDL file "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" into library work
+Parsing VHDL file "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" into library work
 Parsing entity <top>.
 Parsing architecture <Behavioral> of entity <top>.
 
@@ -212,112 +212,112 @@ Elaborating entity <fifo_receive> (architecture <fifo_receive_a>) from library <
 Elaborating entity <rs232c_8bit_receive> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <transfer> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 148. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 148. Case statement is complete. others clause is never selected
 
 Elaborating entity <fifo_trans> (architecture <fifo_trans_a>) from library <work>.
 
 Elaborating entity <rs232c_8bit_transfer> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\rs232c_8bit_transfer.vhd" Line 87. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\rs232c_8bit_transfer.vhd" Line 87. Case statement is complete. others clause is never selected
 
 Elaborating entity <SDRAM_ctrl> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <SDRAM_rd> (architecture <read_sec>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_rd.vhd" Line 136: sdr_data should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_rd.vhd" Line 146. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_rd.vhd" Line 136: sdr_data should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_rd.vhd" Line 146. Case statement is complete. others clause is never selected
 
 Elaborating entity <SDRAM_wr> (architecture <write_sec>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_wr.vhd" Line 97: adr_in should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_wr.vhd" Line 99: data_in should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_wr.vhd" Line 97: adr_in should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_wr.vhd" Line 99: data_in should be on the sensitivity list of the process
 
 Elaborating entity <state_machine> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <crlf_observer> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\crlf_observer.vhd" Line 62: rec_rq should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\state_machine.vhd" Line 424. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\crlf_observer.vhd" Line 62: rec_rq should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\state_machine.vhd" Line 424. Case statement is complete. others clause is never selected
 
 Elaborating entity <signal_auth_ctrl> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <command_execute> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\command_execute.vhd" Line 233. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ascii_pac.vhd" Line 268. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\command_execute.vhd" Line 233. Case statement is complete. others clause is never selected
 
 Elaborating entity <just_measurement> (architecture <measure>) from library <work>.
 
 Elaborating entity <data_fetch> (architecture <fetch>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\data_fetch.vhd" Line 156: str_adr should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\data_fetch.vhd" Line 176: sdr_fin should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\data_fetch.vhd" Line 178: end_adr should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "C:\Users\Igarashi\Desktop\integ100\src\data_fetch.vhd" Line 260. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_fetch.vhd" Line 156: str_adr should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_fetch.vhd" Line 176: sdr_fin should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_fetch.vhd" Line 178: end_adr should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_fetch.vhd" Line 260. Case statement is complete. others clause is never selected
 
 Elaborating entity <data_decode> (architecture <decode>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Igarashi\Desktop\integ100\src\data_decode.vhd" Line 232: Assignment to fresh ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_decode.vhd" Line 232: Assignment to fresh ignored, since the identifier is never used
 
 Elaborating entity <master_counter> (architecture <count_time>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Igarashi\Desktop\integ100\src\master_counter.vhd" Line 139: Assignment to m_fin ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\master_counter.vhd" Line 139: Assignment to m_fin ignored, since the identifier is never used
 
 Elaborating entity <DDS_data> (architecture <data_read>) from library <work>.
-WARNING:HDLCompiler:1127 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data.vhd" Line 109: Assignment to counter ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data.vhd" Line 109: Assignment to counter ignored, since the identifier is never used
 
 Elaborating entity <DDS_data_drive> (architecture <data_save>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 309: d_drive_18 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 312: d_drive_17 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 315: d_drive_16 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 318: d_drive_15 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 321: d_drive_14 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 324: d_drive_13 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 327: d_drive_12 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 330: d_drive_11 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 345: d_drive_28 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 348: d_drive_27 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 351: d_drive_26 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 354: d_drive_25 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 357: d_drive_24 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 360: d_drive_23 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 363: d_drive_22 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd" Line 366: d_drive_21 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 309: d_drive_18 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 312: d_drive_17 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 315: d_drive_16 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 318: d_drive_15 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 321: d_drive_14 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 324: d_drive_13 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 327: d_drive_12 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 330: d_drive_11 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 345: d_drive_28 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 348: d_drive_27 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 351: d_drive_26 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 354: d_drive_25 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 357: d_drive_24 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 360: d_drive_23 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 363: d_drive_22 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 366: d_drive_21 should be on the sensitivity list of the process
 
 Elaborating entity <AD9851_ctrl> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "C:\Users\Igarashi\Desktop\integ100\src\just_measurement.vhd" Line 441: led_blink1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" Line 441: led_blink1 should be on the sensitivity list of the process
 
 Elaborating entity <string_send> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <vector_mux> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:634 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" Line 338: Net <rc_fifo_rst> does not have a driver.
-WARNING:HDLCompiler:634 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" Line 347: Net <tr_fifo_rst> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" Line 338: Net <rc_fifo_rst> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" Line 347: Net <tr_fifo_rst> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\top.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd".
 WARNING:Xst:647 - Input <WING_B> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <WING_C<15:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 473: Output port <CLK115200> of the instance <rs232c_clk_gen> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 488: Output port <FULL> of the instance <rc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 503: Output port <FULL> of the instance <tr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 503: Output port <EMPTY> of the instance <tr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 516: Output port <data_in_valid> of the instance <sdram> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 616: Output port <MSR_DATA> of the instance <cmd_exe> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 651: Output port <test_dout> of the instance <measure> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 651: Output port <rf_pulse> of the instance <measure> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 651: Output port <adc_sig> of the instance <measure> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\top.vhd" line 651: Output port <test_bit> of the instance <measure> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 473: Output port <CLK115200> of the instance <rs232c_clk_gen> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 488: Output port <FULL> of the instance <rc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 503: Output port <FULL> of the instance <tr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 503: Output port <EMPTY> of the instance <tr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 516: Output port <data_in_valid> of the instance <sdram> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 616: Output port <MSR_DATA> of the instance <cmd_exe> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 651: Output port <test_dout> of the instance <measure> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 651: Output port <rf_pulse> of the instance <measure> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 651: Output port <adc_sig> of the instance <measure> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 651: Output port <test_bit> of the instance <measure> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <rc_fifo_rst> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <tr_fifo_rst> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
@@ -325,7 +325,7 @@ WARNING:Xst:653 - Signal <tr_fifo_rst> is used but never assigned. This sourcele
 Unit <top> synthesized.
 
 Synthesizing Unit <clk_gen_rs232c>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\clk_gen_rs232c.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\clk_gen_rs232c.vhd".
     Found 1-bit register for signal <CLK115200>.
     Found 12-bit register for signal <cnt9600>.
     Found 1-bit register for signal <CLK9600>.
@@ -338,13 +338,13 @@ Synthesizing Unit <clk_gen_rs232c>.
 Unit <clk_gen_rs232c> synthesized.
 
 Synthesizing Unit <clk_generator>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\ipcore_dir\clk_generator.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\ipcore_dir\clk_generator.vhd".
     Summary:
 	no macro.
 Unit <clk_generator> synthesized.
 
 Synthesizing Unit <receive>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\receive.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\receive.vhd".
     Found 1-bit register for signal <fifo_wr_en>.
     Found 1-bit register for signal <read_rq>.
     Found 256x6-bit Read Only RAM for signal <ACOUT>
@@ -354,7 +354,7 @@ Synthesizing Unit <receive>.
 Unit <receive> synthesized.
 
 Synthesizing Unit <rs232c_8bit_receive>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\rs232c_8bit_receive.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\rs232c_8bit_receive.vhd".
     Found 1-bit register for signal <GET_EN>.
     Found 8-bit register for signal <data_i>.
     Found 4-bit register for signal <state>.
@@ -376,7 +376,7 @@ Synthesizing Unit <rs232c_8bit_receive>.
 Unit <rs232c_8bit_receive> synthesized.
 
 Synthesizing Unit <transfer>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\transfer.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\transfer.vhd".
     Found 1-bit register for signal <send_rq>.
     Found 1-bit register for signal <fifo_rd_en>.
     Found 64x8-bit Read Only RAM for signal <AC_TR[5]_X_15_o_wide_mux_0_OUT>
@@ -386,7 +386,7 @@ Synthesizing Unit <transfer>.
 Unit <transfer> synthesized.
 
 Synthesizing Unit <rs232c_8bit_transfer>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\rs232c_8bit_transfer.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\rs232c_8bit_transfer.vhd".
     Found 1-bit register for signal <SET_EN>.
     Found 4-bit register for signal <state>.
     Found 1-bit register for signal <txd_inner>.
@@ -409,7 +409,7 @@ Synthesizing Unit <rs232c_8bit_transfer>.
 Unit <rs232c_8bit_transfer> synthesized.
 
 Synthesizing Unit <SDRAM_ctrl>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_ctrl.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_ctrl.vhd".
         HIGH_BIT = 24
         MHZ = 96
         REFRESH_CYCLES = 4096
@@ -506,7 +506,7 @@ INFO:Xst:2774 - HDL ADVISOR - IOB property attached to signal r_bank may hinder 
 Unit <SDRAM_ctrl> synthesized.
 
 Synthesizing Unit <SDRAM_rd>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_rd.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_rd.vhd".
     Found 64-bit register for signal <p_data>.
     Found 20-bit register for signal <p_adr>.
     Found 2-bit register for signal <p_state>.
@@ -535,7 +535,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <rd_fin>. Latches may be generate
 Unit <SDRAM_rd> synthesized.
 
 Synthesizing Unit <SDRAM_wr>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\SDRAM_wr.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\SDRAM_wr.vhd".
     Found 64-bit register for signal <p_data>.
     Found 20-bit register for signal <p_adr>.
     Found 2-bit register for signal <p_state>.
@@ -565,7 +565,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <wr_fin>. Latches may be generate
 Unit <SDRAM_wr> synthesized.
 
 Synthesizing Unit <state_machine>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\state_machine.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\state_machine.vhd".
         MAX_LEN = 64
     Found 32-bit register for signal <recieve_cnt>.
     Found 6-bit register for signal <STR<0>>.
@@ -682,7 +682,7 @@ Synthesizing Unit <state_machine>.
 Unit <state_machine> synthesized.
 
 Synthesizing Unit <crlf_observer>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\crlf_observer.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\crlf_observer.vhd".
     Found 1-bit register for signal <CRLF>.
     Found 1-bit register for signal <cr_flag>.
     Summary:
@@ -690,7 +690,7 @@ Synthesizing Unit <crlf_observer>.
 Unit <crlf_observer> synthesized.
 
 Synthesizing Unit <signal_auth_ctrl>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\signal_auth_ctrl.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\signal_auth_ctrl.vhd".
     Found 1-bit register for signal <RD_REQ>.
     Found 1-bit register for signal <EXE_RD_FIN>.
     Found 1-bit register for signal <MSR_RD_FIN>.
@@ -703,7 +703,7 @@ Synthesizing Unit <signal_auth_ctrl>.
 Unit <signal_auth_ctrl> synthesized.
 
 Synthesizing Unit <command_execute>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\command_execute.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\command_execute.vhd".
 WARNING:Xst:653 - Signal <MSR_DATA> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 1-bit register for signal <WR_START>.
     Found 1-bit register for signal <MSR_START>.
@@ -799,11 +799,11 @@ WARNING:Xst:653 - Signal <MSR_DATA> is used but never assigned. This sourceless 
 Unit <command_execute> synthesized.
 
 Synthesizing Unit <just_measurement>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\just_measurement.vhd".
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\just_measurement.vhd" line 288: Output port <test_pin> of the instance <fetch> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\just_measurement.vhd" line 325: Output port <msr_allcomp> of the instance <count_time> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\just_measurement.vhd" line 325: Output port <dds_start> of the instance <count_time> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Igarashi\Desktop\integ100\src\just_measurement.vhd" line 325: Output port <dds_fin> of the instance <count_time> is unconnected or connected to loadless signal.
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd".
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 288: Output port <test_pin> of the instance <fetch> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 325: Output port <msr_allcomp> of the instance <count_time> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 325: Output port <dds_start> of the instance <count_time> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 325: Output port <dds_fin> of the instance <count_time> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <test_dout<63:16>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <rf_pulse> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <adc_sig> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -813,7 +813,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <led_blink1>. Latches may be gene
 Unit <just_measurement> synthesized.
 
 Synthesizing Unit <data_fetch>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\data_fetch.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_fetch.vhd".
 WARNING:Xst:653 - Signal <test_pin> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Found 3-bit register for signal <p_state>.
     Found 2-bit register for signal <p_d_num>.
@@ -867,7 +867,7 @@ WARNING:Xst:653 - Signal <test_pin> is used but never assigned. This sourceless 
 Unit <data_fetch> synthesized.
 
 Synthesizing Unit <data_decode>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\data_decode.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_decode.vhd".
 WARNING:Xst:647 - Input <msr_fin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <p_d_type>.
     Found 4-bit register for signal <p_change_counter>.
@@ -921,7 +921,7 @@ INFO:Xst:1799 - State cycle_end is never reached in FSM <p_state>.
 Unit <data_decode> synthesized.
 
 Synthesizing Unit <master_counter>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\master_counter.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\master_counter.vhd".
 WARNING:Xst:647 - Input <msr_fin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 3-bit register for signal <rf_out>.
     Found 3-bit register for signal <ad_out>.
@@ -934,13 +934,6 @@ WARNING:Xst:647 - Input <msr_fin> is never used. This port will be preserved and
     Found 64-bit register for signal <p_t_5>.
     Found 64-bit register for signal <p_t_6>.
     Found 64-bit register for signal <p_t_7>.
-    Found 64-bit register for signal <n_t_1>.
-    Found 64-bit register for signal <n_t_2>.
-    Found 64-bit register for signal <n_t_3>.
-    Found 64-bit register for signal <n_t_4>.
-    Found 64-bit register for signal <n_t_5>.
-    Found 64-bit register for signal <n_t_6>.
-    Found 64-bit register for signal <n_t_7>.
     Found 32-bit register for signal <counter>.
     Found 1-bit register for signal <preset>.
     Found 1-bit register for signal <full>.
@@ -952,25 +945,23 @@ WARNING:Xst:647 - Input <msr_fin> is never used. This port will be preserved and
     Found 1-bit register for signal <dst_5>.
     Found 1-bit register for signal <dst_6>.
     Found 1-bit register for signal <dst_7>.
-    Found 32-bit adder for signal <counter[31]_GND_73_o_add_28_OUT> created at line 258.
-    Found 32-bit subtractor for signal <GND_73_o_GND_73_o_sub_23_OUT<31:0>> created at line 242.
-    Found 32-bit comparator equal for signal <counter[31]_p_t_1[31]_equal_5_o> created at line 176
-    Found 32-bit comparator equal for signal <counter[31]_p_t_2[31]_equal_8_o> created at line 187
-    Found 32-bit comparator equal for signal <counter[31]_p_t_3[31]_equal_11_o> created at line 198
-    Found 32-bit comparator equal for signal <counter[31]_p_t_4[31]_equal_14_o> created at line 209
-    Found 32-bit comparator equal for signal <counter[31]_p_t_5[31]_equal_17_o> created at line 220
-    Found 32-bit comparator equal for signal <counter[31]_p_t_6[31]_equal_20_o> created at line 231
-    Found 32-bit comparator equal for signal <counter[31]_GND_73_o_equal_24_o> created at line 242
-    Found 32-bit comparator not equal for signal <counter[31]_p_t_7[31]_equal_27_o> created at line 253
+    Found 32-bit adder for signal <counter[31]_GND_73_o_add_25_OUT> created at line 249.
+    Found 32-bit comparator equal for signal <counter[31]_p_t_1[31]_equal_5_o> created at line 160
+    Found 32-bit comparator equal for signal <counter[31]_p_t_2[31]_equal_8_o> created at line 172
+    Found 32-bit comparator equal for signal <counter[31]_p_t_3[31]_equal_11_o> created at line 184
+    Found 32-bit comparator equal for signal <counter[31]_p_t_4[31]_equal_14_o> created at line 196
+    Found 32-bit comparator equal for signal <counter[31]_p_t_5[31]_equal_17_o> created at line 208
+    Found 32-bit comparator equal for signal <counter[31]_p_t_6[31]_equal_20_o> created at line 220
+    Found 32-bit comparator equal for signal <counter[31]_p_t_7[31]_equal_23_o> created at line 232
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred 960 D-type flip-flop(s).
-	inferred   8 Comparator(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred 512 D-type flip-flop(s).
+	inferred   7 Comparator(s).
 	inferred  53 Multiplexer(s).
 Unit <master_counter> synthesized.
 
 Synthesizing Unit <DDS_data>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\DDS_data.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data.vhd".
 WARNING:Xst:647 - Input <d_type> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <msr_fin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 40-bit register for signal <d_out>.
@@ -998,7 +989,7 @@ WARNING:Xst:647 - Input <msr_fin> is never used. This port will be preserved and
 Unit <DDS_data> synthesized.
 
 Synthesizing Unit <DDS_data_drive>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\DDS_data_drive.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd".
     Found 4-bit register for signal <counter>.
     Found 1-bit register for signal <d_num>.
     Found 1-bit register for signal <rec>.
@@ -1109,7 +1100,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <req_2>. Latches may be generated
 Unit <DDS_data_drive> synthesized.
 
 Synthesizing Unit <AD9851_ctrl>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\AD9851_ctrl.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\AD9851_ctrl.vhd".
     Found 1-bit register for signal <p_c_w>.
     Found 7-bit register for signal <state_p>.
     Found 1-bit register for signal <p_data_set>.
@@ -1181,7 +1172,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <data32<0>>. Latches may be gener
 Unit <AD9851_ctrl> synthesized.
 
 Synthesizing Unit <string_send>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\string_send.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\string_send.vhd".
         MAX_LEN = 64
     Found 1-bit register for signal <WR_REQ>.
     Found 1-bit register for signal <finish_inner>.
@@ -1200,7 +1191,7 @@ Synthesizing Unit <string_send>.
 Unit <string_send> synthesized.
 
 Synthesizing Unit <vector_mux>.
-    Related source file is "C:\Users\Igarashi\Desktop\integ100\src\vector_mux.vhd".
+    Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\vector_mux.vhd".
         SIGNAL_NUM = 20
     Summary:
 	inferred   1 Multiplexer(s).
@@ -1215,17 +1206,17 @@ Macro Statistics
  64x4-bit single-port Read Only RAM                    : 1
  64x8-bit single-port Read Only RAM                    : 1
  8x4-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 18
+# Adders/Subtractors                                   : 17
  12-bit adder                                          : 2
  15-bit subtractor                                     : 1
  20-bit adder                                          : 1
  32-bit adder                                          : 6
- 32-bit subtractor                                     : 2
+ 32-bit subtractor                                     : 1
  4-bit adder                                           : 3
  5-bit subtractor                                      : 1
  6-bit subtractor                                      : 1
  64-bit subtractor                                     : 1
-# Registers                                            : 299
+# Registers                                            : 292
  1-bit register                                        : 82
  12-bit register                                       : 4
  15-bit register                                       : 1
@@ -1237,20 +1228,19 @@ Macro Statistics
  4-bit register                                        : 5
  40-bit register                                       : 17
  6-bit register                                        : 133
- 64-bit register                                       : 24
+ 64-bit register                                       : 17
  8-bit register                                        : 3
 # Latches                                              : 181
  1-bit latch                                           : 181
-# Comparators                                          : 13
+# Comparators                                          : 12
  12-bit comparator equal                               : 1
  2-bit comparator equal                                : 1
  20-bit comparator equal                               : 1
  32-bit comparator equal                               : 8
  32-bit comparator greater                             : 1
- 32-bit comparator not equal                           : 1
 # Multiplexers                                         : 1762
  1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 1408
+ 1-bit 2-to-1 multiplexer                              : 1415
  1-bit 4-to-1 multiplexer                              : 1
  1-bit 5-to-1 multiplexer                              : 2
  1-bit 7-to-1 multiplexer                              : 1
@@ -1263,7 +1253,7 @@ Macro Statistics
  40-bit 2-to-1 multiplexer                             : 17
  6-bit 2-to-1 multiplexer                              : 220
  6-bit 64-to-1 multiplexer                             : 1
- 64-bit 2-to-1 multiplexer                             : 14
+ 64-bit 2-to-1 multiplexer                             : 7
  8-bit 2-to-1 multiplexer                              : 19
 # Tristates                                            : 16
  1-bit tristate buffer                                 : 16
@@ -1408,24 +1398,6 @@ WARNING:Xst:1293 - FF/Latch <STR_36_4> has a constant value of 0 in block <st_ma
 WARNING:Xst:1293 - FF/Latch <STR_36_2> has a constant value of 0 in block <st_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <STR_36_0> has a constant value of 0 in block <st_machine>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <STR_34_4> has a constant value of 0 in block <st_machine>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <p_t_2_54> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_2_55> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_2_56> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_2_57> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_2_58> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_2_59> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_2_60> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_2_61> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_2_62> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_1_54> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_1_55> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_1_56> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_1_57> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_1_58> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_1_59> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_1_60> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_1_61> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_1_62> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_3_54> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_3_55> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_3_56> of sequential type is unconnected in block <count_time>.
@@ -1435,33 +1407,24 @@ WARNING:Xst:2677 - Node <p_t_3_59> of sequential type is unconnected in block <c
 WARNING:Xst:2677 - Node <p_t_3_60> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_3_61> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_3_62> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_4_54> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_4_55> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_4_56> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_4_57> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_4_58> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_4_59> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_4_60> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_4_61> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_4_62> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_7_54> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_7_55> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_7_56> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_7_57> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_7_58> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_7_59> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_7_60> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_7_61> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_7_62> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_54> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_55> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_56> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_57> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_58> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_59> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_60> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_61> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_62> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_1_54> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_1_55> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_1_56> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_1_57> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_1_58> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_1_59> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_1_60> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_1_61> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_1_62> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_2_54> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_2_55> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_2_56> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_2_57> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_2_58> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_2_59> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_2_60> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_2_61> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_2_62> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_54> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_55> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_56> of sequential type is unconnected in block <count_time>.
@@ -1471,6 +1434,33 @@ WARNING:Xst:2677 - Node <p_t_6_59> of sequential type is unconnected in block <c
 WARNING:Xst:2677 - Node <p_t_6_60> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_61> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_62> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_4_54> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_4_55> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_4_56> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_4_57> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_4_58> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_4_59> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_4_60> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_4_61> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_4_62> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_54> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_55> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_56> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_57> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_58> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_59> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_60> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_61> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_62> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_7_54> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_7_55> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_7_56> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_7_57> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_7_58> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_7_59> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_7_60> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_7_61> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_7_62> of sequential type is unconnected in block <count_time>.
 
 Synthesizing (advanced) Unit <SDRAM_ctrl>.
 The following registers are absorbed into counter <r_init_counter>: 1 register on signal <r_init_counter>.
@@ -1546,24 +1536,6 @@ INFO:Xst:3231 - The small RAM <Mram_AC_TR[5]_X_15_o_wide_mux_0_OUT> will be impl
     |     doA            | connected to internal node          |          |
     -----------------------------------------------------------------------
 Unit <transfer> synthesized (advanced).
-WARNING:Xst:2677 - Node <p_t_2_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_2_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_2_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_2_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_2_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_2_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_2_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_2_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_2_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_1_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_1_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_1_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_1_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_1_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_1_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_1_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_1_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_1_62> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_3_54> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_3_55> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_3_56> of sequential type is unconnected in block <master_counter>.
@@ -1573,33 +1545,24 @@ WARNING:Xst:2677 - Node <p_t_3_59> of sequential type is unconnected in block <m
 WARNING:Xst:2677 - Node <p_t_3_60> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_3_61> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_3_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_4_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_4_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_4_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_4_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_4_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_4_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_4_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_4_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_4_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_7_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_7_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_7_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_7_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_7_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_7_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_7_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_7_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_7_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_62> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_1_54> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_1_55> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_1_56> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_1_57> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_1_58> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_1_59> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_1_60> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_1_61> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_1_62> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_2_54> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_2_55> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_2_56> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_2_57> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_2_58> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_2_59> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_2_60> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_2_61> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_2_62> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_54> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_55> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_56> of sequential type is unconnected in block <master_counter>.
@@ -1609,6 +1572,33 @@ WARNING:Xst:2677 - Node <p_t_6_59> of sequential type is unconnected in block <m
 WARNING:Xst:2677 - Node <p_t_6_60> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_61> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_62> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_4_54> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_4_55> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_4_56> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_4_57> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_4_58> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_4_59> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_4_60> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_4_61> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_4_62> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_54> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_55> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_56> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_57> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_58> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_59> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_60> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_61> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_62> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_7_54> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_7_55> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_7_56> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_7_57> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_7_58> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_7_59> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_7_60> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_7_61> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_7_62> of sequential type is unconnected in block <master_counter>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -1619,11 +1609,11 @@ Macro Statistics
  64x4-bit single-port distributed Read Only RAM        : 1
  64x8-bit single-port distributed Read Only RAM        : 1
  8x4-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 13
+# Adders/Subtractors                                   : 12
  12-bit adder                                          : 2
  20-bit adder                                          : 1
  32-bit adder                                          : 4
- 32-bit subtractor                                     : 2
+ 32-bit subtractor                                     : 1
  4-bit adder                                           : 2
  5-bit subtractor                                      : 1
  6-bit subtractor                                      : 1
@@ -1633,18 +1623,17 @@ Macro Statistics
  32-bit up counter                                     : 2
  4-bit up counter                                      : 1
  64-bit down counter                                   : 1
-# Registers                                            : 3575
- Flip-Flops                                            : 3575
-# Comparators                                          : 13
+# Registers                                            : 3127
+ Flip-Flops                                            : 3127
+# Comparators                                          : 12
  12-bit comparator equal                               : 1
  2-bit comparator equal                                : 1
  20-bit comparator equal                               : 1
  32-bit comparator equal                               : 8
  32-bit comparator greater                             : 1
- 32-bit comparator not equal                           : 1
 # Multiplexers                                         : 2422
  1-bit 10-to-1 multiplexer                             : 1
- 1-bit 2-to-1 multiplexer                              : 2087
+ 1-bit 2-to-1 multiplexer                              : 2094
  1-bit 4-to-1 multiplexer                              : 1
  1-bit 5-to-1 multiplexer                              : 2
  1-bit 7-to-1 multiplexer                              : 1
@@ -1656,7 +1645,7 @@ Macro Statistics
  4-bit 2-to-1 multiplexer                              : 6
  6-bit 2-to-1 multiplexer                              : 220
  6-bit 64-to-1 multiplexer                             : 1
- 64-bit 2-to-1 multiplexer                             : 13
+ 64-bit 2-to-1 multiplexer                             : 6
  8-bit 2-to-1 multiplexer                              : 19
 # FSMs                                                 : 14
 
@@ -2323,69 +2312,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RESULT_13_4> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RESULT_14_4> (without init value) has a constant value of 0 in block <command_execute>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RESULT_15_4> (without init value) has a constant value of 0 in block <command_execute>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <p_d_type_3> (without init value) has a constant value of 0 in block <data_decode>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <n_t_3_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_3_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_3_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_3_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_3_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_3_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_3_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_3_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_3_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_1_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_1_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_1_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_1_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_1_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_1_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_1_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_1_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_1_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_2_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_2_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_2_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_2_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_2_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_2_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_2_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_2_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_2_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_6_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_6_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_6_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_6_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_6_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_6_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_6_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_6_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_6_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_4_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_4_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_4_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_4_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_4_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_4_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_4_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_4_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_4_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_5_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_5_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_5_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_5_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_5_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_5_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_5_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_5_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_5_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_7_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_7_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_7_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_7_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_7_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_7_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_7_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_7_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <n_t_7_62> of sequential type is unconnected in block <master_counter>.
 INFO:Xst:2261 - The FF/Latch <RESULT_16_1> in Unit <command_execute> is equivalent to the following 4 FFs/Latches, which will be removed : <RESULT_12_5> <RESULT_13_5> <RESULT_14_5> <RESULT_15_5> 
 INFO:Xst:2261 - The FF/Latch <RESULT_16_2> in Unit <command_execute> is equivalent to the following FF/Latch, which will be removed : <RESULT_17_0> 
 WARNING:Xst:2677 - Node <sdram/r_data_in_valid> of sequential type is unconnected in block <top>.
@@ -2760,7 +2686,7 @@ INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd1> in Unit <top> is eq
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd1 and measure/DDS1/state_p_FSM_FFd1 measure/DDS1/state_p_FSM_FFd1 signal will be lost.
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd47> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd47> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd47 and measure/DDS1/state_p_FSM_FFd47 measure/DDS1/state_p_FSM_FFd47 signal will be lost.
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 98.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 88.
 WARNING:Xst:1426 - The value init of the FF/Latch measure/DDS2/state_p_FSM_FFd55_LD hinder the constant cleaning in the block top.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch sdram/r_rf_counter_31_LD hinder the constant cleaning in the block top.
@@ -2807,8 +2733,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 3108
- Flip-Flops                                            : 3108
+# Registers                                            : 2723
+ Flip-Flops                                            : 2723
 
 =========================================================================
 
@@ -2831,33 +2757,32 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 4393
+# BELS                             : 3907
 #      GND                         : 5
-#      INV                         : 79
-#      LUT1                        : 195
-#      LUT2                        : 239
-#      LUT3                        : 1245
-#      LUT4                        : 353
-#      LUT5                        : 572
-#      LUT6                        : 803
-#      MUXCY                       : 534
-#      MUXF7                       : 15
+#      INV                         : 48
+#      LUT1                        : 194
+#      LUT2                        : 210
+#      LUT3                        : 861
+#      LUT4                        : 357
+#      LUT5                        : 574
+#      LUT6                        : 825
+#      MUXCY                       : 494
+#      MUXF7                       : 18
 #      VCC                         : 3
-#      XORCY                       : 350
-# FlipFlops/Latches                : 3592
+#      XORCY                       : 318
+# FlipFlops/Latches                : 3207
 #      FD                          : 28
 #      FD_1                        : 35
 #      FDC                         : 236
 #      FDC_1                       : 105
-#      FDCE                        : 1435
+#      FDCE                        : 1050
 #      FDE                         : 1315
 #      FDE_1                       : 14
 #      FDP                         : 33
 #      FDP_1                       : 3
 #      FDPE                        : 6
-#      FDR                         : 42
+#      FDR                         : 47
 #      FDR_1                       : 151
-#      FDRE                        : 5
 #      LD                          : 183
 #      ODDR2                       : 1
 # RAMS                             : 2
@@ -2879,16 +2804,16 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            3540  out of  11440    30%  
- Number of Slice LUTs:                 3486  out of   5720    60%  
-    Number used as Logic:              3486  out of   5720    60%  
+ Number of Slice Registers:            3155  out of  11440    27%  
+ Number of Slice LUTs:                 3069  out of   5720    53%  
+    Number used as Logic:              3069  out of   5720    53%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4787
-   Number with an unused Flip Flop:    1247  out of   4787    26%  
-   Number with an unused LUT:          1301  out of   4787    27%  
-   Number of fully used LUT-FF pairs:  2239  out of   4787    46%  
-   Number of unique control sets:       131
+ Number of LUT Flip Flop pairs used:   4366
+   Number with an unused Flip Flop:    1211  out of   4366    27%  
+   Number with an unused LUT:          1297  out of   4366    29%  
+   Number of fully used LUT-FF pairs:  1858  out of   4366    42%  
+   Number of unique control sets:       123
 
 IO Utilization: 
  Number of IOs:                          91
@@ -2921,13 +2846,13 @@ Clock Information:
 -------------------------------------------------------------------------------------------------------------+-------------------------------------+-------+
 Clock Signal                                                                                                 | Clock buffer(FF name)               | Load  |
 -------------------------------------------------------------------------------------------------------------+-------------------------------------+-------+
-CLK                                                                                                          | DCM_SP:CLKFX                        | 3232  |
+CLK                                                                                                          | DCM_SP:CLKFX                        | 2847  |
 sdram/statep[8]_GND_45_o_Mux_84_o(sdram/Mmux_statep[8]_GND_45_o_Mux_84_o11:O)                                | NONE(*)(sdram/n_data_w_0)           | 16    |
 rs232c_clk_gen/CLK9600                                                                                       | BUFG                                | 169   |
 read_sec/p_state_FSM_FFd2                                                                                    | NONE(read_sec/rd_fin)               | 1     |
 measure/decode/p_data_63                                                                                     | NONE(measure/led_blink1)            | 1     |
-measure/data_save/GND_76_o_PWR_57_o_MUX_1650_o(measure/data_save/GND_76_o_PWR_57_o_MUX_1650_o3:O)            | BUFG(*)(measure/data_save/d_out_2_0)| 41    |
-measure/data_save/GND_76_o_PWR_57_o_MUX_1313_o(measure/data_save/GND_76_o_PWR_57_o_MUX_1313_o:O)             | BUFG(*)(measure/data_save/d_out_1_1)| 40    |
+measure/data_save/GND_76_o_PWR_57_o_MUX_1671_o(measure/data_save/GND_76_o_PWR_57_o_MUX_1671_o3:O)            | BUFG(*)(measure/data_save/d_out_2_0)| 41    |
+measure/data_save/GND_76_o_PWR_57_o_MUX_1334_o(measure/data_save/GND_76_o_PWR_57_o_MUX_1334_o:O)             | BUFG(*)(measure/data_save/d_out_1_1)| 40    |
 measure/DDS2/req_dds_p_rst_pend_AND_183_o(measure/DDS2/req_dds_p_rst_pend_AND_183_o1:O)                      | BUFG(*)(measure/DDS2/data32_1)      | 40    |
 measure/DDS1/req_dds_p_rst_pend_AND_183_o(measure/DDS1/req_dds_p_rst_pend_AND_183_o1:O)                      | BUFG(*)(measure/DDS1/data32_1)      | 40    |
 WING_C<0>                                                                                                    | IBUFG                               | 13    |
@@ -2960,7 +2885,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
   Clock period: 46.844ns (frequency: 21.348MHz)
-  Total number of paths / destination ports: 581309 / 7778
+  Total number of paths / destination ports: 162107 / 6618
 -------------------------------------------------------------------------
 Delay:               7.495ns (Levels of Logic = 5)
   Source:            rc/fifo_rc/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram (RAM)
@@ -3025,7 +2950,7 @@ Delay:               2.318ns (Levels of Logic = 1)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q               3   0.581   0.765  measure/led_blink1 (measure/led_blink1)
-     INV:I->O              1   0.255   0.681  measure/led_blink1_INV_239_o1_INV_0 (measure/led_blink1_INV_239_o)
+     INV:I->O              1   0.255   0.681  measure/led_blink1_INV_246_o1_INV_0 (measure/led_blink1_INV_246_o)
      LD:D                      0.036          measure/led_blink1
     ----------------------------------------
     Total                      2.318ns (0.872ns logic, 1.446ns route)
@@ -3076,7 +3001,7 @@ Offset:              2.083ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IOBUF:IO->O           1   1.328   0.681  DRAM_DQ_15_IOBUF (N126)
+     IOBUF:IO->O           1   1.328   0.681  DRAM_DQ_15_IOBUF (N138)
      FD_1:D                    0.074          sdram/captured_15
     ----------------------------------------
     Total                      2.083ns (1.402ns logic, 0.681ns route)
@@ -3122,13 +3047,13 @@ Offset:              4.258ns (Levels of Logic = 1)
                                        (82.0% logic, 18.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'measure/data_save/GND_76_o_PWR_57_o_MUX_1650_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'measure/data_save/GND_76_o_PWR_57_o_MUX_1671_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.174ns (Levels of Logic = 1)
   Source:            measure/data_save/d_out_2_0_1 (LATCH)
   Destination:       WING_A<14> (PAD)
-  Source Clock:      measure/data_save/GND_76_o_PWR_57_o_MUX_1650_o falling
+  Source Clock:      measure/data_save/GND_76_o_PWR_57_o_MUX_1671_o falling
 
   Data Path: measure/data_save/d_out_2_0_1 to WING_A<14>
                                 Gate     Net
@@ -3189,7 +3114,7 @@ Clock to Setup on destination clock CLK
                                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------------+---------+---------+---------+---------+
-CLK                                                 |   11.690|    6.481|    7.574|         |
+CLK                                                 |   11.690|    6.497|    7.495|         |
 cmd_exe/RST_OP                                      |         |    6.224|    6.776|         |
 measure/DDS1/req_dds_p_rst_pend_AND_183_o           |         |         |    2.754|         |
 measure/DDS2/req_dds_p_rst_pend_AND_183_o           |         |         |    2.754|         |
@@ -3213,7 +3138,7 @@ Clock to Setup on destination clock measure/DDS1/req_dds_p_rst_pend_AND_183_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-measure/data_save/GND_76_o_PWR_57_o_MUX_1313_o|         |         |    1.298|         |
+measure/data_save/GND_76_o_PWR_57_o_MUX_1334_o|         |         |    1.298|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock measure/DDS2/req_dds_p_rst_pend_AND_183_o
@@ -3221,10 +3146,10 @@ Clock to Setup on destination clock measure/DDS2/req_dds_p_rst_pend_AND_183_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-measure/data_save/GND_76_o_PWR_57_o_MUX_1650_o|         |         |    1.298|         |
+measure/data_save/GND_76_o_PWR_57_o_MUX_1671_o|         |         |    1.298|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock measure/data_save/GND_76_o_PWR_57_o_MUX_1313_o
+Clock to Setup on destination clock measure/data_save/GND_76_o_PWR_57_o_MUX_1334_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -3232,7 +3157,7 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 CLK            |         |         |    9.282|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock measure/data_save/GND_76_o_PWR_57_o_MUX_1650_o
+Clock to Setup on destination clock measure/data_save/GND_76_o_PWR_57_o_MUX_1671_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -3292,14 +3217,14 @@ CLK            |         |         |    3.990|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 35.00 secs
-Total CPU time to Xst completion: 34.25 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 31.58 secs
  
 --> 
 
-Total memory usage is 4636568 kilobytes
+Total memory usage is 4620404 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 1059 (   0 filtered)
+Number of warnings :  996 (   0 filtered)
 Number of infos    :   82 (   0 filtered)
 

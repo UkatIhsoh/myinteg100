@@ -156,28 +156,13 @@
  			n.t_5 <= (others => '0'); n.t_6 <= (others => '0'); n.t_7 <= (others => '0'); 
  			dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
  		elsif clk' event and clk = '1' then
--- 			if count_end = '1' then
--- 				counter <= (others => '0');
--- 				m_fin <= '0';
--- 				count_end <= '0';
--- 				preset <= '0';
--- 				full <= '0';
--- 				comp_rd <= '0';
--- 				rf_out <= (others => '0');
--- 				dds_set_1 <= (others => '0');
--- 				dds_set_2 <= (others => '0');
--- 				ad_out <= (others => '0');
---				p.t_1 <= (others => '0'); p.t_2 <= (others => '0'); p.t_3 <= (others => '0'); p.t_4 <= (others => '0'); 
---				p.t_5 <= (others => '0'); p.t_6 <= (others => '0'); p.t_7 <= (others => '0'); 
---				n.t_1 <= (others => '0'); n.t_2 <= (others => '0'); n.t_3 <= (others => '0'); n.t_4 <= (others => '0'); 
---				n.t_5 <= (others => '0'); n.t_6 <= (others => '0'); n.t_7 <= (others => '0');
--- 				dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
  			if preset = '1' then --事前のデータセットが終わらなければカウントは始まらない
  				if counter = p.t_1(31 downto 0) then	--データによって指定された時刻になったらイベントを起こす
  					rf_out <= p.t_1(34 downto 32);
  					dds_set_1 <= p.t_1(45 downto 38);
  					dds_set_2 <= p.t_1(53 downto 46);
 					ad_out <= p.t_1(37 downto 35);
+					dst_1 <= '0';
 					counter <= counter +1;
 					if p.t_1(63) = '1' then
 --						count_end <= '1';
@@ -189,6 +174,7 @@
  					dds_set_1 <= p.t_2(45 downto 38);
  					dds_set_2 <= p.t_2(53 downto 46);
 					ad_out <= p.t_2(37 downto 35);
+					dst_2 <= '0';
 					counter <= counter +1;
 					if p.t_2(63) = '1' then
 --						count_end <= '1';
@@ -196,10 +182,11 @@
 --						preset <= '0';
 					end if;
  				elsif counter = p.t_3(31 downto 0) then		
- 					rf_out <= p.t_3(34 downto 32);
- 					dds_set_1 <= p.t_3(45 downto 38);
- 					dds_set_2 <= p.t_3(53 downto 46);
+ 					 rf_out <= p.t_3(34 downto 32);
+ 					 dds_set_1 <= p.t_3(45 downto 38);
+					 dds_set_2 <= p.t_3(53 downto 46);
 					 ad_out <= p.t_3(37 downto 35);
+					 dst_3 <= '0';
 					 counter <= counter +1;
 					 if p.t_3(63) = '1' then
 --						count_end <= '1';
@@ -207,10 +194,11 @@
 --						preset <= '0';
 					end if;
  				elsif counter = p.t_4(31 downto 0) then		
- 					rf_out <= p.t_4(34 downto 32);
- 					dds_set_1 <= p.t_4(45 downto 38);
- 					dds_set_2 <= p.t_4(53 downto 46);
+ 					 rf_out <= p.t_4(34 downto 32);
+ 					 dds_set_1 <= p.t_4(45 downto 38);
+ 					 dds_set_2 <= p.t_4(53 downto 46);
 					 ad_out <= p.t_4(37 downto 35);
+					 dst_4 <= '0';
 					 counter <= counter +1;
 					 if p.t_4(63) = '1' then
 --						count_end <= '1';
@@ -218,10 +206,11 @@
 --						preset <= '0';
 					end if;
  				elsif counter = p.t_5(31 downto 0) then		
- 					rf_out <= p.t_5(34 downto 32);
- 					dds_set_1 <= p.t_5(45 downto 38);
- 					dds_set_2 <= p.t_5(53 downto 46);
+ 					 rf_out <= p.t_5(34 downto 32);
+ 					 dds_set_1 <= p.t_5(45 downto 38);
+ 					 dds_set_2 <= p.t_5(53 downto 46);
 					 ad_out <= p.t_5(37 downto 35);
+					 dst_5 <= '0';
 					 counter <= counter +1;
 					 if p.t_5(63) = '1' then
 --						count_end <= '1';
@@ -229,31 +218,33 @@
 --						preset <= '0';
 					end if;
  				elsif counter = p.t_6(31 downto 0) then	
- 					rf_out <= p.t_6(34 downto 32);
- 					dds_set_1 <= p.t_6(45 downto 38);
- 					dds_set_2 <= p.t_6(53 downto 46);
+ 					 rf_out <= p.t_6(34 downto 32);
+ 				 	 dds_set_1 <= p.t_6(45 downto 38);
+ 					 dds_set_2 <= p.t_6(53 downto 46);
 					 ad_out <= p.t_6(37 downto 35);
+					 dst_6 <= '0';
 					 counter <= counter +1;
 					 if p.t_6(63) = '1' then
 --						count_end <= '1';
 						counter <= (others => '0');
 --						preset <= '0';
 					end if;
- 				elsif counter = p.t_7(31 downto 0) -1 then
- 					counter <= counter +1;
+ 				elsif counter = p.t_7(31 downto 0) then
  					rf_out <= p.t_7(34 downto 32);
  					dds_set_1 <= p.t_7(45 downto 38);
  					dds_set_2 <= p.t_7(53 downto 46);
  					ad_out <= p.t_7(37 downto 35);
+					dst_7 <= '0';
+ 					counter <= counter +1;
 					if p.t_7(63) = '1' then
 --						count_end <= '1';
 						counter <= (others => '0');
 --						preset <= '0';
 					end if;
-				elsif counter = p.t_7(31 downto 0) then	
-					counter <= counter +1;
- 					p <= n;
-					full <= '0';							
+--				elsif counter = p.t_7(31 downto 0) then	
+--					counter <= counter +1;
+-- 					p <= n;
+--					full <= '0';							
  				else	--イベントが起きる時刻以外では、釈然とカウントを続ける
  					counter <= counter +1;
 -- 					dds_set_1 <= (others => '0');
@@ -261,50 +252,85 @@
  					--ad_out <= (others => '0');
  				end if;
  				if d_fin = '1' then --最初以降のデータセット
- 					case d_type is
- 						when first =>		
- 							n.t_1 <= data;	
- 							comp_rd <= '1';	
- 							dst_1 <= '1';
-						
- 						when second =>		
- 							n.t_2 <= data;
- 							comp_rd <= '1';	
- 							dst_2 <= '1';
-							
- 						when third =>		
- 							n.t_3 <= data;	
- 							comp_rd <= '1';	
- 							dst_3 <= '1';
-						
- 						when fourth =>		
- 							n.t_4 <= data;
- 							comp_rd <= '1';	
- 							dst_4 <= '1';
-							
- 						when fifth =>		
- 							n.t_5 <= data;	
- 							comp_rd <= '1';	
- 							dst_5 <= '1';
-						
- 						when sixth =>		
- 							n.t_6 <= data;	
- 							comp_rd <= '1';	
- 							dst_6 <= '1';
-							
- 						when seventh =>	
- 							n.t_7 <= data;
- 							comp_rd <= '1';	
- 							dst_7 <= '1';
-							
- 						when others =>		
- 							comp_rd <= '1';
- 					end case;
+					if dst_1 = '0' then
+						p.t_1 <= data;
+						comp_rd <= '1';
+						dst_1 <= '1';
+					end if;
+					if dst_2 = '0' then
+						p.t_2 <= data;
+						comp_rd <= '1';
+						dst_2 <= '1';
+					end if;
+					if dst_3 = '0' then
+						p.t_3 <= data;
+						comp_rd <= '1';
+						dst_3 <= '1';
+					end if;
+					if dst_4 = '0' then
+						p.t_4 <= data;
+						comp_rd <= '1';
+						dst_4 <= '1';
+					end if;
+					if dst_5 = '0' then
+						p.t_5 <= data;
+						comp_rd <= '1';
+						dst_5 <= '1';
+					end if;
+					if dst_6 = '0' then
+						p.t_6 <= data;
+						comp_rd <= '1';
+						dst_6 <= '1';
+					end if;
+					if dst_7 = '0' then
+						p.t_7 <= data;
+						comp_rd <= '1';
+						dst_7 <= '1';
+					end if;
+-- 					case d_type is
+-- 						when first =>		
+-- 							n.t_1 <= data;	
+-- 							comp_rd <= '1';	
+-- 							dst_1 <= '1';
+--						
+-- 						when second =>		
+-- 							n.t_2 <= data;
+-- 							comp_rd <= '1';	
+-- 							dst_2 <= '1';
+--							
+-- 						when third =>		
+-- 							n.t_3 <= data;	
+-- 							comp_rd <= '1';	
+-- 							dst_3 <= '1';
+--						
+-- 						when fourth =>		
+-- 							n.t_4 <= data;
+-- 							comp_rd <= '1';	
+-- 							dst_4 <= '1';
+--							
+-- 						when fifth =>		
+-- 							n.t_5 <= data;	
+-- 							comp_rd <= '1';	
+-- 							dst_5 <= '1';
+--						
+-- 						when sixth =>		
+-- 							n.t_6 <= data;	
+-- 							comp_rd <= '1';	
+-- 							dst_6 <= '1';
+--							
+-- 						when seventh =>	
+-- 							n.t_7 <= data;
+-- 							comp_rd <= '1';	
+-- 							dst_7 <= '1';
+--							
+-- 						when others =>		
+-- 							comp_rd <= '1';
+-- 					end case;
  				else
  					comp_rd <= '0';
  					if dst_7 = '1' and dst_1 = '1' and dst_2 = '1' and dst_3 = '1' and dst_4 = '1' and dst_5 = '1' and dst_6 = '1' then --nのほうまでデータが満タンになったらdecodeを一旦停止
  						full <= '1';
- 						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
+-- 						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
  					end if;
  				end if;
  			elsif preset = '0' then  --最初のデータセット
@@ -352,7 +378,7 @@
  					comp_rd <= '0';
  					if dst_7 = '1' and dst_1 = '1' and dst_2 = '1' and dst_3 = '1' and dst_4 = '1' and dst_5 = '1' and dst_6 = '1' then --パルスシーケンスのデータがある程度集まればカウント開始
  						preset <= '1';
- 						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
+-- 						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
  					end if;
  				end if;
 --			elsif preset = '0' and count_end = '1' then
