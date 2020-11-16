@@ -29,8 +29,8 @@ Compiling architecture xilinx of entity clk_gen [clk_gen_default]
 Compiling architecture behavioral of entity top [top_default]
 Compiling architecture behavior of entity pulse_sim_test
 Time Resolution for simulation is 1ps.
-Waiting for 12 sub-compilation(s) to finish...
+Waiting for 11 sub-compilation(s) to finish...
 Compiled 29 VHDL Units
 Built simulation executable E:/hoshino_Data/SotsuKen/ISE/myinteg100/pulse_sim/pulse_sim_test_isim_beh.exe
-Fuse Memory Usage: 61616 KB
-Fuse CPU Usage: 875 ms
+Fuse Memory Usage: 61032 KB
+Fuse CPU Usage: 890 ms

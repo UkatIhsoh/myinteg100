@@ -34,7 +34,9 @@ use IEEE.NUMERIC_STD.ALL;
 entity top is
     Port ( clk : in  STD_LOGIC;
 			  rst : in	STD_LOGIC;
+			  led : out STD_LOGIC;
            data_1 : in  STD_LOGIC;
+			  data_out  : out STD_LOGIC_VECTOR(15 downto 0);
 			  data_2 : in STD_LOGIC;
            ref_1 : in  STD_LOGIC;
 			  ref_2 : in  STD_LOGIC;
@@ -85,6 +87,9 @@ signal trigger_2 : std_logic:='0';
 signal pulse_out_1 : std_logic:='0';
 signal pulse_out_2 : std_logic:='0';
 
+signal led_blink : std_logic:='0';
+--led_blink <= not led_blink; --led test
+
 begin
 
 count_clk : clk_gen
@@ -106,16 +111,18 @@ begin
 		trigger_2 <= '0';
 		pulse_out_1 <= '0';
 		pulse_out_2 <= '0';
-	elsif rising_edge(clk_10M) then
+		led_blink <= '0';
+	elsif clk_10M'event and clk_10M = '1' then
 		if trigger_1 = '1' then
-			pulse_out_1 <= '1';
-			if counter_1 = p.count_data_1 then
+			if counter_1 = X"000A" then--p.count_data_1 then
+				pulse_out_1 <= '0';
 				trigger_1 <= '0';
-				counter_1 <= (others => '0');
 			else
+				pulse_out_1 <= '1';
 				counter_1 <= counter_1 +1;
 			end if;
 		else
+			counter_1 <= (others => '0');
 			pulse_out_1 <= '0';
 		end if;
 	end if;
@@ -125,67 +132,67 @@ begin
 		if already_set_1 = '0' then
 			case bit_count_1 is
 				when "0000" =>
-					n.count_data_1(0) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(15) <= data_1;
+					bit_count_1 <= "0001";
 					already_set_1 <= '1'; 
 				when "0001" =>
-					n.count_data_1(1) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(14) <= data_1;
+					bit_count_1 <= "0010";
 					already_set_1 <= '1';
 				when "0010" =>
-					n.count_data_1(2) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(13) <= data_1;
+					bit_count_1 <= "0011";
 					already_set_1 <= '1';
 				when "0011" =>
-					n.count_data_1(3) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(12) <= data_1;
+					bit_count_1 <= "0100";
 					already_set_1 <= '1';
 				when "0100" =>
-					n.count_data_1(4) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(11) <= data_1;
+					bit_count_1 <= "0101";
 					already_set_1 <= '1';
 				when "0101" =>
-					n.count_data_1(5) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(10) <= data_1;
+					bit_count_1 <= "0110";
 					already_set_1 <= '1';
 				when "0110" =>
-					n.count_data_1(6) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(9) <= data_1;
+					bit_count_1 <= "0111";
 					already_set_1 <= '1';
 				when "0111" =>
-					n.count_data_1(7) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(8) <= data_1;
+					bit_count_1 <= X"8";
 					already_set_1 <= '1';
 				when X"8" =>
-					n.count_data_1(8) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(7) <= data_1;
+					bit_count_1 <= X"9";
 					already_set_1 <= '1';
 				when X"9" =>
-					n.count_data_1(9) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(6) <= data_1;
+					bit_count_1 <= X"A";
 					already_set_1 <= '1';
 				when X"A" =>
-					n.count_data_1(10) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(5) <= data_1;
+					bit_count_1 <= X"B";
 					already_set_1 <= '1';
 				when X"B" =>
-					n.count_data_1(11) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(4) <= data_1;
+					bit_count_1 <= X"C";
 					already_set_1 <= '1';
 				when X"C" =>
-					n.count_data_1(12) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(3) <= data_1;
+					bit_count_1 <= X"D";
 					already_set_1 <= '1';
 				when X"D" =>
-					n.count_data_1(13) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(2) <= data_1;
+					bit_count_1 <= X"E";
 					already_set_1 <= '1';
 				when X"E" =>
-					n.count_data_1(14) <= data_1;
-					bit_count_1 <= bit_count_1 +1;
+					n.count_data_1(1) <= data_1;
+					bit_count_1 <= X"F";
 					already_set_1 <= '1';
 				when X"F" =>
-					n.count_data_1(15) <= data_1;
+					n.count_data_1(0) <= data_1;
 					bit_count_1 <= "0000";
 					already_set_1 <= '1';
 				when others =>
@@ -198,19 +205,24 @@ begin
 	
 --ラズパイからカウント開始のトリガーを受け取ったらカウント開始
 	if timing_1 = '1' then
-		if already_high_1 = '0' then
-			trigger_1 <= '1';
-			p <= n;
-			already_high_1 <= '1';
-		end if;
-	else
-		already_high_1 <= '0';
+		trigger_1 <= '1';
+		p <= n;
+--		if already_high_1 = '0' then
+--			trigger_1 <= '1';
+--			p <= n;
+--			already_high_1 <= '1';
+--		end if;
+--	else
+--		already_high_1 <= '0';
 	end if;
 
 end process;
 
 pulse_1 <= pulse_out_1;
 pulse_2 <= pulse_out_2;
+
+data_out <= n.count_data_1;
+led <= timing_1;
 
 end Behavioral;
 

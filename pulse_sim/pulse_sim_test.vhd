@@ -42,8 +42,11 @@ ARCHITECTURE behavior OF pulse_sim_test IS
     COMPONENT top
     PORT(
          clk : IN  std_logic;
+			rst : in	STD_LOGIC;
+			led : out STD_LOGIC;
          data_1 : IN  std_logic;
          data_2 : IN  std_logic;
+			data_out  : out STD_LOGIC_VECTOR(15 downto 0);
          ref_1 : IN  std_logic;
          ref_2 : IN  std_logic;
          timing_1 : IN  std_logic;
@@ -56,6 +59,7 @@ ARCHITECTURE behavior OF pulse_sim_test IS
 
    --Inputs
    signal clk : std_logic := '0';
+	signal rst : std_logic := '0';
    signal data_1 : std_logic := '0';
    signal data_2 : std_logic := '0';
    signal ref_1 : std_logic := '0';
@@ -64,6 +68,8 @@ ARCHITECTURE behavior OF pulse_sim_test IS
    signal timing_2 : std_logic := '0';
 
  	--Outputs
+	signal led : std_logic;
+	signal data_out : std_logic_vector(15 downto 0);
    signal pulse_1 : std_logic;
    signal pulse_2 : std_logic;
 
@@ -75,6 +81,9 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: top PORT MAP (
           clk => clk,
+			 rst => rst,
+			 led => led,
+			 data_out => data_out,
           data_1 => data_1,
           data_2 => data_2,
           ref_1 => ref_1,
@@ -103,12 +112,12 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
-      wait for clk_period*10;
+      wait for clk_period;
 
       -- insert stimulus here 
 		data_1 <= '0';
 		
-		wait for clk_period*5;
+		wait for clk_period;
 		
 		ref_1 <= '1';
 		
@@ -116,7 +125,7 @@ BEGIN
 		
 		ref_1 <= '0';
 		
-		wait for clk_period*5;
+		wait for clk_period;
 		
 		ref_1 <= '1';
 		
@@ -124,7 +133,7 @@ BEGIN
 		
 		ref_1 <= '0';
 		
-		wait for clk_period*5;
+		wait for clk_period;
 		
 		ref_1 <= '1';
 		
@@ -132,7 +141,7 @@ BEGIN
 		
 		ref_1 <= '0';
 		
-		wait for clk_period*5;
+		wait for clk_period;
 		
 		ref_1 <= '1';
 		
@@ -140,7 +149,7 @@ BEGIN
 		
 		ref_1 <= '0';
 		
-		wait for clk_period*5;
+		wait for clk_period;
 		
 		ref_1 <= '1';
 		
@@ -148,7 +157,55 @@ BEGIN
 		
 		ref_1 <= '0';
 		
-		wait for clk_period*5;
+		wait for clk_period;
+		
+		ref_1 <= '1';
+		
+		wait for clk_period;
+		
+		ref_1 <= '0';
+		
+		wait for clk_period;
+		
+		ref_1 <= '1';
+		
+		wait for clk_period;
+		
+		ref_1 <= '0';
+		
+		wait for clk_period;
+		
+		ref_1 <= '1';
+		
+		wait for clk_period;
+		
+		ref_1 <= '0';
+		
+		wait for clk_period;
+		
+		ref_1 <= '1';
+		
+		wait for clk_period;
+		
+		ref_1 <= '0';
+		
+		wait for clk_period;
+		
+		ref_1 <= '1';
+		
+		wait for clk_period;
+		
+		ref_1 <= '0';
+		
+		wait for clk_period;
+		
+		ref_1 <= '1';
+		
+		wait for clk_period;
+		
+		ref_1 <= '0';
+		
+		wait for clk_period;
 		
 		ref_1 <= '1';
 		
@@ -158,7 +215,17 @@ BEGIN
 		
 		data_1 <= '1';
 		
-		wait for clk_period*5;
+		wait for clk_period;
+		
+		ref_1 <= '1';
+		
+		wait for clk_period;
+		
+		data_1 <= '0';
+		
+		ref_1 <= '0';
+		
+		wait for clk_period;
 		
 		ref_1 <= '1';
 		
@@ -166,7 +233,19 @@ BEGIN
 		
 		ref_1 <= '0';
 		
-		wait for clk_period*5;
+		data_1 <= '1';
+		
+		wait for clk_period;
+		
+		ref_1 <= '1';
+		
+		wait for clk_period;
+		
+		data_1 <= '0';
+		
+		ref_1 <= '0';
+		
+		wait for clk_period;
 		
 		ref_1 <= '1';
 		
@@ -174,13 +253,16 @@ BEGIN
 		
 		ref_1 <= '0';
 		
-		wait for clk_period*5;
+		wait for clk_period;
 		
 		timing_1 <= '1';
 		
 		wait for clk_period;
 		
 		timing_1 <= '0';
+		
+		wait for clk_period*5;
+		
       wait;
    end process;
 

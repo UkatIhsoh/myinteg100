@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-L548H6P::  Mon Nov 16 12:31:42 2020
+DESKTOP-L548H6P::  Mon Nov 16 15:17:32 2020
 
 par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
 
@@ -21,26 +21,26 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    57 out of  11,440    1%
-    Number used as Flip Flops:                  18
-    Number used as Latches:                     39
+  Number of Slice Registers:                    12 out of  11,440    1%
+    Number used as Flip Flops:                   6
+    Number used as Latches:                      6
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         48 out of   5,720    1%
-    Number used as logic:                       48 out of   5,720    1%
-      Number using O6 output only:              27
+  Number of Slice LUTs:                         30 out of   5,720    1%
+    Number used as logic:                       30 out of   5,720    1%
+      Number using O6 output only:              24
       Number using O5 output only:               0
-      Number using O5 and O6:                   21
+      Number using O5 and O6:                    6
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    42 out of   1,430    2%
-  Number of MUXCYs used:                        24 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:           81
-    Number with an unused Flip Flop:            24 out of      81   29%
-    Number with an unused LUT:                  33 out of      81   40%
-    Number of fully used LUT-FF pairs:          24 out of      81   29%
+  Number of occupied Slices:                    18 out of   1,430    1%
+  Number of MUXCYs used:                         4 out of   2,860    1%
+  Number of LUT Flip Flop pairs used:           32
+    Number with an unused Flip Flop:            20 out of      32   62%
+    Number with an unused LUT:                   2 out of      32    6%
+    Number of fully used LUT-FF pairs:          10 out of      32   31%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -51,8 +51,9 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        10 out of     102    9%
-    Number of LOCed IOBs:                       10 out of      10  100%
+  Number of bonded IOBs:                        27 out of     102   26%
+    Number of LOCed IOBs:                       27 out of      27  100%
+    IOB Latches:                                16
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -63,15 +64,19 @@ Specific Feature Utilization:
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             1 out of      32    3%
     Number used as BUFIO2FBs:                    1
     Number used as BUFIO2FB_2CLKs:               0
-  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
-    Number used as BUFGs:                        2
+  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
+    Number used as BUFGs:                        3
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     1 out of       4   25%
     Number used as DCMs:                         1
     Number used as DCM_CLKGENs:                  0
-  Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
+  Number of ILOGIC2/ISERDES2s:                   1 out of     200    1%
+    Number used as ILOGIC2s:                     1
+    Number used as ISERDES2s:                    0
   Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     200    0%
-  Number of OLOGIC2/OSERDES2s:                   0 out of     200    0%
+  Number of OLOGIC2/OSERDES2s:                  15 out of     200    7%
+    Number used as OLOGIC2s:                    15
+    Number used as OSERDES2s:                    0
   Number of BSCANs:                              0 out of       4    0%
   Number of BUFHs:                               0 out of     128    0%
   Number of BUFPLLs:                             0 out of       8    0%
@@ -98,13 +103,13 @@ WARNING:Par:288 - The signal timing_2_IBUF has no load.  PAR will not attempt to
 Starting Router
 
 
-Phase  1  : 319 unrouted;      REAL time: 2 secs 
+Phase  1  : 239 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 284 unrouted;      REAL time: 3 secs 
+Phase  2  : 209 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 72 unrouted;      REAL time: 3 secs 
+Phase  3  : 77 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 72 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  4  : 77 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
 
 Updating file: top.ncd with current fully routed design.
 
@@ -138,67 +143,62 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|             clk_10M | BUFGMUX_X3Y13| No   |    6 |  0.065     |  1.465      |
+|             clk_10M | BUFGMUX_X3Y13| No   |    3 |  0.002     |  1.398      |
 +---------------------+--------------+------+------+------------+-------------+
-|ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_29_o |         Local|      |    1 |  0.000     |  0.578      |
-+---------------------+--------------+------+------+------------+-------------+
-|ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_23_o |         Local|      |    1 |  0.000     |  0.578      |
-+---------------------+--------------+------+------+------------+-------------+
-|ref_1_already_set_1_ |              |      |      |            |             |
-|             AND_9_o |         Local|      |    1 |  0.000     |  0.769      |
-+---------------------+--------------+------+------+------------+-------------+
-|ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_15_o |         Local|      |    1 |  0.000     |  0.578      |
-+---------------------+--------------+------+------+------------+-------------+
-|ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_13_o |         Local|      |    1 |  0.000     |  0.769      |
-+---------------------+--------------+------+------+------------+-------------+
-|ref_1_already_set_1_ |              |      |      |            |             |
-|             AND_7_o |         Local|      |    1 |  0.000     |  0.578      |
-+---------------------+--------------+------+------+------------+-------------+
-|ref_1_already_set_1_ |              |      |      |            |             |
-|             AND_5_o |         Local|      |    1 |  0.000     |  0.696      |
-+---------------------+--------------+------+------+------------+-------------+
-|ref_1_already_set_1_ |              |      |      |            |             |
-|             AND_3_o |         Local|      |    1 |  0.000     |  0.578      |
-+---------------------+--------------+------+------+------------+-------------+
-|rst_already_high_1_A |              |      |      |            |             |
-|             ND_50_o |         Local|      |    2 |  0.000     |  0.583      |
-+---------------------+--------------+------+------+------------+-------------+
-|      already_high_1 |         Local|      |    7 |  0.591     |  1.216      |
+|       led_OBUF_BUFG | BUFGMUX_X2Y11| No   |    1 |  0.000     |  1.400      |
 +---------------------+--------------+------+------+------------+-------------+
 |rst_already_set_1_MU |              |      |      |            |             |
-|              X_51_o |         Local|      |    2 |  0.183     |  0.998      |
-+---------------------+--------------+------+------+------------+-------------+
-|     already_set_1_G |         Local|      |    1 |  0.000     |  0.575      |
+|              X_51_o |         Local|      |    2 |  0.000     |  0.707      |
 +---------------------+--------------+------+------+------------+-------------+
 |ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_31_o |         Local|      |    1 |  0.000     |  0.578      |
+|             AND_2_o |         Local|      |    1 |  0.000     |  4.355      |
 +---------------------+--------------+------+------+------------+-------------+
 |ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_33_o |         Local|      |    1 |  0.000     |  0.578      |
+|            AND_12_o |         Local|      |    1 |  0.000     |  1.622      |
 +---------------------+--------------+------+------+------------+-------------+
 |ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_11_o |         Local|      |    1 |  0.000     |  0.578      |
+|            AND_10_o |         Local|      |    1 |  0.000     |  1.689      |
 +---------------------+--------------+------+------+------------+-------------+
 |ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_27_o |         Local|      |    1 |  0.000     |  0.578      |
+|             AND_8_o |         Local|      |    1 |  0.000     |  1.596      |
 +---------------------+--------------+------+------+------------+-------------+
 |ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_17_o |         Local|      |    1 |  0.000     |  0.578      |
+|            AND_32_o |         Local|      |    1 |  0.000     |  1.908      |
 +---------------------+--------------+------+------+------------+-------------+
 |ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_19_o |         Local|      |    1 |  0.000     |  0.769      |
-+---------------------+--------------+------+------+------------+-------------+
-|    already_high_1_G |         Local|      |    1 |  0.000     |  0.371      |
+|             AND_6_o |         Local|      |    1 |  0.000     |  1.576      |
 +---------------------+--------------+------+------+------------+-------------+
 |ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_21_o |         Local|      |    1 |  0.000     |  0.578      |
+|            AND_30_o |         Local|      |    1 |  0.000     |  2.091      |
 +---------------------+--------------+------+------+------------+-------------+
 |ref_1_already_set_1_ |              |      |      |            |             |
-|            AND_25_o |         Local|      |    1 |  0.000     |  0.578      |
+|             AND_4_o |         Local|      |    1 |  0.000     |  1.511      |
++---------------------+--------------+------+------+------------+-------------+
+|ref_1_already_set_1_ |              |      |      |            |             |
+|            AND_28_o |         Local|      |    1 |  0.000     |  1.798      |
++---------------------+--------------+------+------+------------+-------------+
+|ref_1_already_set_1_ |              |      |      |            |             |
+|            AND_26_o |         Local|      |    1 |  0.000     |  1.721      |
++---------------------+--------------+------+------+------------+-------------+
+|ref_1_already_set_1_ |              |      |      |            |             |
+|            AND_24_o |         Local|      |    1 |  0.000     |  1.833      |
++---------------------+--------------+------+------+------------+-------------+
+|ref_1_already_set_1_ |              |      |      |            |             |
+|            AND_22_o |         Local|      |    1 |  0.000     |  2.012      |
++---------------------+--------------+------+------+------------+-------------+
+|ref_1_already_set_1_ |              |      |      |            |             |
+|            AND_20_o |         Local|      |    1 |  0.000     |  1.673      |
++---------------------+--------------+------+------+------------+-------------+
+|ref_1_already_set_1_ |              |      |      |            |             |
+|            AND_18_o |         Local|      |    1 |  0.000     |  1.572      |
++---------------------+--------------+------+------+------------+-------------+
+|ref_1_already_set_1_ |              |      |      |            |             |
+|            AND_16_o |         Local|      |    1 |  0.000     |  1.519      |
++---------------------+--------------+------+------+------------+-------------+
+|ref_1_already_set_1_ |              |      |      |            |             |
+|            AND_14_o |         Local|      |    1 |  0.000     |  1.581      |
++---------------------+--------------+------+------+------------+-------------+
+|     already_set_1_G |         Local|      |    1 |  0.000     |  0.602      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -223,8 +223,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   NET "count_clk/clkin1" PERIOD = 31.25 ns  | MINLOWPULSE |    15.250ns|    16.000ns|       0|           0
   HIGH 50%                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PERIOD analysis for net "count_clk/clkfx" | SETUP       |    93.815ns|     6.185ns|       0|           0
-   derived from  NET "count_clk/clkin1" PER | HOLD        |     0.524ns|            |       0|           0
+  PERIOD analysis for net "count_clk/clkfx" | SETUP       |    96.123ns|     3.877ns|       0|           0
+   derived from  NET "count_clk/clkin1" PER | HOLD        |     0.478ns|            |       0|           0
   IOD = 31.25 ns HIGH 50%                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 
@@ -239,8 +239,8 @@ Derived Constraints for count_clk/clkin1
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|count_clk/clkin1               |     31.250ns|     16.000ns|      1.933ns|            0|            0|            0|         2602|
-| count_clk/clkfx               |    100.000ns|      6.185ns|          N/A|            0|            0|         2602|            0|
+|count_clk/clkin1               |     31.250ns|     16.000ns|      1.212ns|            0|            0|            0|           54|
+| count_clk/clkfx               |    100.000ns|      3.877ns|          N/A|            0|            0|           54|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -255,7 +255,7 @@ WARNING:Par:283 - There are 3 loadless signals in this design. This design will 
 Total REAL time to PAR completion: 4 secs 
 Total CPU time to PAR completion: 3 secs 
 
-Peak Memory Usage:  4455 MB
+Peak Memory Usage:  4454 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
