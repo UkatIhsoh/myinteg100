@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/clk_gen.vhd"
+vhdl work "top.vhd"
+vhdl work "pulse_sim_test.vhd"

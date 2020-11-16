@@ -1,0 +1,12 @@
+NET clk      LOC="P94"  | IOSTANDARD=LVTTL | PERIOD=31.25ns;               # CLK
+NET data_1     LOC="P48"  | IOSTANDARD=LVTTL;                                # A0
+NET ref_1     LOC="P51"  | IOSTANDARD=LVTTL;                                # A1 GCLK
+NET timing_1    LOC="P56"  | IOSTANDARD=LVTTL;                                # A2 GCLK
+NET pulse_1     LOC="P58"  | IOSTANDARD=LVTTL;                                # A3
+NET data_2      LOC="P61"  | IOSTANDARD=LVTTL;                                # A4
+NET ref_2     LOC="P66"  | IOSTANDARD=LVTTL;                                # A5
+NET timing_2     LOC="P67"  | IOSTANDARD=LVTTL;                                # A6
+NET pulse_2      LOC="P75"  | IOSTANDARD=LVTTL;                                # A7
+NET rst     LOC="P99"  | IOSTANDARD=LVTTL;                                # B0
+
+PIN "count_clk/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;

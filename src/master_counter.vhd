@@ -164,10 +164,9 @@
 					ad_out <= p.t_1(37 downto 35);
 					dst_1 <= '0';
 					counter <= counter +1;
+					full <= '0';
 					if p.t_1(63) = '1' then
---						count_end <= '1';
 						counter <= (others => '0');
---						preset <= '0';
 					end if;
  				elsif counter = p.t_2(31 downto 0) then		
  					rf_out <= p.t_2(34 downto 32);
@@ -176,10 +175,9 @@
 					ad_out <= p.t_2(37 downto 35);
 					dst_2 <= '0';
 					counter <= counter +1;
+					full <= '0';
 					if p.t_2(63) = '1' then
---						count_end <= '1';
 						counter <= (others => '0');
---						preset <= '0';
 					end if;
  				elsif counter = p.t_3(31 downto 0) then		
  					 rf_out <= p.t_3(34 downto 32);
@@ -188,10 +186,9 @@
 					 ad_out <= p.t_3(37 downto 35);
 					 dst_3 <= '0';
 					 counter <= counter +1;
+					 full <= '0';
 					 if p.t_3(63) = '1' then
---						count_end <= '1';
 						counter <= (others => '0');
---						preset <= '0';
 					end if;
  				elsif counter = p.t_4(31 downto 0) then		
  					 rf_out <= p.t_4(34 downto 32);
@@ -200,10 +197,9 @@
 					 ad_out <= p.t_4(37 downto 35);
 					 dst_4 <= '0';
 					 counter <= counter +1;
+					 full <= '0';
 					 if p.t_4(63) = '1' then
---						count_end <= '1';
 						counter <= (others => '0');
---						preset <= '0';
 					end if;
  				elsif counter = p.t_5(31 downto 0) then		
  					 rf_out <= p.t_5(34 downto 32);
@@ -212,10 +208,9 @@
 					 ad_out <= p.t_5(37 downto 35);
 					 dst_5 <= '0';
 					 counter <= counter +1;
+					 full <= '0';
 					 if p.t_5(63) = '1' then
---						count_end <= '1';
 						counter <= (others => '0');
---						preset <= '0';
 					end if;
  				elsif counter = p.t_6(31 downto 0) then	
  					 rf_out <= p.t_6(34 downto 32);
@@ -224,10 +219,9 @@
 					 ad_out <= p.t_6(37 downto 35);
 					 dst_6 <= '0';
 					 counter <= counter +1;
+					 full <= '0';
 					 if p.t_6(63) = '1' then
---						count_end <= '1';
 						counter <= (others => '0');
---						preset <= '0';
 					end if;
  				elsif counter = p.t_7(31 downto 0) then
  					rf_out <= p.t_7(34 downto 32);
@@ -236,102 +230,55 @@
  					ad_out <= p.t_7(37 downto 35);
 					dst_7 <= '0';
  					counter <= counter +1;
+					full <= '0';
 					if p.t_7(63) = '1' then
---						count_end <= '1';
 						counter <= (others => '0');
---						preset <= '0';
-					end if;
---				elsif counter = p.t_7(31 downto 0) then	
---					counter <= counter +1;
--- 					p <= n;
---					full <= '0';							
+					end if;							
  				else	--イベントが起きる時刻以外では、釈然とカウントを続ける
  					counter <= counter +1;
--- 					dds_set_1 <= (others => '0');
--- 					dds_set_2 <= (others => '0');
- 					--ad_out <= (others => '0');
  				end if;
  				if d_fin = '1' then --最初以降のデータセット
 					if dst_1 = '0' then
 						p.t_1 <= data;
 						comp_rd <= '1';
 						dst_1 <= '1';
-					end if;
-					if dst_2 = '0' then
+						full <= '1';
+					elsif dst_2 = '0' then
 						p.t_2 <= data;
 						comp_rd <= '1';
 						dst_2 <= '1';
-					end if;
-					if dst_3 = '0' then
+						full <= '1';
+					elsif dst_3 = '0' then
 						p.t_3 <= data;
 						comp_rd <= '1';
 						dst_3 <= '1';
-					end if;
-					if dst_4 = '0' then
+						full <= '1';
+					elsif dst_4 = '0' then
 						p.t_4 <= data;
 						comp_rd <= '1';
 						dst_4 <= '1';
-					end if;
-					if dst_5 = '0' then
+						full <= '1';
+					elsif dst_5 = '0' then
 						p.t_5 <= data;
 						comp_rd <= '1';
 						dst_5 <= '1';
-					end if;
-					if dst_6 = '0' then
+						full <= '1';
+					elsif dst_6 = '0' then
 						p.t_6 <= data;
 						comp_rd <= '1';
 						dst_6 <= '1';
-					end if;
-					if dst_7 = '0' then
+						full <= '1';
+					elsif dst_7 = '0' then
 						p.t_7 <= data;
 						comp_rd <= '1';
 						dst_7 <= '1';
+						full <= '1';
 					end if;
--- 					case d_type is
--- 						when first =>		
--- 							n.t_1 <= data;	
--- 							comp_rd <= '1';	
--- 							dst_1 <= '1';
---						
--- 						when second =>		
--- 							n.t_2 <= data;
--- 							comp_rd <= '1';	
--- 							dst_2 <= '1';
---							
--- 						when third =>		
--- 							n.t_3 <= data;	
--- 							comp_rd <= '1';	
--- 							dst_3 <= '1';
---						
--- 						when fourth =>		
--- 							n.t_4 <= data;
--- 							comp_rd <= '1';	
--- 							dst_4 <= '1';
---							
--- 						when fifth =>		
--- 							n.t_5 <= data;	
--- 							comp_rd <= '1';	
--- 							dst_5 <= '1';
---						
--- 						when sixth =>		
--- 							n.t_6 <= data;	
--- 							comp_rd <= '1';	
--- 							dst_6 <= '1';
---							
--- 						when seventh =>	
--- 							n.t_7 <= data;
--- 							comp_rd <= '1';	
--- 							dst_7 <= '1';
---							
--- 						when others =>		
--- 							comp_rd <= '1';
--- 					end case;
  				else
  					comp_rd <= '0';
- 					if dst_7 = '1' and dst_1 = '1' and dst_2 = '1' and dst_3 = '1' and dst_4 = '1' and dst_5 = '1' and dst_6 = '1' then --nのほうまでデータが満タンになったらdecodeを一旦停止
- 						full <= '1';
--- 						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
- 					end if;
+-- 					if dst_7 = '1' and dst_1 = '1' and dst_2 = '1' and dst_3 = '1' and dst_4 = '1' and dst_5 = '1' and dst_6 = '1' then --nのほうまでデータが満タンになったらdecodeを一旦停止
+-- 						full <= '1';
+-- 					end if;
  				end if;
  			elsif preset = '0' then  --最初のデータセット
  				if d_fin = '1' then --decodeからのデータがavailableならデータをセットする
@@ -378,7 +325,7 @@
  					comp_rd <= '0';
  					if dst_7 = '1' and dst_1 = '1' and dst_2 = '1' and dst_3 = '1' and dst_4 = '1' and dst_5 = '1' and dst_6 = '1' then --パルスシーケンスのデータがある程度集まればカウント開始
  						preset <= '1';
--- 						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
+						full <= '1';
  					end if;
  				end if;
 --			elsif preset = '0' and count_end = '1' then

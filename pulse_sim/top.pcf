@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Nov 16 12:31:39 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P94" LEVEL 1;
+COMP "data_1" LOCATE = SITE "P48" LEVEL 1;
+COMP "data_2" LOCATE = SITE "P61" LEVEL 1;
+COMP "ref_1" LOCATE = SITE "P51" LEVEL 1;
+COMP "ref_2" LOCATE = SITE "P66" LEVEL 1;
+COMP "pulse_1" LOCATE = SITE "P58" LEVEL 1;
+COMP "pulse_2" LOCATE = SITE "P75" LEVEL 1;
+COMP "timing_1" LOCATE = SITE "P56" LEVEL 1;
+COMP "timing_2" LOCATE = SITE "P67" LEVEL 1;
+COMP "rst" LOCATE = SITE "P99" LEVEL 1;
+PIN count_clk/clkout1_buf_pin<1> = BEL "count_clk/clkout1_buf" PINNAME O;
+PIN "count_clk/clkout1_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "count_clk/clkin1" PERIOD = 31.25 ns HIGH 50%;
+SCHEMATIC END;
+

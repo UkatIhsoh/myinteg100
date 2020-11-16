@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/hoshino_Data/SotsuKen/ISE/myinteg100/pulse_sim/pulse_sim_test_isim_beh.exe" -prj "E:/hoshino_Data/SotsuKen/ISE/myinteg100/pulse_sim/pulse_sim_test_beh.prj" "work.pulse_sim_test" 
