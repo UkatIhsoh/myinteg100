@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name pulse_sim -dir "E:/hoshino_Data/SotsuKen/ISE/myinteg100/pulse_sim/planAhead_run_1" -part xc6slx9tqg144-2
+create_project -name pulse_sim -dir "E:/hoshino_Data/SotsuKen/ISE/myinteg100/pulse_sim/planAhead_run_2" -part xc6slx9tqg144-2
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
 set_property target_constrs_file "top.ucf" [current_fileset -constrset]

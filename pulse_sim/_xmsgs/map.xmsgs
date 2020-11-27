@@ -23,51 +23,6 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 <msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
 </msg>
 
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_14</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_13</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_10</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_12</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_11</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_9</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_8</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_5</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_7</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_6</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_4</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_3</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_0</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_2</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
-<msg type="warning" file="Pack" num="2548" delta="old" >The register &quot;<arg fmt="%s" index="1">n_count_data_1_1</arg>&quot; has the property IOB=TRUE, but was not packed into the ILOGIC component. <arg fmt="%z" index="2"></arg>
-</msg>
-
 <msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
 </msg>
 
@@ -78,60 +33,6 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 </msg>
 
 <msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">rst_already_set_1_MUX_51_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_2_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_12_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_10_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_8_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_32_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_6_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_30_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_4_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_28_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_26_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_24_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_22_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_20_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_18_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_16_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">ref_1_already_set_1_AND_14_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">already_set_1_G</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 <msg type="info" file="PhysDesignRules" num="1861" delta="old" >To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of the DCM comp <arg fmt="%s" index="1">count_clk/dcm_sp_inst</arg>, consult the device Data Sheet.

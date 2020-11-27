@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: top.prj
 
@@ -122,11 +122,7 @@ Parsing architecture <Behavioral> of entity <top>.
 Elaborating entity <top> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <clk_gen> (architecture <xilinx>) from library <work>.
-WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\pulse_sim\top.vhd" Line 132: already_set_1 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\pulse_sim\top.vhd" Line 133: bit_count_1 should be on the sensitivity list of the process
-INFO:HDLCompiler:679 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\pulse_sim\top.vhd" Line 198. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\pulse_sim\top.vhd" Line 209: n should be on the sensitivity list of the process
-WARNING:HDLCompiler:1127 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\pulse_sim\top.vhd" Line 99: Assignment to counter_2 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\pulse_sim\top.vhd" Line 120: Assignment to counter_2 ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -137,36 +133,37 @@ Synthesizing Unit <top>.
 WARNING:Xst:647 - Input <data_2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <ref_2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <timing_2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <bit_count_1>.
     Found 16-bit register for signal <counter_1>.
-    Found 1-bit register for signal <pulse_out_1>.
+    Found 1-bit register for signal <already_set_1>.
+    Found 1-bit register for signal <already_high_1>.
+    Found 1-bit register for signal <timing_on_1>.
     Found 1-bit register for signal <trigger_1>.
-    Found 16-bit adder for signal <counter_1[15]_GND_6_o_add_1_OUT> created at line 122.
-WARNING:Xst:737 - Found 1-bit latch for signal <bit_count_1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <bit_count_1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <bit_count_1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <bit_count_1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <n_count_data_1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <already_set_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 1-bit register for signal <pulse_out_1>.
+    Found 16-bit register for signal <p_count_data_1>.
+    Found 1-bit register for signal <one>.
+    Found 16-bit register for signal <data_out>.
+    Found finite state machine <FSM_0> for signal <bit_count_1>.
+    -----------------------------------------------------------------------
+    | States             | 16                                             |
+    | Transitions        | 48                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk_10M (rising_edge)                          |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit adder for signal <counter_1[15]_GND_6_o_add_3_OUT> created at line 153.
+    Found 16-bit comparator equal for signal <counter_1[15]_p_count_data_1[15]_equal_3_o> created at line 148
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  18 D-type flip-flop(s).
-	inferred  21 Latch(s).
-	inferred  16 Multiplexer(s).
+	inferred  54 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  23 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
 Unit <top> synthesized.
 
 Synthesizing Unit <clk_gen>.
@@ -181,14 +178,15 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  16-bit adder                                          : 1
-# Registers                                            : 3
- 1-bit register                                        : 2
- 16-bit register                                       : 1
-# Latches                                              : 21
- 1-bit latch                                           : 21
-# Multiplexers                                         : 16
- 1-bit 2-to-1 multiplexer                              : 15
- 16-bit 2-to-1 multiplexer                             : 1
+# Registers                                            : 9
+ 1-bit register                                        : 6
+ 16-bit register                                       : 3
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 23
+ 1-bit 2-to-1 multiplexer                              : 21
+ 16-bit 2-to-1 multiplexer                             : 2
+# FSMs                                                 : 1
 
 =========================================================================
 
@@ -207,60 +205,48 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 1
  16-bit up counter                                     : 1
-# Registers                                            : 2
- Flip-Flops                                            : 2
-# Multiplexers                                         : 15
- 1-bit 2-to-1 multiplexer                              : 15
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+# Multiplexers                                         : 22
+ 1-bit 2-to-1 multiplexer                              : 21
+ 16-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
-   incompatible with the Spartan6 architecture. The two primary causes of this is
-   either a register or latch described with both an asynchronous set and
-   asynchronous reset, or a register or latch described with an asynchronous
-   set or reset which however has an initialization value of the opposite 
-   polarity (i.e. asynchronous reset with an initialization value of 1).
-    While this circuit can be built, it creates a sub-optimal implementation
-   in terms of area, power and performance. For a more optimal implementation
-   Xilinx highly recommends one of the following:
-
-          1) Remove either the set or reset from all registers and latches
-             if not needed for required functionality
-          2) Modify the code in order to produce a synchronous set
-             and/or reset (both is preferred)
-          3) Ensure all registers have the same initialization value as the
-             described asynchronous set or reset polarity
-          4) Use the -async_to_sync option to transform the asynchronous
-             set/reset to synchronous operation
-             (timing simulation highly recommended when using this option)
-
-  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
-
-  List of register instances with asynchronous set and reset:
-    trigger_1 in unit <top>
-    already_set_1 in unit <top>
-
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <bit_count_1[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+ 1010  | 1010
+ 1011  | 1011
+ 1100  | 1100
+ 1101  | 1101
+ 1110  | 1110
+ 1111  | 1111
+-------------------
 
 Optimizing unit <top> ...
-WARNING:Xst:1293 - FF/Latch <counter_1_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <counter_1_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -268,8 +254,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 6
- Flip-Flops                                            : 6
+# Registers                                            : 58
+ Flip-Flops                                            : 58
 
 =========================================================================
 
@@ -292,24 +278,24 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 42
+# BELS                             : 93
 #      GND                         : 1
-#      LUT2                        : 3
-#      LUT3                        : 7
+#      INV                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 20
+#      LUT3                        : 6
 #      LUT4                        : 1
 #      LUT5                        : 1
-#      LUT6                        : 21
-#      MUXCY                       : 3
+#      LUT6                        : 22
+#      MUXCY                       : 23
 #      VCC                         : 1
-#      XORCY                       : 4
-# FlipFlops/Latches                : 28
-#      FDC                         : 1
-#      FDCE                        : 4
-#      FDPE                        : 1
-#      LD                          : 21
-#      LDC                         : 1
-# Clock Buffers                    : 3
-#      BUFG                        : 3
+#      XORCY                       : 16
+# FlipFlops/Latches                : 58
+#      FDC                         : 7
+#      FDCE                        : 18
+#      FDE                         : 33
+# Clock Buffers                    : 2
+#      BUFG                        : 2
 # IO Buffers                       : 24
 #      IBUF                        : 4
 #      IBUFG                       : 1
@@ -324,24 +310,23 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              12  out of  11440     0%  
- Number of Slice LUTs:                   33  out of   5720     0%  
-    Number used as Logic:                33  out of   5720     0%  
+ Number of Slice Registers:              58  out of  11440     0%  
+ Number of Slice LUTs:                   52  out of   5720     0%  
+    Number used as Logic:                52  out of   5720     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     35
-   Number with an unused Flip Flop:      23  out of     35    65%  
-   Number with an unused LUT:             2  out of     35     5%  
-   Number of fully used LUT-FF pairs:    10  out of     35    28%  
-   Number of unique control sets:        22
+ Number of LUT Flip Flop pairs used:     68
+   Number with an unused Flip Flop:      10  out of     68    14%  
+   Number with an unused LUT:            16  out of     68    23%  
+   Number of fully used LUT-FF pairs:    42  out of     68    61%  
+   Number of unique control sets:         6
 
 IO Utilization: 
  Number of IOs:                          27
  Number of bonded IOBs:                  24  out of    102    23%  
-    IOB Flip Flops/Latches:              16
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
 
 ---------------------------
 Partition Resource Summary:
@@ -361,34 +346,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------------------------------+---------------------------+-------+
-Clock Signal                                                   | Clock buffer(FF name)     | Load  |
----------------------------------------------------------------+---------------------------+-------+
-ref_1_already_set_1_AND_2_o(ref_1_already_set_1_AND_2_o1:O)    | NONE(*)(n_count_data_1_15)| 1     |
-ref_1_already_set_1_AND_4_o(ref_1_already_set_1_AND_4_o1:O)    | NONE(*)(n_count_data_1_14)| 1     |
-ref_1_already_set_1_AND_6_o(ref_1_already_set_1_AND_6_o1:O)    | NONE(*)(n_count_data_1_13)| 1     |
-ref_1_already_set_1_AND_12_o(ref_1_already_set_1_AND_12_o1:O)  | NONE(*)(n_count_data_1_10)| 1     |
-ref_1_already_set_1_AND_8_o(ref_1_already_set_1_AND_8_o1:O)    | NONE(*)(n_count_data_1_12)| 1     |
-ref_1_already_set_1_AND_10_o(ref_1_already_set_1_AND_10_o1:O)  | NONE(*)(n_count_data_1_11)| 1     |
-ref_1_already_set_1_AND_14_o(ref_1_already_set_1_AND_14_o1:O)  | NONE(*)(n_count_data_1_9) | 1     |
-ref_1_already_set_1_AND_16_o(ref_1_already_set_1_AND_16_o1:O)  | NONE(*)(n_count_data_1_8) | 1     |
-ref_1_already_set_1_AND_22_o(ref_1_already_set_1_AND_22_o1:O)  | NONE(*)(n_count_data_1_5) | 1     |
-ref_1_already_set_1_AND_18_o(ref_1_already_set_1_AND_18_o1:O)  | NONE(*)(n_count_data_1_7) | 1     |
-ref_1_already_set_1_AND_20_o(ref_1_already_set_1_AND_20_o1:O)  | NONE(*)(n_count_data_1_6) | 1     |
-ref_1_already_set_1_AND_24_o(ref_1_already_set_1_AND_24_o1:O)  | NONE(*)(n_count_data_1_4) | 1     |
-ref_1_already_set_1_AND_26_o(ref_1_already_set_1_AND_26_o1:O)  | NONE(*)(n_count_data_1_3) | 1     |
-ref_1_already_set_1_AND_32_o(ref_1_already_set_1_AND_32_o1:O)  | NONE(*)(n_count_data_1_0) | 1     |
-ref_1_already_set_1_AND_28_o(ref_1_already_set_1_AND_28_o1:O)  | NONE(*)(n_count_data_1_2) | 1     |
-ref_1_already_set_1_AND_30_o(ref_1_already_set_1_AND_30_o1:O)  | NONE(*)(n_count_data_1_1) | 1     |
-rst_already_set_1_MUX_51_o(Mmux_rst_already_set_1_MUX_51_o11:O)| NONE(*)(bit_count_1_3)    | 4     |
-clk                                                            | DCM_SP:CLKFX              | 6     |
-already_set_1_G(already_set_1_G:O)                             | NONE(*)(already_set_1)    | 1     |
-timing_1                                                       | IBUF+BUFG                 | 1     |
----------------------------------------------------------------+---------------------------+-------+
-(*) These 18 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | DCM_SP:CLKFX           | 58    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -398,793 +360,89 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 3.172ns (Maximum Frequency: 315.259MHz)
-   Minimum input arrival time before clock: 3.895ns
-   Maximum output required time after clock: 4.174ns
-   Maximum combinational path delay: 5.005ns
+   Minimum period: 1.515ns (Maximum Frequency: 660.032MHz)
+   Minimum input arrival time before clock: 4.727ns
+   Maximum output required time after clock: 4.202ns
+   Maximum combinational path delay: 5.043ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'rst_already_set_1_MUX_51_o'
-  Clock period: 3.172ns (frequency: 315.259MHz)
-  Total number of paths / destination ports: 10 / 4
--------------------------------------------------------------------------
-Delay:               3.172ns (Levels of Logic = 2)
-  Source:            bit_count_1_1 (LATCH)
-  Destination:       bit_count_1_3 (LATCH)
-  Source Clock:      rst_already_set_1_MUX_51_o falling
-  Destination Clock: rst_already_set_1_MUX_51_o falling
-
-  Data Path: bit_count_1_1 to bit_count_1_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q              19   0.581   1.369  bit_count_1_1 (bit_count_1_1)
-     LUT2:I0->O            1   0.250   0.682  Mmux_bit_count_1[3]_bit_count_1[3]_MUX_49_o1_SW0 (N01)
-     LUT6:I5->O            1   0.254   0.000  Mmux_bit_count_1[3]_bit_count_1[3]_MUX_49_o1 (bit_count_1[3]_bit_count_1[3]_MUX_49_o)
-     LD:D                      0.036          bit_count_1_3
-    ----------------------------------------
-    Total                      3.172ns (1.121ns logic, 2.051ns route)
-                                       (35.3% logic, 64.7% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 0.982ns (frequency: 1018.136MHz)
-  Total number of paths / destination ports: 54 / 10
+  Clock period: 1.515ns (frequency: 660.032MHz)
+  Total number of paths / destination ports: 1080 / 105
 -------------------------------------------------------------------------
-Delay:               3.143ns (Levels of Logic = 1)
+Delay:               4.848ns (Levels of Logic = 9)
   Source:            counter_1_0 (FF)
-  Destination:       counter_1_0 (FF)
+  Destination:       trigger_1 (FF)
   Source Clock:      clk rising 0.3X
   Destination Clock: clk rising 0.3X
 
-  Data Path: counter_1_0 to counter_1_0
+  Data Path: counter_1_0 to trigger_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             4   0.525   1.259  counter_1_0 (counter_1_0)
-     LUT6:I0->O            4   0.254   0.803  _n0228_inv1 (_n0228_inv)
-     FDCE:CE                   0.302          counter_1_0
+     FDCE:C->Q             2   0.525   1.181  counter_1_0 (counter_1_0)
+     LUT6:I0->O            1   0.254   0.000  Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_lut<0> (Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<0> (Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<1> (Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<2> (Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<3> (Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<4> (Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<4>)
+     MUXCY:CI->O           3   0.023   0.766  Mcompar_counter_1[15]_p_count_data_1[15]_equal_3_o_cy<5> (counter_1[15]_p_count_data_1[15]_equal_3_o)
+     LUT2:I1->O           17   0.254   1.209  trigger_1_trigger_1_MUX_23_o1 (trigger_1_trigger_1_MUX_23_o)
+     LUT3:I2->O            1   0.254   0.000  trigger_1_rstpot (trigger_1_rstpot)
+     FDC:D                     0.074          trigger_1
     ----------------------------------------
-    Total                      3.143ns (1.081ns logic, 2.062ns route)
-                                       (34.4% logic, 65.6% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'already_set_1_G'
-  Clock period: 2.229ns (frequency: 448.632MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               2.229ns (Levels of Logic = 1)
-  Source:            already_set_1 (LATCH)
-  Destination:       already_set_1 (LATCH)
-  Source Clock:      already_set_1_G falling
-  Destination Clock: already_set_1_G falling
-
-  Data Path: already_set_1 to already_set_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q              23   0.581   1.358  already_set_1 (already_set_1)
-     LUT2:I1->O            1   0.254   0.000  already_set_1_D (already_set_1_D)
-     LD:D                      0.036          already_set_1
-    ----------------------------------------
-    Total                      2.229ns (0.871ns logic, 1.358ns route)
-                                       (39.1% logic, 60.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_2_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_15 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_2_o falling
-
-  Data Path: data_1 to n_count_data_1_15
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_15
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_4_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_14 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_4_o falling
-
-  Data Path: data_1 to n_count_data_1_14
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_14
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_6_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_13 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_6_o falling
-
-  Data Path: data_1 to n_count_data_1_13
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_13
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_12_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_10 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_12_o falling
-
-  Data Path: data_1 to n_count_data_1_10
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_10
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_8_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_12 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_8_o falling
-
-  Data Path: data_1 to n_count_data_1_12
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_12
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_10_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_11 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_10_o falling
-
-  Data Path: data_1 to n_count_data_1_11
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_11
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_14_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_9 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_14_o falling
-
-  Data Path: data_1 to n_count_data_1_9
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_9
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_16_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_8 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_16_o falling
-
-  Data Path: data_1 to n_count_data_1_8
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_8
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_22_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_5 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_22_o falling
-
-  Data Path: data_1 to n_count_data_1_5
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_5
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_18_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_7 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_18_o falling
-
-  Data Path: data_1 to n_count_data_1_7
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_7
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_20_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_6 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_20_o falling
-
-  Data Path: data_1 to n_count_data_1_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_6
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_24_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_4 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_24_o falling
-
-  Data Path: data_1 to n_count_data_1_4
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_4
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_26_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_3 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_26_o falling
-
-  Data Path: data_1 to n_count_data_1_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_3
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_32_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_0 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_32_o falling
-
-  Data Path: data_1 to n_count_data_1_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_0
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_28_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_2 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_28_o falling
-
-  Data Path: data_1 to n_count_data_1_2
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_2
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ref_1_already_set_1_AND_30_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.545ns (Levels of Logic = 1)
-  Source:            data_1 (PAD)
-  Destination:       n_count_data_1_1 (LATCH)
-  Destination Clock: ref_1_already_set_1_AND_30_o falling
-
-  Data Path: data_1 to n_count_data_1_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.181  data_1_IBUF (data_1_IBUF)
-     LD:D                      0.036          n_count_data_1_1
-    ----------------------------------------
-    Total                      2.545ns (1.364ns logic, 1.181ns route)
-                                       (53.6% logic, 46.4% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_already_set_1_MUX_51_o'
-  Total number of paths / destination ports: 8 / 4
--------------------------------------------------------------------------
-Offset:              3.431ns (Levels of Logic = 2)
-  Source:            ref_1 (PAD)
-  Destination:       bit_count_1_2 (LATCH)
-  Destination Clock: rst_already_set_1_MUX_51_o falling
-
-  Data Path: ref_1 to bit_count_1_2
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            23   1.328   1.813  ref_1_IBUF (ref_1_IBUF)
-     LUT6:I0->O            1   0.254   0.000  Mmux_bit_count_1[3]_bit_count_1[3]_MUX_53_o11 (bit_count_1[3]_bit_count_1[3]_MUX_53_o)
-     LD:D                      0.036          bit_count_1_2
-    ----------------------------------------
-    Total                      3.431ns (1.618ns logic, 1.813ns route)
-                                       (47.2% logic, 52.8% route)
+    Total                      4.848ns (1.692ns logic, 3.156ns route)
+                                       (34.9% logic, 65.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 6 / 6
+  Total number of paths / destination ports: 102 / 69
 -------------------------------------------------------------------------
-Offset:              2.855ns (Levels of Logic = 1)
+Offset:              4.727ns (Levels of Logic = 2)
   Source:            rst (PAD)
-  Destination:       pulse_out_1 (FF)
+  Destination:       n_count_data_1_0 (FF)
   Destination Clock: clk rising 0.3X
 
-  Data Path: rst to pulse_out_1
+  Data Path: rst to n_count_data_1_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            12   1.328   1.068  rst_IBUF (rst_IBUF)
-     FDC:CLR                   0.459          pulse_out_1
+     IBUF:I->O            28   1.328   1.681  rst_IBUF (rst_IBUF)
+     LUT3:I0->O           16   0.235   1.181  _n0307_inv1 (_n0307_inv)
+     FDE:CE                    0.302          n_count_data_1_0
     ----------------------------------------
-    Total                      2.855ns (1.787ns logic, 1.068ns route)
-                                       (62.6% logic, 37.4% route)
+    Total                      4.727ns (1.865ns logic, 2.862ns route)
+                                       (39.5% logic, 60.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'already_set_1_G'
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 17 / 17
 -------------------------------------------------------------------------
-Offset:              3.080ns (Levels of Logic = 2)
-  Source:            ref_1 (PAD)
-  Destination:       already_set_1 (LATCH)
-  Destination Clock: already_set_1_G falling
-
-  Data Path: ref_1 to already_set_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            23   1.328   1.466  ref_1_IBUF (ref_1_IBUF)
-     LUT2:I0->O            1   0.250   0.000  already_set_1_D (already_set_1_D)
-     LD:D                      0.036          already_set_1
-    ----------------------------------------
-    Total                      3.080ns (1.614ns logic, 1.466ns route)
-                                       (52.4% logic, 47.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'timing_1'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              3.895ns (Levels of Logic = 2)
-  Source:            rst (PAD)
-  Destination:       trigger_1_LDC (LATCH)
-  Destination Clock: timing_1 falling
-
-  Data Path: rst to trigger_1_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            12   1.328   1.177  rst_IBUF (rst_IBUF)
-     LUT2:I0->O            1   0.250   0.681  rst_timing_1_AND_34_o1 (rst_timing_1_AND_34_o)
-     LDC:CLR                   0.459          trigger_1_LDC
-    ----------------------------------------
-    Total                      3.895ns (2.037ns logic, 1.858ns route)
-                                       (52.3% logic, 47.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_2_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_15 (LATCH)
+Offset:              4.202ns (Levels of Logic = 1)
+  Source:            n_count_data_1_15 (FF)
   Destination:       data_out<15> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_2_o falling
+  Source Clock:      clk rising 0.3X
 
   Data Path: n_count_data_1_15 to data_out<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_15 (n_count_data_1_15)
+     FDE:C->Q              3   0.525   0.765  n_count_data_1_15 (n_count_data_1_15)
      OBUF:I->O                 2.912          data_out_15_OBUF (data_out<15>)
     ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_4_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_14 (LATCH)
-  Destination:       data_out<14> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_4_o falling
-
-  Data Path: n_count_data_1_14 to data_out<14>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_14 (n_count_data_1_14)
-     OBUF:I->O                 2.912          data_out_14_OBUF (data_out<14>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_6_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_13 (LATCH)
-  Destination:       data_out<13> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_6_o falling
-
-  Data Path: n_count_data_1_13 to data_out<13>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_13 (n_count_data_1_13)
-     OBUF:I->O                 2.912          data_out_13_OBUF (data_out<13>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_8_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_12 (LATCH)
-  Destination:       data_out<12> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_8_o falling
-
-  Data Path: n_count_data_1_12 to data_out<12>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_12 (n_count_data_1_12)
-     OBUF:I->O                 2.912          data_out_12_OBUF (data_out<12>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_10_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_11 (LATCH)
-  Destination:       data_out<11> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_10_o falling
-
-  Data Path: n_count_data_1_11 to data_out<11>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_11 (n_count_data_1_11)
-     OBUF:I->O                 2.912          data_out_11_OBUF (data_out<11>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_12_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_10 (LATCH)
-  Destination:       data_out<10> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_12_o falling
-
-  Data Path: n_count_data_1_10 to data_out<10>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_10 (n_count_data_1_10)
-     OBUF:I->O                 2.912          data_out_10_OBUF (data_out<10>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_14_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_9 (LATCH)
-  Destination:       data_out<9> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_14_o falling
-
-  Data Path: n_count_data_1_9 to data_out<9>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_9 (n_count_data_1_9)
-     OBUF:I->O                 2.912          data_out_9_OBUF (data_out<9>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_16_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_8 (LATCH)
-  Destination:       data_out<8> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_16_o falling
-
-  Data Path: n_count_data_1_8 to data_out<8>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_8 (n_count_data_1_8)
-     OBUF:I->O                 2.912          data_out_8_OBUF (data_out<8>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_18_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_7 (LATCH)
-  Destination:       data_out<7> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_18_o falling
-
-  Data Path: n_count_data_1_7 to data_out<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_7 (n_count_data_1_7)
-     OBUF:I->O                 2.912          data_out_7_OBUF (data_out<7>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_20_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_6 (LATCH)
-  Destination:       data_out<6> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_20_o falling
-
-  Data Path: n_count_data_1_6 to data_out<6>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_6 (n_count_data_1_6)
-     OBUF:I->O                 2.912          data_out_6_OBUF (data_out<6>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_22_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_5 (LATCH)
-  Destination:       data_out<5> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_22_o falling
-
-  Data Path: n_count_data_1_5 to data_out<5>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_5 (n_count_data_1_5)
-     OBUF:I->O                 2.912          data_out_5_OBUF (data_out<5>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_24_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_4 (LATCH)
-  Destination:       data_out<4> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_24_o falling
-
-  Data Path: n_count_data_1_4 to data_out<4>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_4 (n_count_data_1_4)
-     OBUF:I->O                 2.912          data_out_4_OBUF (data_out<4>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_26_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_3 (LATCH)
-  Destination:       data_out<3> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_26_o falling
-
-  Data Path: n_count_data_1_3 to data_out<3>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_3 (n_count_data_1_3)
-     OBUF:I->O                 2.912          data_out_3_OBUF (data_out<3>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_28_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_2 (LATCH)
-  Destination:       data_out<2> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_28_o falling
-
-  Data Path: n_count_data_1_2 to data_out<2>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_2 (n_count_data_1_2)
-     OBUF:I->O                 2.912          data_out_2_OBUF (data_out<2>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_30_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_1 (LATCH)
-  Destination:       data_out<1> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_30_o falling
-
-  Data Path: n_count_data_1_1 to data_out<1>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_1 (n_count_data_1_1)
-     OBUF:I->O                 2.912          data_out_1_OBUF (data_out<1>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ref_1_already_set_1_AND_32_o'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.174ns (Levels of Logic = 1)
-  Source:            n_count_data_1_0 (LATCH)
-  Destination:       data_out<0> (PAD)
-  Source Clock:      ref_1_already_set_1_AND_32_o falling
-
-  Data Path: n_count_data_1_0 to data_out<0>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.581   0.681  n_count_data_1_0 (n_count_data_1_0)
-     OBUF:I->O                 2.912          data_out_0_OBUF (data_out<0>)
-    ----------------------------------------
-    Total                      4.174ns (3.493ns logic, 0.681ns route)
-                                       (83.7% logic, 16.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              4.118ns (Levels of Logic = 1)
-  Source:            pulse_out_1 (FF)
-  Destination:       pulse_1 (PAD)
-  Source Clock:      clk rising 0.3X
-
-  Data Path: pulse_out_1 to pulse_1
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDC:C->Q              1   0.525   0.681  pulse_out_1 (pulse_out_1)
-     OBUF:I->O                 2.912          pulse_1_OBUF (pulse_1)
-    ----------------------------------------
-    Total                      4.118ns (3.437ns logic, 0.681ns route)
-                                       (83.5% logic, 16.5% route)
+    Total                      4.202ns (3.437ns logic, 0.765ns route)
+                                       (81.8% logic, 18.2% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               5.005ns (Levels of Logic = 2)
+Delay:               5.043ns (Levels of Logic = 2)
   Source:            timing_1 (PAD)
   Destination:       led (PAD)
 
@@ -1192,42 +450,24 @@ Delay:               5.005ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.328   0.765  timing_1_IBUF (led_OBUF)
+     IBUF:I->O             4   1.328   0.803  timing_1_IBUF (led_OBUF)
      OBUF:I->O                 2.912          led_OBUF (led)
     ----------------------------------------
-    Total                      5.005ns (4.240ns logic, 0.765ns route)
-                                       (84.7% logic, 15.3% route)
+    Total                      5.043ns (4.240ns logic, 0.803ns route)
+                                       (84.1% logic, 15.9% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock already_set_1_G
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-already_set_1_G|         |         |    2.229|         |
----------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.143|         |         |         |
-timing_1       |         |    3.019|         |         |
+clk            |    4.848|         |         |         |
 ---------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock rst_already_set_1_MUX_51_o
---------------------------+---------+---------+---------+---------+
-                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------------+---------+---------+---------+---------+
-already_set_1_G           |         |         |    2.659|         |
-rst_already_set_1_MUX_51_o|         |         |    3.172|         |
---------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
@@ -1237,9 +477,9 @@ Total CPU time to Xst completion: 5.35 secs
  
 --> 
 
-Total memory usage is 4518076 kilobytes
+Total memory usage is 4501884 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   41 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Nov 26 15:12:16 2020
+# Process ID: 8072
+# Log file: E:/hoshino_Data/SotsuKen/ISE/myinteg100/pulse_sim/planAhead_run_3/planAhead.log
+# Journal file: E:/hoshino_Data/SotsuKen/ISE/myinteg100/pulse_sim/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -576 day(s)
+INFO: [Device 21-36] Loading parts and site information from E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source E:/hoshino_Data/SotsuKen/ISE/myinteg100/pulse_sim/pa.fromNetlist.tcl
+# create_project -name pulse_sim -dir "E:/hoshino_Data/SotsuKen/ISE/myinteg100/pulse_sim/planAhead_run_3" -part xc6slx9tqg144-2

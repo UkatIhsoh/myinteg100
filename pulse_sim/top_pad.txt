@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-MON 16 NOV 15:17:36 2020
+FRI 27 NOV 12:12:47 2020
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -67,26 +67,26 @@ Pinout by Pin Number:
 |P45       |            |IOBS     |IO_L49N_D4_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P46       |            |IOBM     |IO_L49P_D3_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P47       |            |IOBS     |IO_L48N_RDWR_B_VREF_2     |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P48       |data_1      |IOB      |IO_L48P_D7_2              |INPUT    |LVTTL      |2             |          |         |           |NONE     |         |LOCATED   |YES        |NONE            |
+|P48       |data_out<0> |IOB      |IO_L48P_D7_2              |OUTPUT   |LVTTL      |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P49       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P50       |            |IOBS     |IO_L31N_GCLK30_D15_2      |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P51       |ref_1       |IOB      |IO_L31P_GCLK31_D14_2      |INPUT    |LVTTL      |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P51       |data_out<1> |IOB      |IO_L31P_GCLK31_D14_2      |OUTPUT   |LVTTL      |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P52       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.2      |          |           |                |
 |P53       |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
 |P54       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P55       |            |IOBS     |IO_L30N_GCLK0_USERCCLK_2  |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P56       |timing_1    |IOB      |IO_L30P_GCLK1_D13_2       |INPUT    |LVTTL      |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P56       |data_out<2> |IOB      |IO_L30P_GCLK1_D13_2       |OUTPUT   |LVTTL      |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P57       |            |IOBS     |IO_L14N_D12_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P58       |pulse_1     |IOB      |IO_L14P_D11_2             |OUTPUT   |LVTTL      |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P58       |data_out<3> |IOB      |IO_L14P_D11_2             |OUTPUT   |LVTTL      |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P59       |            |IOBS     |IO_L13N_D10_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P60       |            |IOBM     |IO_L13P_M1_2              |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P61       |data_2      |IOB      |IO_L12N_D2_MISO3_2        |INPUT    |LVTTL      |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P61       |data_out<4> |IOB      |IO_L12N_D2_MISO3_2        |OUTPUT   |LVTTL      |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P62       |            |IOBM     |IO_L12P_D1_MISO2_2        |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P63       |            |         |VCCO_2                    |         |           |2             |          |         |           |         |3.30     |          |           |                |
 |P64       |            |IOBS     |IO_L3N_MOSI_CSI_B_MISO0_2 |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P65       |            |IOBM     |IO_L3P_D0_DIN_MISO_MISO1_2|UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|P66       |ref_2       |IOB      |IO_L2N_CMPMOSI_2          |INPUT    |LVTTL      |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|P67       |timing_2    |IOB      |IO_L2P_CMPCLK_2           |INPUT    |LVTTL      |2             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P66       |data_out<5> |IOB      |IO_L2N_CMPMOSI_2          |OUTPUT   |LVTTL      |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P67       |data_out<6> |IOB      |IO_L2P_CMPCLK_2           |OUTPUT   |LVTTL      |2             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P68       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P69       |            |IOBS     |IO_L1N_M0_CMPMISO_2       |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |P70       |            |IOBM     |IO_L1P_CCLK_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -94,32 +94,32 @@ Pinout by Pin Number:
 |P72       |            |         |CMPCS_B_2                 |         |           |              |          |         |           |         |         |          |           |                |
 |P73       |            |         |SUSPEND                   |         |           |              |          |         |           |         |         |          |           |                |
 |P74       |            |IOBS     |IO_L74N_DOUT_BUSY_1       |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P75       |pulse_2     |IOB      |IO_L74P_AWAKE_1           |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P75       |data_out<7> |IOB      |IO_L74P_AWAKE_1           |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P76       |            |         |VCCO_1                    |         |           |1             |          |         |           |         |3.30     |          |           |                |
 |P77       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P78       |            |IOBS     |IO_L47N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P79       |            |IOBM     |IO_L47P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P79       |data_out<8> |IOB      |IO_L47P_1                 |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P80       |            |IOBS     |IO_L46N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P81       |            |IOBM     |IO_L46P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P81       |data_out<9> |IOB      |IO_L46P_1                 |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P82       |            |IOBS     |IO_L45N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P83       |            |IOBM     |IO_L45P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P83       |data_out<10>|IOB      |IO_L45P_1                 |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P84       |            |IOBS     |IO_L43N_GCLK4_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P85       |            |IOBM     |IO_L43P_GCLK5_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P85       |data_out<11>|IOB      |IO_L43P_GCLK5_1           |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P86       |            |         |VCCO_1                    |         |           |1             |          |         |           |         |3.30     |          |           |                |
 |P87       |            |IOBS     |IO_L42N_GCLK6_TRDY1_1     |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P88       |            |IOBM     |IO_L42P_GCLK7_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P88       |data_out<12>|IOB      |IO_L42P_GCLK7_1           |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P89       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.2      |          |           |                |
 |P90       |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
 |P91       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P92       |            |IOBS     |IO_L41N_GCLK8_1           |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P93       |            |IOBM     |IO_L41P_GCLK9_IRDY1_1     |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P93       |data_out<13>|IOB      |IO_L41P_GCLK9_IRDY1_1     |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P94       |clk         |IOB      |IO_L40N_GCLK10_1          |INPUT    |LVTTL      |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P95       |            |IOBM     |IO_L40P_GCLK11_1          |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P96       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P97       |            |IOBS     |IO_L34N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|P98       |            |IOBM     |IO_L34P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P98       |data_out<14>|IOB      |IO_L34P_1                 |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P99       |rst         |IOB      |IO_L33N_1                 |INPUT    |LVTTL      |1             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|P100      |            |IOBM     |IO_L33P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
+|P100      |data_out<15>|IOB      |IO_L33P_1                 |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P101      |            |IOBS     |IO_L32N_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P102      |            |IOBM     |IO_L32P_1                 |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |P103      |            |         |VCCO_1                    |         |           |1             |          |         |           |         |3.30     |          |           |                |
@@ -133,27 +133,27 @@ Pinout by Pin Number:
 |P111      |            |IOBS     |IO_L66N_SCP0_0            |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |P112      |led         |IOB      |IO_L66P_SCP1_0            |OUTPUT   |LVTTL      |0             |8         |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |P113      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
-|P114      |data_out<0> |IOB      |IO_L65N_SCP2_0            |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P115      |data_out<1> |IOB      |IO_L65P_SCP3_0            |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P116      |data_out<2> |IOB      |IO_L64N_SCP4_0            |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P117      |data_out<3> |IOB      |IO_L64P_SCP5_0            |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P118      |data_out<4> |IOB      |IO_L63N_SCP6_0            |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P119      |data_out<5> |IOB      |IO_L63P_SCP7_0            |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P120      |data_out<6> |IOB      |IO_L62N_VREF_0            |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P121      |data_out<7> |IOB      |IO_L62P_0                 |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|P114      |            |IOBS     |IO_L65N_SCP2_0            |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
+|P115      |            |IOBM     |IO_L65P_SCP3_0            |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
+|P116      |            |IOBS     |IO_L64N_SCP4_0            |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
+|P117      |            |IOBM     |IO_L64P_SCP5_0            |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
+|P118      |            |IOBS     |IO_L63N_SCP6_0            |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
+|P119      |            |IOBM     |IO_L63P_SCP7_0            |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
+|P120      |            |IOBS     |IO_L62N_VREF_0            |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
+|P121      |            |IOBM     |IO_L62P_0                 |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |P122      |            |         |VCCO_0                    |         |           |0             |          |         |           |         |3.30     |          |           |                |
-|P123      |data_out<8> |IOB      |IO_L37N_GCLK12_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P124      |data_out<9> |IOB      |IO_L37P_GCLK13_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|P123      |pulse_2     |IOB      |IO_L37N_GCLK12_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P124      |timing_2    |IOB      |IO_L37P_GCLK13_0          |INPUT    |LVTTL      |0             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P125      |            |         |VCCO_0                    |         |           |0             |          |         |           |         |3.30     |          |           |                |
-|P126      |data_out<10>|IOB      |IO_L36N_GCLK14_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P127      |data_out<11>|IOB      |IO_L36P_GCLK15_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
+|P126      |ref_2       |IOB      |IO_L36N_GCLK14_0          |INPUT    |LVTTL      |0             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P127      |data_2      |IOB      |IO_L36P_GCLK15_0          |INPUT    |LVTTL      |0             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P128      |            |         |VCCINT                    |         |           |              |          |         |           |         |1.2      |          |           |                |
 |P129      |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
 |P130      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
-|P131      |data_out<12>|IOB      |IO_L35N_GCLK16_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P132      |data_out<13>|IOB      |IO_L35P_GCLK17_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P133      |data_out<14>|IOB      |IO_L34N_GCLK18_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |YES        |NONE            |
-|P134      |data_out<15>|IOB      |IO_L34P_GCLK19_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P131      |pulse_1     |IOB      |IO_L35N_GCLK16_0          |OUTPUT   |LVTTL      |0             |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
+|P132      |timing_1    |IOB      |IO_L35P_GCLK17_0          |INPUT    |LVTTL      |0             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P133      |ref_1       |IOB      |IO_L34N_GCLK18_0          |INPUT    |LVTTL      |0             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
+|P134      |data_1      |IOB      |IO_L34P_GCLK19_0          |INPUT    |LVTTL      |0             |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
 |P135      |            |         |VCCO_0                    |         |           |0             |          |         |           |         |3.30     |          |           |                |
 |P136      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
 |P137      |            |IOBS     |IO_L4N_0                  |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
