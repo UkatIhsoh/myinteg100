@@ -54,7 +54,9 @@
 -- "Output    Output      Phase     Duty      Pk-to-Pk        Phase"
 -- "Clock    Freq (MHz) (degrees) Cycle (%) Jitter (ps)  Error (ps)"
 ------------------------------------------------------------------------------
--- CLK_OUT1___100.000______0.000______50.0______400.000____150.000
+-- CLK_OUT1____99.556______0.000______50.0______234.944____186.700
+-- CLK_OUT2____29.867______0.000______50.0______344.075____186.700
+-- CLK_OUT3____49.778______0.000______50.0______289.072____186.700
 --
 ------------------------------------------------------------------------------
 -- "Input Clock   Freq (MHz)    Input Jitter (UI)"
@@ -69,7 +71,9 @@ port
  (-- Clock in ports
   CLK_IN1           : in     std_logic;
   -- Clock out ports
-  CLK100          : out    std_logic
+  CLK100          : out    std_logic;
+  CLK_OUT2          : out    std_logic;
+  CLK_OUT3          : out    std_logic
  );
 end component;
 
@@ -82,5 +86,7 @@ your_instance_name : clk_generator
    (-- Clock in ports
     CLK_IN1 => CLK_IN1,
     -- Clock out ports
-    CLK100 => CLK100);
+    CLK100 => CLK100,
+    CLK_OUT2 => CLK_OUT2,
+    CLK_OUT3 => CLK_OUT3);
 -- INST_TAG_END ------ End INSTANTIATION Template ------------

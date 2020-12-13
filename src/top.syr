@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: top.prj
@@ -292,13 +292,15 @@ WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_d
 WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\DDS_data_drive.vhd" Line 366: d_drive_21 should be on the sensitivity list of the process
 
 Elaborating entity <AD9851_ctrl> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" Line 441: led_blink1 should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\AD9851_ctrl.vhd" Line 88: Assignment to not_clk ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\AD9851_ctrl.vhd" Line 532: Assignment to clk_count ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" Line 448: led_blink1 should be on the sensitivity list of the process
 
 Elaborating entity <string_send> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <vector_mux> (architecture <Behavioral>) with generics from library <work>.
-WARNING:HDLCompiler:634 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" Line 338: Net <rc_fifo_rst> does not have a driver.
-WARNING:HDLCompiler:634 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" Line 347: Net <tr_fifo_rst> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" Line 345: Net <rc_fifo_rst> does not have a driver.
+WARNING:HDLCompiler:634 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" Line 354: Net <tr_fifo_rst> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -308,16 +310,16 @@ Synthesizing Unit <top>.
     Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd".
 WARNING:Xst:647 - Input <WING_B> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <WING_C<15:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 473: Output port <CLK115200> of the instance <rs232c_clk_gen> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 488: Output port <FULL> of the instance <rc> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 503: Output port <FULL> of the instance <tr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 503: Output port <EMPTY> of the instance <tr> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 516: Output port <data_in_valid> of the instance <sdram> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 616: Output port <MSR_DATA> of the instance <cmd_exe> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 651: Output port <test_dout> of the instance <measure> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 651: Output port <rf_pulse> of the instance <measure> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 651: Output port <adc_sig> of the instance <measure> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 651: Output port <test_bit> of the instance <measure> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 490: Output port <CLK115200> of the instance <rs232c_clk_gen> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 507: Output port <FULL> of the instance <rc> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 522: Output port <FULL> of the instance <tr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 522: Output port <EMPTY> of the instance <tr> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 535: Output port <data_in_valid> of the instance <sdram> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 635: Output port <MSR_DATA> of the instance <cmd_exe> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 670: Output port <test_dout> of the instance <measure> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 670: Output port <rf_pulse> of the instance <measure> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 670: Output port <adc_sig> of the instance <measure> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\top.vhd" line 670: Output port <test_bit> of the instance <measure> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <rc_fifo_rst> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <tr_fifo_rst> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
@@ -330,8 +332,8 @@ Synthesizing Unit <clk_gen_rs232c>.
     Found 12-bit register for signal <cnt9600>.
     Found 1-bit register for signal <CLK9600>.
     Found 12-bit register for signal <cnt115200>.
-    Found 12-bit adder for signal <_n0022> created at line 44.
-    Found 12-bit adder for signal <_n0025> created at line 53.
+    Found 12-bit adder for signal <_n0025> created at line 44.
+    Found 12-bit adder for signal <_n0022> created at line 53.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  26 D-type flip-flop(s).
@@ -458,7 +460,7 @@ Synthesizing Unit <SDRAM_ctrl>.
     | Encoding           | user                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <r_rf_counter[31]_GND_23_o_add_21_OUT> created at line 386.
+    Found 32-bit adder for signal <r_rf_counter[31]_GND_19_o_add_21_OUT> created at line 386.
     Found 15-bit subtractor for signal <n_init_counter> created at line 290.
     Found 1-bit tristate buffer for signal <sdram_dq<15>> created at line 348
     Found 1-bit tristate buffer for signal <sdram_dq<14>> created at line 348
@@ -662,16 +664,16 @@ Synthesizing Unit <state_machine>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <recieve_cnt[31]_GND_64_o_add_140_OUT> created at line 220.
-    Found 32-bit adder for signal <addr_cnt[31]_GND_64_o_add_478_OUT> created at line 342.
-    Found 32-bit adder for signal <exe_data_cnt[31]_GND_64_o_add_671_OUT> created at line 385.
-    Found 5-bit subtractor for signal <GND_64_o_addr_cnt[31]_sub_344_OUT<4:0>> created at line 335.
-    Found 6-bit subtractor for signal <GND_64_o_exe_data_cnt[31]_sub_541_OUT<5:0>> created at line 384.
+    Found 32-bit adder for signal <recieve_cnt[31]_GND_60_o_add_140_OUT> created at line 220.
+    Found 32-bit adder for signal <addr_cnt[31]_GND_60_o_add_478_OUT> created at line 342.
+    Found 32-bit adder for signal <exe_data_cnt[31]_GND_60_o_add_671_OUT> created at line 385.
+    Found 5-bit subtractor for signal <GND_60_o_addr_cnt[31]_sub_344_OUT<4:0>> created at line 335.
+    Found 6-bit subtractor for signal <GND_60_o_exe_data_cnt[31]_sub_541_OUT<5:0>> created at line 384.
     Found 64x4-bit Read Only RAM for signal <_n4107>
-    Found 1-bit 5-to-1 multiplexer for signal <GND_64_o_REC_AC[5]_Mux_369_o> created at line 335.
-    Found 1-bit 5-to-1 multiplexer for signal <GND_64_o_REC_AC[5]_Mux_457_o> created at line 340.
+    Found 1-bit 5-to-1 multiplexer for signal <GND_60_o_REC_AC[5]_Mux_369_o> created at line 335.
+    Found 1-bit 5-to-1 multiplexer for signal <GND_60_o_REC_AC[5]_Mux_457_o> created at line 340.
     Found 1-bit 7-to-1 multiplexer for signal <state[2]_X_55_o_Mux_958_o> created at line 177.
-    Found 32-bit comparator greater for signal <recieve_cnt[31]_GND_64_o_LessThan_8_o> created at line 197
+    Found 32-bit comparator greater for signal <recieve_cnt[31]_GND_60_o_LessThan_8_o> created at line 197
     Summary:
 	inferred   1 RAM(s).
 	inferred   5 Adder/Subtractor(s).
@@ -800,10 +802,10 @@ Unit <command_execute> synthesized.
 
 Synthesizing Unit <just_measurement>.
     Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd".
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 288: Output port <test_pin> of the instance <fetch> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 325: Output port <msr_allcomp> of the instance <count_time> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 325: Output port <dds_start> of the instance <count_time> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 325: Output port <dds_fin> of the instance <count_time> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 293: Output port <test_pin> of the instance <fetch> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 330: Output port <msr_allcomp> of the instance <count_time> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 330: Output port <dds_start> of the instance <count_time> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\just_measurement.vhd" line 330: Output port <dds_fin> of the instance <count_time> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <test_dout<63:16>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <rf_pulse> is used but never assigned. This sourceless signal will be automatically connected to value GND.
 WARNING:Xst:653 - Signal <adc_sig> is used but never assigned. This sourceless signal will be automatically connected to value GND.
@@ -855,8 +857,8 @@ WARNING:Xst:653 - Signal <test_pin> is used but never assigned. This sourceless 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 20-bit adder for signal <p_addr[19]_GND_69_o_add_2_OUT> created at line 165.
-    Found 64-bit subtractor for signal <GND_69_o_GND_69_o_sub_41_OUT<63:0>> created at line 242.
+    Found 20-bit adder for signal <p_addr[19]_GND_65_o_add_2_OUT> created at line 165.
+    Found 64-bit subtractor for signal <GND_65_o_GND_65_o_sub_41_OUT<63:0>> created at line 242.
     Found 20-bit comparator equal for signal <p_addr[19]_end_adr[19]_equal_6_o> created at line 178
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -868,7 +870,6 @@ Unit <data_fetch> synthesized.
 
 Synthesizing Unit <data_decode>.
     Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\data_decode.vhd".
-WARNING:Xst:647 - Input <msr_fin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <p_d_type>.
     Found 4-bit register for signal <p_change_counter>.
     Found 4-bit register for signal <p_patt_counter>.
@@ -878,7 +879,7 @@ WARNING:Xst:647 - Input <msr_fin> is never used. This port will be preserved and
     Found 1-bit register for signal <p_d_en>.
     Found 1-bit register for signal <p_d_fin_m>.
     Found 1-bit register for signal <p_d_fin_d>.
-    Found 1-bit register for signal <p_c_end>.
+    Found 1-bit register for signal <p_m_fin>.
     Found 1-bit register for signal <p_loading>.
 INFO:Xst:1799 - State cycle_end is never reached in FSM <p_state>.
     Found finite state machine <FSM_9> for signal <p_state>.
@@ -908,9 +909,9 @@ INFO:Xst:1799 - State cycle_end is never reached in FSM <p_state>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 4-bit adder for signal <p_change_counter[3]_GND_71_o_add_18_OUT> created at line 177.
-    Found 4-bit adder for signal <p_patt_counter[3]_GND_71_o_add_31_OUT> created at line 186.
-    Found 8x4-bit Read Only RAM for signal <_n0256>
+    Found 4-bit adder for signal <p_change_counter[3]_GND_67_o_add_18_OUT> created at line 177.
+    Found 4-bit adder for signal <p_patt_counter[3]_GND_67_o_add_31_OUT> created at line 186.
+    Found 8x4-bit Read Only RAM for signal <_n0258>
     Found 1-bit 4-to-1 multiplexer for signal <n_loading> created at line 194.
     Summary:
 	inferred   1 RAM(s).
@@ -945,7 +946,7 @@ WARNING:Xst:647 - Input <msr_fin> is never used. This port will be preserved and
     Found 1-bit register for signal <dst_5>.
     Found 1-bit register for signal <dst_6>.
     Found 1-bit register for signal <dst_7>.
-    Found 32-bit adder for signal <counter[31]_GND_73_o_add_25_OUT> created at line 238.
+    Found 32-bit adder for signal <counter[31]_GND_69_o_add_25_OUT> created at line 238.
     Found 32-bit comparator equal for signal <counter[31]_p_t_1[31]_equal_5_o> created at line 160
     Found 32-bit comparator equal for signal <counter[31]_p_t_2[31]_equal_8_o> created at line 171
     Found 32-bit comparator equal for signal <counter[31]_p_t_3[31]_equal_11_o> created at line 182
@@ -1009,7 +1010,7 @@ Synthesizing Unit <DDS_data_drive>.
     Found 40-bit register for signal <d_drive_26>.
     Found 40-bit register for signal <d_drive_27>.
     Found 40-bit register for signal <d_drive_28>.
-    Found 4-bit adder for signal <counter[3]_GND_76_o_add_59_OUT> created at line 277.
+    Found 4-bit adder for signal <counter[3]_GND_72_o_add_59_OUT> created at line 277.
 WARNING:Xst:737 - Found 1-bit latch for signal <d_out_1<39>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <d_out_1<38>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <d_out_1<37>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -1101,6 +1102,7 @@ Unit <DDS_data_drive> synthesized.
 
 Synthesizing Unit <AD9851_ctrl>.
     Related source file is "E:\hoshino_Data\SotsuKen\ISE\myinteg100\src\AD9851_ctrl.vhd".
+WARNING:Xst:647 - Input <clk_2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <p_c_w>.
     Found 7-bit register for signal <state_p>.
     Found 1-bit register for signal <p_data_set>.
@@ -1179,8 +1181,8 @@ Synthesizing Unit <string_send>.
     Found 1-bit register for signal <state>.
     Found 32-bit register for signal <index>.
     Found 6-bit register for signal <AC_OUT>.
-    Found 32-bit adder for signal <index[31]_GND_205_o_add_4_OUT> created at line 104.
-    Found 32-bit subtractor for signal <LEN[31]_GND_205_o_sub_3_OUT<31:0>> created at line 99.
+    Found 32-bit adder for signal <index[31]_GND_201_o_add_4_OUT> created at line 104.
+    Found 32-bit subtractor for signal <LEN[31]_GND_201_o_sub_3_OUT<31:0>> created at line 99.
     Found 6-bit 64-to-1 multiplexer for signal <index[5]_STR[63][5]_wide_mux_0_OUT> created at line 94.
     Found 32-bit comparator equal for signal <LEN[31]_index[31]_equal_4_o> created at line 99
     Summary:
@@ -1407,6 +1409,15 @@ WARNING:Xst:2677 - Node <p_t_7_59> of sequential type is unconnected in block <c
 WARNING:Xst:2677 - Node <p_t_7_60> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_7_61> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_7_62> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_54> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_55> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_56> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_57> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_58> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_59> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_60> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_61> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_5_62> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_1_54> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_1_55> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_1_56> of sequential type is unconnected in block <count_time>.
@@ -1425,15 +1436,6 @@ WARNING:Xst:2677 - Node <p_t_2_59> of sequential type is unconnected in block <c
 WARNING:Xst:2677 - Node <p_t_2_60> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_2_61> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_2_62> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_3_54> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_3_55> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_3_56> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_3_57> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_3_58> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_3_59> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_3_60> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_3_61> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_3_62> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_54> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_55> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_56> of sequential type is unconnected in block <count_time>.
@@ -1443,6 +1445,15 @@ WARNING:Xst:2677 - Node <p_t_6_59> of sequential type is unconnected in block <c
 WARNING:Xst:2677 - Node <p_t_6_60> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_61> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_6_62> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_3_54> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_3_55> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_3_56> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_3_57> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_3_58> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_3_59> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_3_60> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_3_61> of sequential type is unconnected in block <count_time>.
+WARNING:Xst:2677 - Node <p_t_3_62> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_4_54> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_4_55> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_4_56> of sequential type is unconnected in block <count_time>.
@@ -1452,15 +1463,6 @@ WARNING:Xst:2677 - Node <p_t_4_59> of sequential type is unconnected in block <c
 WARNING:Xst:2677 - Node <p_t_4_60> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_4_61> of sequential type is unconnected in block <count_time>.
 WARNING:Xst:2677 - Node <p_t_4_62> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_54> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_55> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_56> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_57> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_58> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_59> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_60> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_61> of sequential type is unconnected in block <count_time>.
-WARNING:Xst:2677 - Node <p_t_5_62> of sequential type is unconnected in block <count_time>.
 
 Synthesizing (advanced) Unit <SDRAM_ctrl>.
 The following registers are absorbed into counter <r_init_counter>: 1 register on signal <r_init_counter>.
@@ -1473,7 +1475,7 @@ Unit <clk_gen_rs232c> synthesized (advanced).
 
 Synthesizing (advanced) Unit <data_decode>.
 The following registers are absorbed into counter <p_patt_counter>: 1 register on signal <p_patt_counter>.
-INFO:Xst:3217 - HDL ADVISOR - Register <p_d_type> currently described with an asynchronous reset, could be combined with distributed RAM <Mram__n0256> for implementation on block RAM resources if you made this reset synchronous instead.
+INFO:Xst:3217 - HDL ADVISOR - Register <p_d_type> currently described with an asynchronous reset, could be combined with distributed RAM <Mram__n0258> for implementation on block RAM resources if you made this reset synchronous instead.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -1545,6 +1547,15 @@ WARNING:Xst:2677 - Node <p_t_7_59> of sequential type is unconnected in block <m
 WARNING:Xst:2677 - Node <p_t_7_60> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_7_61> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_7_62> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_54> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_55> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_56> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_57> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_58> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_59> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_60> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_61> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_5_62> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_1_54> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_1_55> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_1_56> of sequential type is unconnected in block <master_counter>.
@@ -1563,15 +1574,6 @@ WARNING:Xst:2677 - Node <p_t_2_59> of sequential type is unconnected in block <m
 WARNING:Xst:2677 - Node <p_t_2_60> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_2_61> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_2_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_3_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_3_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_3_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_3_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_3_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_3_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_3_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_3_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_3_62> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_54> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_55> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_56> of sequential type is unconnected in block <master_counter>.
@@ -1581,6 +1583,15 @@ WARNING:Xst:2677 - Node <p_t_6_59> of sequential type is unconnected in block <m
 WARNING:Xst:2677 - Node <p_t_6_60> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_61> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_6_62> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_3_54> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_3_55> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_3_56> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_3_57> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_3_58> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_3_59> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_3_60> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_3_61> of sequential type is unconnected in block <master_counter>.
+WARNING:Xst:2677 - Node <p_t_3_62> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_4_54> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_4_55> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_4_56> of sequential type is unconnected in block <master_counter>.
@@ -1590,15 +1601,6 @@ WARNING:Xst:2677 - Node <p_t_4_59> of sequential type is unconnected in block <m
 WARNING:Xst:2677 - Node <p_t_4_60> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_4_61> of sequential type is unconnected in block <master_counter>.
 WARNING:Xst:2677 - Node <p_t_4_62> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_54> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_55> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_56> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_57> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_58> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_59> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_60> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_61> of sequential type is unconnected in block <master_counter>.
-WARNING:Xst:2677 - Node <p_t_5_62> of sequential type is unconnected in block <master_counter>.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -2068,7 +2070,6 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RESULT_34_0> has a 
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RESULT_34_2> has a constant value of 0 in block <command_execute>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RESULT_34_4> has a constant value of 0 in block <command_execute>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <RESULT_35_0> has a constant value of 0 in block <command_execute>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <p_c_end> (without init value) has a constant value of 0 in block <data_decode>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <p_rst_pend> (without init value) has a constant value of 0 in block <AD9851_ctrl>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <send_rq> in Unit <transfer> is equivalent to the following FF/Latch, which will be removed : <fifo_rd_en> 
 INFO:Xst:2261 - The FF/Latch <RESULT_19_1> in Unit <command_execute> is equivalent to the following 134 FFs/Latches, which will be removed : <RESULT_19_3> <RESULT_19_5> <RESULT_20_1> <RESULT_20_3> <RESULT_20_5> <RESULT_21_1> <RESULT_21_3> <RESULT_21_5> <RESULT_24_1> <RESULT_24_3> <RESULT_24_5> <RESULT_22_1> <RESULT_22_3> <RESULT_22_5> <RESULT_23_1> <RESULT_23_3> <RESULT_23_5> <RESULT_25_1> <RESULT_25_3> <RESULT_25_5> <RESULT_26_1> <RESULT_26_3> <RESULT_26_5> <RESULT_27_1> <RESULT_27_3> <RESULT_27_5> <RESULT_28_1> <RESULT_28_3> <RESULT_28_5> <RESULT_29_1> <RESULT_29_3> <RESULT_29_5> <RESULT_30_1> <RESULT_30_3> <RESULT_30_5> <RESULT_31_1> <RESULT_31_3> <RESULT_31_5> <RESULT_32_1> <RESULT_32_3> <RESULT_32_5> <RESULT_33_1> <RESULT_33_3> <RESULT_33_5> <RESULT_34_1> <RESULT_34_3> <RESULT_34_5> <RESULT_35_1> <RESULT_35_3> <RESULT_35_5> <RESULT_36_1> <RESULT_36_3> <RESULT_36_5> <RESULT_37_1> <RESULT_37_3> <RESULT_37_5> <RESULT_38_1> <RESULT_38_3> <RESULT_38_5> <RESULT_39_1> <RESULT_39_3> <RESULT_39_5> <RESULT_40_1>
@@ -2312,6 +2313,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RESULT_13_4> (witho
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RESULT_14_4> (without init value) has a constant value of 0 in block <command_execute>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RESULT_15_4> (without init value) has a constant value of 0 in block <command_execute>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <p_d_type_3> (without init value) has a constant value of 0 in block <data_decode>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance clk_gen/pll_base_inst in unit clk_gen/pll_base_inst of type PLL_BASE has been replaced by PLL_ADV
 INFO:Xst:2261 - The FF/Latch <RESULT_16_1> in Unit <command_execute> is equivalent to the following 4 FFs/Latches, which will be removed : <RESULT_12_5> <RESULT_13_5> <RESULT_14_5> <RESULT_15_5> 
 INFO:Xst:2261 - The FF/Latch <RESULT_16_2> in Unit <command_execute> is equivalent to the following FF/Latch, which will be removed : <RESULT_17_0> 
 WARNING:Xst:2677 - Node <sdram/r_data_in_valid> of sequential type is unconnected in block <top>.
@@ -2599,6 +2601,7 @@ WARNING:Xst:2677 - Node <measure/decode/p_data_57> of sequential type is unconne
 WARNING:Xst:2677 - Node <measure/decode/p_data_56> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <measure/decode/p_data_55> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <measure/decode/p_data_54> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <measure/decode/p_m_fin> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <rs232c_clk_gen/cnt115200_11> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <rs232c_clk_gen/cnt115200_10> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <rs232c_clk_gen/cnt115200_9> of sequential type is unconnected in block <top>.
@@ -2612,31 +2615,6 @@ WARNING:Xst:2677 - Node <rs232c_clk_gen/cnt115200_2> of sequential type is uncon
 WARNING:Xst:2677 - Node <rs232c_clk_gen/cnt115200_1> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <rs232c_clk_gen/cnt115200_0> of sequential type is unconnected in block <top>.
 WARNING:Xst:2677 - Node <rs232c_clk_gen/CLK115200> of sequential type is unconnected in block <top>.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_10> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_11> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_12> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_13> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_14> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_15> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_16> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_17> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_18> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_19> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_20> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_21> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_22> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_23> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_24> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_25> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_26> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_27> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_28> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_29> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_30> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <st_machine/recieve_cnt_31> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <st_machine/STR_16_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <st_machine/STR_14_4> 
 INFO:Xst:2261 - The FF/Latch <st_machine/STR_16_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <st_machine/STR_14_5> 
 INFO:Xst:2261 - The FF/Latch <write_sec/p_req> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <write_sec/p_state_FSM_FFd1> 
@@ -2658,24 +2636,23 @@ INFO:Xst:2261 - The FF/Latch <st_machine/STR_62_5> in Unit <top> is equivalent t
    <st_machine/STR_50_1> <st_machine/STR_49_5> <st_machine/STR_49_3> <st_machine/STR_49_1> <st_machine/STR_48_5> <st_machine/STR_48_3> <st_machine/STR_48_1> <st_machine/STR_47_5> <st_machine/STR_47_3> <st_machine/STR_47_1> <st_machine/STR_46_5> <st_machine/STR_46_3> <st_machine/STR_46_1> <st_machine/STR_45_5> <st_machine/STR_45_3> <st_machine/STR_45_1> <st_machine/STR_43_5> <st_machine/STR_43_3> <st_machine/STR_43_1> <st_machine/STR_42_5> <st_machine/STR_42_3> <st_machine/STR_42_1> <st_machine/STR_44_5> <st_machine/STR_44_3> <st_machine/STR_44_1> <st_machine/STR_41_5> <st_machine/STR_41_3> <st_machine/STR_41_1> <st_machine/STR_40_5> <st_machine/STR_40_3> <st_machine/STR_40_1> <st_machine/STR_38_5> <st_machine/STR_38_3> <st_machine/STR_38_1> <st_machine/STR_37_5> <st_machine/STR_37_3> <st_machine/STR_37_1> <st_machine/STR_39_5> <st_machine/STR_39_3> <st_machine/STR_39_1> <st_machine/STR_36_5> <st_machine/STR_36_3> <st_machine/STR_36_1> <st_machine/STR_35_5> <st_machine/STR_35_3> <st_machine/STR_35_1>
    <st_machine/STR_33_5> <st_machine/STR_33_3> <st_machine/STR_33_1> <st_machine/STR_32_5> <st_machine/STR_32_3> <st_machine/STR_32_1> <st_machine/STR_34_5> <st_machine/STR_34_3> <st_machine/STR_34_1> <st_machine/STR_31_5> <st_machine/STR_31_3> <st_machine/STR_31_1> <st_machine/STR_30_5> <st_machine/STR_30_3> <st_machine/STR_30_1> <st_machine/STR_29_5> <st_machine/STR_29_3> <st_machine/STR_29_1> <st_machine/STR_28_5> <st_machine/STR_28_3> <st_machine/STR_28_1> <st_machine/STR_27_5> <st_machine/STR_27_3> <st_machine/STR_27_1> <st_machine/STR_26_5> <st_machine/STR_26_3> <st_machine/STR_26_1> 
 INFO:Xst:2261 - The FF/Latch <st_machine/STR_2_5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <st_machine/STR_1_5> 
-INFO:Xst:3203 - The FF/Latch <str_send/finish_inner> in Unit <top> is the opposite to the following FF/Latch, which will be removed : <str_send/state> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd52> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd52> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd5-In and measure/DDS1/state_p_FSM_FFd5-In measure/DDS1/state_p_FSM_FFd5-In signal will be lost.
-INFO:Xst:2261 - The FF/Latch <measure/DDS2/p_rst_set> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/p_rst_set> 
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd5> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd5> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd5 and measure/DDS1/state_p_FSM_FFd5 measure/DDS1/state_p_FSM_FFd5 signal will be lost.
+INFO:Xst:2261 - The FF/Latch <measure/DDS2/p_rst_set> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/p_rst_set> 
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd51> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd51> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd4-In and measure/DDS1/state_p_FSM_FFd4-In measure/DDS1/state_p_FSM_FFd4-In signal will be lost.
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd4> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd4> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd4 and measure/DDS1/state_p_FSM_FFd4 measure/DDS1/state_p_FSM_FFd4 signal will be lost.
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd50> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd50> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd3-In and measure/DDS1/state_p_FSM_FFd3-In measure/DDS1/state_p_FSM_FFd3-In signal will be lost.
-INFO:Xst:2261 - The FF/Latch <measure/DDS2/p_w_clk_set> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/p_w_clk_set> 
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd3> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd3 and measure/DDS1/state_p_FSM_FFd3 measure/DDS1/state_p_FSM_FFd3 signal will be lost.
+INFO:Xst:2261 - The FF/Latch <measure/DDS2/p_w_clk_set> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/p_w_clk_set> 
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd49> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd49> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd2-In and measure/DDS1/state_p_FSM_FFd2-In measure/DDS1/state_p_FSM_FFd2-In signal will be lost.
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd2> 
@@ -2686,7 +2663,7 @@ INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd1> in Unit <top> is eq
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd1 and measure/DDS1/state_p_FSM_FFd1 measure/DDS1/state_p_FSM_FFd1 signal will be lost.
 INFO:Xst:2261 - The FF/Latch <measure/DDS2/state_p_FSM_FFd47> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <measure/DDS1/state_p_FSM_FFd47> 
 WARNING:Xst:638 - in unit top Conflict on KEEP property on signal measure/DDS2/state_p_FSM_FFd47 and measure/DDS1/state_p_FSM_FFd47 measure/DDS1/state_p_FSM_FFd47 signal will be lost.
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 87.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 86.
 WARNING:Xst:1426 - The value init of the FF/Latch measure/DDS2/state_p_FSM_FFd55_LD hinder the constant cleaning in the block top.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch sdram/r_rf_counter_31_LD hinder the constant cleaning in the block top.
@@ -2733,8 +2710,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2723
- Flip-Flops                                            : 2723
+# Registers                                            : 2749
+ Flip-Flops                                            : 2749
 
 =========================================================================
 
@@ -2757,45 +2734,46 @@ Top Level Output File Name         : top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3912
+# BELS                             : 3996
 #      GND                         : 5
-#      INV                         : 48
-#      LUT1                        : 194
-#      LUT2                        : 209
-#      LUT3                        : 860
+#      INV                         : 47
+#      LUT1                        : 195
+#      LUT2                        : 234
+#      LUT3                        : 862
 #      LUT4                        : 360
-#      LUT5                        : 574
-#      LUT6                        : 832
-#      MUXCY                       : 494
-#      MUXF7                       : 15
+#      LUT5                        : 579
+#      LUT6                        : 836
+#      MUXCY                       : 518
+#      MUXF7                       : 14
 #      VCC                         : 3
-#      XORCY                       : 318
-# FlipFlops/Latches                : 3207
+#      XORCY                       : 343
+# FlipFlops/Latches                : 3233
 #      FD                          : 28
-#      FD_1                        : 35
+#      FD_1                        : 34
 #      FDC                         : 236
 #      FDC_1                       : 105
 #      FDCE                        : 1050
-#      FDE                         : 1315
+#      FDE                         : 1340
 #      FDE_1                       : 14
 #      FDP                         : 33
 #      FDP_1                       : 3
 #      FDPE                        : 6
 #      FDR                         : 47
-#      FDR_1                       : 151
+#      FDR_1                       : 152
+#      FDS_1                       : 1
 #      LD                          : 183
 #      ODDR2                       : 1
 # RAMS                             : 2
 #      RAMB8BWER                   : 2
-# Clock Buffers                    : 7
-#      BUFG                        : 7
+# Clock Buffers                    : 8
+#      BUFG                        : 8
 # IO Buffers                       : 60
 #      IBUF                        : 1
 #      IBUFG                       : 2
 #      IOBUF                       : 16
 #      OBUF                        : 41
-# DCMs                             : 1
-#      DCM_SP                      : 1
+# Others                           : 1
+#      PLL_ADV                     : 1
 
 Device utilization summary:
 ---------------------------
@@ -2804,16 +2782,16 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            3155  out of  11440    27%  
- Number of Slice LUTs:                 3077  out of   5720    53%  
-    Number used as Logic:              3077  out of   5720    53%  
+ Number of Slice Registers:            3181  out of  11440    27%  
+ Number of Slice LUTs:                 3113  out of   5720    54%  
+    Number used as Logic:              3113  out of   5720    54%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   4385
-   Number with an unused Flip Flop:    1230  out of   4385    28%  
-   Number with an unused LUT:          1308  out of   4385    29%  
-   Number of fully used LUT-FF pairs:  1847  out of   4385    42%  
-   Number of unique control sets:       123
+ Number of LUT Flip Flop pairs used:   4267
+   Number with an unused Flip Flop:    1086  out of   4267    25%  
+   Number with an unused LUT:          1154  out of   4267    27%  
+   Number of fully used LUT-FF pairs:  2027  out of   4267    47%  
+   Number of unique control sets:       126
 
 IO Utilization: 
  Number of IOs:                          91
@@ -2823,7 +2801,8 @@ IO Utilization:
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                1  out of     32     3%  
     Number using Block RAM only:          1
- Number of BUFG/BUFGCTRLs:                7  out of     16    43%  
+ Number of BUFG/BUFGCTRLs:                8  out of     16    50%  
+ Number of PLL_ADVs:                      1  out of      2    50%  
 
 ---------------------------
 Partition Resource Summary:
@@ -2846,13 +2825,14 @@ Clock Information:
 -------------------------------------------------------------------------------------------------------------+-------------------------------------+-------+
 Clock Signal                                                                                                 | Clock buffer(FF name)               | Load  |
 -------------------------------------------------------------------------------------------------------------+-------------------------------------+-------+
-CLK                                                                                                          | DCM_SP:CLKFX                        | 2847  |
-sdram/statep[8]_GND_45_o_Mux_84_o(sdram/Mmux_statep[8]_GND_45_o_Mux_84_o11:O)                                | NONE(*)(sdram/n_data_w_0)           | 16    |
+clk_gen/pll_base_inst/CLKOUT0                                                                                | BUFG                                | 2761  |
+sdram/statep[8]_GND_41_o_Mux_84_o(sdram/Mmux_statep[8]_GND_41_o_Mux_84_o11:O)                                | NONE(*)(sdram/n_data_w_0)           | 16    |
 rs232c_clk_gen/CLK9600                                                                                       | BUFG                                | 169   |
 read_sec/p_state_FSM_FFd2                                                                                    | NONE(read_sec/rd_fin)               | 1     |
 measure/decode/p_data_63                                                                                     | NONE(measure/led_blink1)            | 1     |
-measure/data_save/GND_76_o_PWR_57_o_MUX_1708_o(measure/data_save/GND_76_o_PWR_57_o_MUX_1708_o3:O)            | BUFG(*)(measure/data_save/d_out_2_0)| 41    |
-measure/data_save/GND_76_o_PWR_57_o_MUX_1371_o(measure/data_save/GND_76_o_PWR_57_o_MUX_1371_o:O)             | BUFG(*)(measure/data_save/d_out_1_1)| 40    |
+measure/data_save/GND_72_o_PWR_57_o_MUX_1708_o(measure/data_save/GND_72_o_PWR_57_o_MUX_1708_o3:O)            | BUFG(*)(measure/data_save/d_out_2_0)| 41    |
+measure/data_save/GND_72_o_PWR_57_o_MUX_1371_o(measure/data_save/GND_72_o_PWR_57_o_MUX_1371_o:O)             | BUFG(*)(measure/data_save/d_out_1_1)| 40    |
+clk_gen/pll_base_inst/CLKOUT2                                                                                | NONE(measure/DDS2/state_p_FSM_FFd6) | 112   |
 measure/DDS2/req_dds_p_rst_pend_AND_177_o(measure/DDS2/req_dds_p_rst_pend_AND_177_o1:O)                      | BUFG(*)(measure/DDS2/data32_1)      | 40    |
 measure/DDS1/req_dds_p_rst_pend_AND_177_o(measure/DDS1/req_dds_p_rst_pend_AND_177_o1:O)                      | BUFG(*)(measure/DDS1/data32_1)      | 40    |
 WING_C<0>                                                                                                    | IBUFG                               | 13    |
@@ -2873,7 +2853,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 46.844ns (Maximum Frequency: 21.348MHz)
+   Minimum period: 14.990ns (Maximum Frequency: 66.711MHz)
    Minimum input arrival time before clock: 2.873ns
    Maximum output required time after clock: 5.347ns
    Maximum combinational path delay: No path found
@@ -2883,15 +2863,15 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 46.844ns (frequency: 21.348MHz)
-  Total number of paths / destination ports: 164364 / 6618
+Timing constraint: Default period analysis for Clock 'clk_gen/pll_base_inst/CLKOUT0'
+  Clock period: 14.990ns (frequency: 66.711MHz)
+  Total number of paths / destination ports: 170532 / 6452
 -------------------------------------------------------------------------
 Delay:               7.495ns (Levels of Logic = 5)
   Source:            rc/fifo_rc/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram (RAM)
   Destination:       st_machine/crlf_obs/cr_flag (FF)
-  Source Clock:      CLK rising 3.1X
-  Destination Clock: CLK falling 3.1X
+  Source Clock:      clk_gen/pll_base_inst/CLKOUT0 rising
+  Destination Clock: clk_gen/pll_base_inst/CLKOUT0 falling
 
   Data Path: rc/fifo_rc/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SDP.SIMPLE_PRIM9.ram to st_machine/crlf_obs/cr_flag
                                 Gate     Net
@@ -2936,10 +2916,10 @@ Delay:               4.426ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'measure/decode/p_data_63'
-  Clock period: 2.318ns (frequency: 431.406MHz)
+  Clock period: 2.278ns (frequency: 438.982MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Delay:               2.318ns (Levels of Logic = 1)
+Delay:               2.278ns (Levels of Logic = 1)
   Source:            measure/led_blink1 (LATCH)
   Destination:       measure/led_blink1 (LATCH)
   Source Clock:      measure/decode/p_data_63 falling
@@ -2949,12 +2929,38 @@ Delay:               2.318ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               3   0.581   0.765  measure/led_blink1 (measure/led_blink1)
-     INV:I->O              1   0.255   0.681  measure/led_blink1_INV_246_o1_INV_0 (measure/led_blink1_INV_246_o)
+     LD:G->Q               2   0.581   0.725  measure/led_blink1 (measure/led_blink1)
+     INV:I->O              1   0.255   0.681  measure/led_blink1_INV_247_o1_INV_0 (measure/led_blink1_INV_247_o)
      LD:D                      0.036          measure/led_blink1
     ----------------------------------------
-    Total                      2.318ns (0.872ns logic, 1.446ns route)
-                                       (37.6% logic, 62.4% route)
+    Total                      2.278ns (0.872ns logic, 1.406ns route)
+                                       (38.3% logic, 61.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_gen/pll_base_inst/CLKOUT2'
+  Clock period: 6.511ns (frequency: 153.586MHz)
+  Total number of paths / destination ports: 367 / 111
+-------------------------------------------------------------------------
+Delay:               6.511ns (Levels of Logic = 5)
+  Source:            measure/DDS2/state_p_FSM_FFd55_P (FF)
+  Destination:       measure/DDS2/p_rec (FF)
+  Source Clock:      clk_gen/pll_base_inst/CLKOUT2 falling
+  Destination Clock: clk_gen/pll_base_inst/CLKOUT2 falling
+
+  Data Path: measure/DDS2/state_p_FSM_FFd55_P to measure/DDS2/p_rec
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP_1:C->Q            4   0.525   0.804  measure/DDS2/state_p_FSM_FFd55_P (measure/DDS2/state_p_FSM_FFd55_P)
+     LUT3:I2->O            3   0.254   1.042  measure/DDS2/state_p_FSM_FFd551 (measure/DDS2/state_p_FSM_FFd55)
+     LUT6:I2->O            1   0.254   0.682  measure/DDS2/state_p__n0657<3>2 (measure/DDS2/state_p__n0657<3>1)
+     LUT6:I5->O            2   0.254   1.156  measure/DDS2/state_p__n0657<3>3 (measure/DDS2/n_c_w)
+     LUT5:I0->O            1   0.254   0.958  measure/DDS2/state_p__n0527_inv5 (measure/DDS2/state_p__n0527_inv4)
+     LUT6:I2->O            1   0.254   0.000  measure/DDS2/p_rec_rstpot (measure/DDS2/p_rec_rstpot)
+     FDC_1:D                   0.074          measure/DDS2/p_rec
+    ----------------------------------------
+    Total                      6.511ns (1.869ns logic, 4.642ns route)
+                                       (28.7% logic, 71.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'WING_C<0>'
@@ -2972,30 +2978,30 @@ Delay:               6.028ns (Levels of Logic = 11)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              2   0.525   0.725  rs232c_clk_gen/cnt9600_0 (rs232c_clk_gen/cnt9600_0)
-     INV:I->O              1   0.255   0.000  rs232c_clk_gen/Madd__n0025_lut<0>_INV_0 (rs232c_clk_gen/Madd__n0025_lut<0>)
-     MUXCY:S->O            1   0.215   0.000  rs232c_clk_gen/Madd__n0025_cy<0> (rs232c_clk_gen/Madd__n0025_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0025_cy<1> (rs232c_clk_gen/Madd__n0025_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0025_cy<2> (rs232c_clk_gen/Madd__n0025_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0025_cy<3> (rs232c_clk_gen/Madd__n0025_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0025_cy<4> (rs232c_clk_gen/Madd__n0025_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0025_cy<5> (rs232c_clk_gen/Madd__n0025_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0025_cy<6> (rs232c_clk_gen/Madd__n0025_cy<6>)
-     XORCY:CI->O           1   0.206   0.790  rs232c_clk_gen/Madd__n0025_xor<7> (rs232c_clk_gen/_n0025<4>)
-     LUT2:I0->O            1   0.250   1.112  rs232c_clk_gen/_n0052<0>2 (rs232c_clk_gen/_n0052<0>1)
-     LUT6:I1->O           13   0.254   1.097  rs232c_clk_gen/_n0052<0>3 (rs232c_clk_gen/_n0052)
+     INV:I->O              1   0.255   0.000  rs232c_clk_gen/Madd__n0022_lut<0>_INV_0 (rs232c_clk_gen/Madd__n0022_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  rs232c_clk_gen/Madd__n0022_cy<0> (rs232c_clk_gen/Madd__n0022_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0022_cy<1> (rs232c_clk_gen/Madd__n0022_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0022_cy<2> (rs232c_clk_gen/Madd__n0022_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0022_cy<3> (rs232c_clk_gen/Madd__n0022_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0022_cy<4> (rs232c_clk_gen/Madd__n0022_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0022_cy<5> (rs232c_clk_gen/Madd__n0022_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  rs232c_clk_gen/Madd__n0022_cy<6> (rs232c_clk_gen/Madd__n0022_cy<6>)
+     XORCY:CI->O           1   0.206   0.790  rs232c_clk_gen/Madd__n0022_xor<7> (rs232c_clk_gen/_n0022<4>)
+     LUT2:I0->O            1   0.250   1.112  rs232c_clk_gen/_n0038<0>2 (rs232c_clk_gen/_n0038<0>1)
+     LUT6:I1->O           13   0.254   1.097  rs232c_clk_gen/_n0038<0>3 (rs232c_clk_gen/_n0038)
      FDR:R                     0.459          rs232c_clk_gen/cnt9600_0
     ----------------------------------------
     Total                      6.028ns (2.304ns logic, 3.724ns route)
                                        (38.2% logic, 61.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_gen/pll_base_inst/CLKOUT0'
   Total number of paths / destination ports: 16 / 16
 -------------------------------------------------------------------------
 Offset:              2.083ns (Levels of Logic = 1)
   Source:            DRAM_DQ<15> (PAD)
   Destination:       sdram/captured_15 (FF)
-  Destination Clock: CLK falling 3.1X
+  Destination Clock: clk_gen/pll_base_inst/CLKOUT0 falling
 
   Data Path: DRAM_DQ<15> to sdram/captured_15
                                 Gate     Net
@@ -3028,59 +3034,59 @@ Offset:              2.873ns (Levels of Logic = 2)
                                        (57.0% logic, 43.0% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'measure/decode/p_data_63'
-  Total number of paths / destination ports: 2 / 2
--------------------------------------------------------------------------
-Offset:              4.258ns (Levels of Logic = 1)
-  Source:            measure/led_blink1 (LATCH)
-  Destination:       WING_A<15> (PAD)
-  Source Clock:      measure/decode/p_data_63 falling
-
-  Data Path: measure/led_blink1 to WING_A<15>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               3   0.581   0.765  measure/led_blink1 (measure/led_blink1)
-     OBUF:I->O                 2.912          WING_A_15_OBUF (WING_A<15>)
-    ----------------------------------------
-    Total                      4.258ns (3.493ns logic, 0.765ns route)
-                                       (82.0% logic, 18.0% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'measure/data_save/GND_76_o_PWR_57_o_MUX_1708_o'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'measure/data_save/GND_72_o_PWR_57_o_MUX_1708_o'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.174ns (Levels of Logic = 1)
   Source:            measure/data_save/d_out_2_0_1 (LATCH)
-  Destination:       WING_A<14> (PAD)
-  Source Clock:      measure/data_save/GND_76_o_PWR_57_o_MUX_1708_o falling
+  Destination:       WING_A<15> (PAD)
+  Source Clock:      measure/data_save/GND_72_o_PWR_57_o_MUX_1708_o falling
 
-  Data Path: measure/data_save/d_out_2_0_1 to WING_A<14>
+  Data Path: measure/data_save/d_out_2_0_1 to WING_A<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LD:G->Q               1   0.581   0.681  measure/data_save/d_out_2_0_1 (measure/data_save/d_out_2_0_1)
-     OBUF:I->O                 2.912          WING_A_14_OBUF (WING_A<14>)
+     OBUF:I->O                 2.912          WING_A_15_OBUF (WING_A<15>)
     ----------------------------------------
     Total                      4.174ns (3.493ns logic, 0.681ns route)
                                        (83.7% logic, 16.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 71 / 49
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_gen/pll_base_inst/CLKOUT0'
+  Total number of paths / destination ports: 57 / 41
 -------------------------------------------------------------------------
-Offset:              5.347ns (Levels of Logic = 2)
-  Source:            measure/DDS2/p_c_w (FF)
-  Destination:       WING_A<6> (PAD)
-  Source Clock:      CLK falling 3.1X
+Offset:              4.618ns (Levels of Logic = 1)
+  Source:            sdram/r_tristate (FF)
+  Destination:       DRAM_DQ<15> (PAD)
+  Source Clock:      clk_gen/pll_base_inst/CLKOUT0 rising
 
-  Data Path: measure/DDS2/p_c_w to WING_A<6>
+  Data Path: sdram/r_tristate to DRAM_DQ<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP_1:C->Q            3   0.525   0.994  measure/DDS2/p_c_w (measure/DDS2/p_c_w)
-     LUT3:I0->O            1   0.235   0.681  measure/DDS2/Mmux_w_clk11 (WING_A_6_OBUF)
-     OBUF:I->O                 2.912          WING_A_6_OBUF (WING_A<6>)
+     FDP:C->Q             16   0.525   1.181  sdram/r_tristate (sdram/r_tristate)
+     IOBUF:T->IO               2.912          DRAM_DQ_15_IOBUF (DRAM_DQ<15>)
+    ----------------------------------------
+    Total                      4.618ns (3.437ns logic, 1.181ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_gen/pll_base_inst/CLKOUT2'
+  Total number of paths / destination ports: 14 / 8
+-------------------------------------------------------------------------
+Offset:              5.347ns (Levels of Logic = 2)
+  Source:            measure/DDS1/p_c_w (FF)
+  Destination:       WING_A<2> (PAD)
+  Source Clock:      clk_gen/pll_base_inst/CLKOUT2 falling
+
+  Data Path: measure/DDS1/p_c_w to WING_A<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP_1:C->Q            3   0.525   0.994  measure/DDS1/p_c_w (measure/DDS1/p_c_w)
+     LUT3:I0->O            1   0.235   0.681  measure/DDS1/Mmux_w_clk11 (WING_A_2_OBUF)
+     OBUF:I->O                 2.912          WING_A_2_OBUF (WING_A<2>)
     ----------------------------------------
     Total                      5.347ns (3.672ns logic, 1.675ns route)
                                        (68.7% logic, 31.3% route)
@@ -3105,25 +3111,28 @@ Offset:              4.118ns (Levels of Logic = 1)
                                        (83.5% logic, 16.5% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'measure/decode/p_data_63'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.218ns (Levels of Logic = 1)
+  Source:            measure/led_blink1 (LATCH)
+  Destination:       LED (PAD)
+  Source Clock:      measure/decode/p_data_63 falling
+
+  Data Path: measure/led_blink1 to LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.581   0.725  measure/led_blink1 (measure/led_blink1)
+     OBUF:I->O                 2.912          LED_OBUF (LED)
+    ----------------------------------------
+    Total                      4.218ns (3.493ns logic, 0.725ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
-
-Clock to Setup on destination clock CLK
-----------------------------------------------------+---------+---------+---------+---------+
-                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------------+---------+---------+---------+---------+
-CLK                                                 |   11.690|    6.497|    7.495|         |
-cmd_exe/RST_OP                                      |         |    6.224|    6.776|         |
-measure/DDS1/req_dds_p_rst_pend_AND_177_o           |         |         |    2.754|         |
-measure/DDS2/req_dds_p_rst_pend_AND_177_o           |         |         |    2.754|         |
-measure/data_save/dds1_data[7]_dds1_data[7]_OR_288_o|         |         |    2.105|         |
-measure/data_save/dds2_data[7]_dds2_data[7]_OR_576_o|         |         |    2.105|         |
-read_sec/p_state_FSM_FFd2                           |         |         |    1.911|         |
-rs232c_clk_gen/CLK9600                              |    1.280|         |         |         |
-sdram/statep[8]_GND_45_o_Mux_84_o                   |         |    1.336|         |         |
-----------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock WING_C<0>
 ---------------+---------+---------+---------+---------+
@@ -3133,12 +3142,38 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 WING_C<0>      |    6.028|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock clk_gen/pll_base_inst/CLKOUT0
+---------------------------------+---------+---------+---------+---------+
+                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------+---------+---------+---------+---------+
+clk_gen/pll_base_inst/CLKOUT0    |   11.585|    6.089|    7.495|         |
+cmd_exe/RST_OP                   |         |    6.224|         |         |
+read_sec/p_state_FSM_FFd2        |         |         |    1.911|         |
+rs232c_clk_gen/CLK9600           |    1.280|         |         |         |
+sdram/statep[8]_GND_41_o_Mux_84_o|         |    1.336|         |         |
+---------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_gen/pll_base_inst/CLKOUT2
+----------------------------------------------------+---------+---------+---------+---------+
+                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------+---------+---------+---------+---------+
+clk_gen/pll_base_inst/CLKOUT0                       |         |         |    3.624|         |
+clk_gen/pll_base_inst/CLKOUT2                       |         |         |    6.511|         |
+cmd_exe/RST_OP                                      |         |         |    6.776|         |
+measure/DDS1/req_dds_p_rst_pend_AND_177_o           |         |         |    2.754|         |
+measure/DDS2/req_dds_p_rst_pend_AND_177_o           |         |         |    2.754|         |
+measure/data_save/dds1_data[7]_dds1_data[7]_OR_288_o|         |         |    2.105|         |
+measure/data_save/dds2_data[7]_dds2_data[7]_OR_576_o|         |         |    2.105|         |
+----------------------------------------------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock measure/DDS1/req_dds_p_rst_pend_AND_177_o
 ----------------------------------------------+---------+---------+---------+---------+
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-measure/data_save/GND_76_o_PWR_57_o_MUX_1371_o|         |         |    1.298|         |
+measure/data_save/GND_72_o_PWR_57_o_MUX_1371_o|         |         |    1.298|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock measure/DDS2/req_dds_p_rst_pend_AND_177_o
@@ -3146,85 +3181,87 @@ Clock to Setup on destination clock measure/DDS2/req_dds_p_rst_pend_AND_177_o
                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------+---------+---------+---------+---------+
-measure/data_save/GND_76_o_PWR_57_o_MUX_1708_o|         |         |    1.298|         |
+measure/data_save/GND_72_o_PWR_57_o_MUX_1708_o|         |         |    1.298|         |
 ----------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock measure/data_save/GND_76_o_PWR_57_o_MUX_1371_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |         |         |    9.257|         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock measure/data_save/GND_72_o_PWR_57_o_MUX_1371_o
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk_gen/pll_base_inst/CLKOUT0|         |         |    9.257|         |
+-----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock measure/data_save/GND_76_o_PWR_57_o_MUX_1708_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |         |         |    9.870|         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock measure/data_save/GND_72_o_PWR_57_o_MUX_1708_o
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk_gen/pll_base_inst/CLKOUT0|         |         |    9.870|         |
+-----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock measure/data_save/dds1_data[7]_dds1_data[7]_OR_288_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |         |         |    8.249|         |
----------------+---------+---------+---------+---------+
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk_gen/pll_base_inst/CLKOUT0|         |         |    8.249|         |
+clk_gen/pll_base_inst/CLKOUT2|         |         |    3.080|         |
+-----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock measure/data_save/dds2_data[7]_dds2_data[7]_OR_576_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |         |         |    8.244|         |
----------------+---------+---------+---------+---------+
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk_gen/pll_base_inst/CLKOUT0|         |         |    8.244|         |
+clk_gen/pll_base_inst/CLKOUT2|         |         |    2.730|         |
+-----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock measure/decode/p_data_63
 ------------------------+---------+---------+---------+---------+
                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------+---------+---------+---------+---------+
-measure/decode/p_data_63|         |         |    2.318|         |
+measure/decode/p_data_63|         |         |    2.278|         |
 ------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock read_sec/p_state_FSM_FFd2
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |    1.829|         |         |         |
----------------+---------+---------+---------+---------+
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk_gen/pll_base_inst/CLKOUT0|    1.829|         |         |         |
+-----------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rs232c_clk_gen/CLK9600
-----------------------+---------+---------+---------+---------+
-                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------+---------+---------+---------+---------+
-CLK                   |    1.280|         |         |         |
-rs232c_clk_gen/CLK9600|    3.452|    2.300|    4.426|         |
-----------------------+---------+---------+---------+---------+
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk_gen/pll_base_inst/CLKOUT0|    1.280|         |         |         |
+rs232c_clk_gen/CLK9600       |    3.452|    2.300|    4.426|         |
+-----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock sdram/statep[8]_GND_45_o_Mux_84_o
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-CLK            |         |         |    3.990|         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock sdram/statep[8]_GND_41_o_Mux_84_o
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk_gen/pll_base_inst/CLKOUT0|         |         |    3.990|         |
+-----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 33.00 secs
-Total CPU time to Xst completion: 33.05 secs
+Total REAL time to Xst completion: 32.00 secs
+Total CPU time to Xst completion: 31.98 secs
  
 --> 
 
-Total memory usage is 4620356 kilobytes
+Total memory usage is 4620364 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  996 (   0 filtered)
+Number of warnings :  973 (   0 filtered)
 Number of infos    :   82 (   0 filtered)
 

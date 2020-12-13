@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Nov 05 16:07:04 2020
+// Written by: Map P.20131013 on Fri Dec 11 13:49:33 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -98,6 +98,8 @@ COMP "DRAM_DQM<0>" LOCATE = SITE "P7" LEVEL 1;
 COMP "DRAM_DQM<1>" LOCATE = SITE "P17" LEVEL 1;
 PIN clk_gen/clkout1_buf_pin<1> = BEL "clk_gen/clkout1_buf" PINNAME O;
 PIN "clk_gen/clkout1_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN clk_gen/clkout2_buf_pin<1> = BEL "clk_gen/clkout2_buf" PINNAME O;
+PIN "clk_gen/clkout2_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "clk_gen/clkin1" PERIOD = 31.25 ns HIGH 50%;
 SCHEMATIC END;
 

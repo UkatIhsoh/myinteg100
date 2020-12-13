@@ -18,6 +18,8 @@
 --
 ----------------------------------------------------------------------------------
 library IEEE;
+Library UNISIM;
+use UNISIM.vcomponents.all;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 use ieee.std_logic_arith.all;
@@ -61,6 +63,8 @@ architecture Behavioral of top is
 			-- Clock in ports
 			CLK_IN1           : in     std_logic;
 			-- Clock out ports
+			CLK_OUT2				 : out	 std_logic;
+			CLK_OUT3				:	out	std_logic;
 			CLK100          : out    std_logic
 		);
 	end component;
@@ -263,6 +267,7 @@ architecture Behavioral of top is
 	component just_measurement is
 		port(
 			clk : in std_logic;
+			clk2 : in std_logic;
 			rst : in std_logic;
 			
 			msr_start : in std_logic;
@@ -324,6 +329,8 @@ architecture Behavioral of top is
 	
 	-- clk
 	signal clk100		: std_logic;
+	signal clk100_nb	: std_logic;
+	signal clk30		: std_logic;
 	signal clk_rs232c	: std_logic; -- RS232C通信に合わせたクロック信号
 	
 	-- led
@@ -469,6 +476,16 @@ begin
   
    -- End of OBUF_inst instantiation
 	
+	-- BUFG: Global Clock Buffer
+   --       Spartan-6
+   -- Xilinx HDL Language Template, version 14.7
+
+--   BUFG_inst : BUFG
+--   port map (
+--      O => WING_A(13), -- 1-bit output: Clock buffer output
+--      I => clk30  -- 1-bit input: Clock buffer input
+--   );
+	
 	-- C0からの入力をRS232C用のクロックとして使う
 	rs232c_clk_gen : clk_gen_rs232c
 		port map (
@@ -481,6 +498,8 @@ begin
 	clk_gen : clk_generator
 		port map (
 			CLK_IN1 => CLK,
+			CLK_OUT2 => clk30,
+			CLK_OUT3 => clk100_nb,
 			CLK100 => clk100
 	);
 	
@@ -651,6 +670,7 @@ begin
 	measure : just_measurement 
 		port map(
 			clk => clk100,
+			clk2 => clk100_nb,
 			rst => rst_op,
 			msr_start => msr_start,
 			msr_finish => msr_finish,
@@ -665,13 +685,13 @@ begin
 			measure_output => msr_wing_a,
 			rf_pulse => msr_rf_pulse,
 			data1 => WING_A(3),
-			fqud1=> WING_A(1),
+			fqud1=> WING_A(6),
 			reset1 => WING_A(0),
 			w_clk1 => WING_A(2),
 			data2 => WING_A(7),
 			fqud2 => WING_A(5),
 			reset2 => WING_A(4),
-			w_clk2 => WING_A(6),
+			w_clk2 => WING_A(1),
 			adc_sig => msr_adc_sig
 	);
 	
@@ -701,8 +721,9 @@ begin
 	
 	-- ** signal assignment
 	LED <= msr_wing_a(15);
-	WING_A(14 downto 8) <= msr_wing_a(6 downto 0);
-	WING_A(15) <= msr_wing_a(15);
+	WING_A(12 downto 8) <= msr_wing_a(4 downto 0);
+	WING_A(13) <= clk30;
+	WING_A(15 downto 14) <= msr_wing_a(6 downto 5);
 --	WING_A(13) <= dds_fqud;
 --	WING_A(12) <= dds_reset;
 --	WING_A(14) <= dds_wclk1;

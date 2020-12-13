@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Nov 27 12:12:40 2020
+// Written by: Map P.20131013 on Wed Dec 02 15:30:46 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -7,10 +7,12 @@ PIN count_clk/clkout1_buf_pin<1> = BEL "count_clk/clkout1_buf" PINNAME O;
 PIN "count_clk/clkout1_buf_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "clk" LOCATE = SITE "P94" LEVEL 1;
 COMP "led" LOCATE = SITE "P112" LEVEL 1;
+COMP "through_1" LOCATE = SITE "P131" LEVEL 1;
+COMP "through_2" LOCATE = SITE "P121" LEVEL 1;
 COMP "data_1" LOCATE = SITE "P134" LEVEL 1;
-COMP "data_2" LOCATE = SITE "P127" LEVEL 1;
+COMP "data_2" LOCATE = SITE "P126" LEVEL 1;
 COMP "ref_1" LOCATE = SITE "P133" LEVEL 1;
-COMP "ref_2" LOCATE = SITE "P126" LEVEL 1;
+COMP "ref_2" LOCATE = SITE "P124" LEVEL 1;
 COMP "data_out<10>" LOCATE = SITE "P83" LEVEL 1;
 COMP "data_out<11>" LOCATE = SITE "P85" LEVEL 1;
 COMP "data_out<12>" LOCATE = SITE "P88" LEVEL 1;
@@ -20,9 +22,9 @@ COMP "data_out<1>" LOCATE = SITE "P51" LEVEL 1;
 COMP "data_out<14>" LOCATE = SITE "P98" LEVEL 1;
 COMP "data_out<2>" LOCATE = SITE "P56" LEVEL 1;
 COMP "data_out<15>" LOCATE = SITE "P100" LEVEL 1;
-COMP "pulse_1" LOCATE = SITE "P131" LEVEL 1;
+COMP "pulse_1" LOCATE = SITE "P127" LEVEL 1;
 COMP "data_out<3>" LOCATE = SITE "P58" LEVEL 1;
-COMP "pulse_2" LOCATE = SITE "P123" LEVEL 1;
+COMP "pulse_2" LOCATE = SITE "P120" LEVEL 1;
 COMP "data_out<4>" LOCATE = SITE "P61" LEVEL 1;
 COMP "data_out<5>" LOCATE = SITE "P66" LEVEL 1;
 COMP "data_out<6>" LOCATE = SITE "P67" LEVEL 1;
@@ -30,7 +32,7 @@ COMP "data_out<7>" LOCATE = SITE "P75" LEVEL 1;
 COMP "data_out<8>" LOCATE = SITE "P79" LEVEL 1;
 COMP "data_out<9>" LOCATE = SITE "P81" LEVEL 1;
 COMP "timing_1" LOCATE = SITE "P132" LEVEL 1;
-COMP "timing_2" LOCATE = SITE "P124" LEVEL 1;
+COMP "timing_2" LOCATE = SITE "P123" LEVEL 1;
 COMP "rst" LOCATE = SITE "P99" LEVEL 1;
 NET "count_clk/clkin1" PERIOD = 31.25 ns HIGH 50%;
 SCHEMATIC END;

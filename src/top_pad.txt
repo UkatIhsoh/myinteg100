@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-THU 5 NOV 16:7:43 2020
+FRI 11 DEC 13:50:7 2020
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -117,9 +117,9 @@ Pinout by Pin Number:
 |P95       |WING_B<9>    |IOB      |IO_L40P_GCLK11_1          |INPUT    |LVTTL      |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |P96       |             |         |GND                       |         |           |              |          |         |           |         |       |          |           |                |
 |P97       |WING_B<1>    |IOB      |IO_L34N_1                 |INPUT    |LVTTL      |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
-|P98       |WING_A<14>   |IOB      |IO_L34P_1                 |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
+|P98       |WING_A<14>   |IOB      |IO_L34P_1                 |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
 |P99       |WING_B<0>    |IOB      |IO_L33N_1                 |INPUT    |LVTTL      |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
-|P100      |WING_A<15>   |IOB      |IO_L33P_1                 |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |       |LOCATED   |NO         |NONE            |
+|P100      |WING_A<15>   |IOB      |IO_L33P_1                 |OUTPUT   |LVTTL      |1             |12        |SLOW     |           |         |       |LOCATED   |YES        |NONE            |
 |P101      |RXD          |IOB      |IO_L32N_1                 |INPUT    |LVTTL      |1             |          |         |           |NONE     |       |LOCATED   |NO         |NONE            |
 |P102      |             |IOBM     |IO_L32P_1                 |UNUSED   |           |1             |          |         |           |         |       |          |           |                |
 |P103      |             |         |VCCO_1                    |         |           |1             |          |         |           |         |3.30   |          |           |                |

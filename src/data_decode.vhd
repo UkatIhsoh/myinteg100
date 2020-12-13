@@ -119,7 +119,7 @@
  	decode_fin_m <= p.d_fin_m;
  	decode_fin_d <= p.d_fin_d;
  	data_type <= p.d_type;
- 	count_end <= p.c_end;
+ 	count_end <= p.m_fin;
 
  	process(n,p,data64,fetch_fin,read_fin,decode_wait,msr_fin)
  		begin

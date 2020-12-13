@@ -22,6 +22,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_arith.ALL;
 use IEEE.STD_LOGIC_unsigned.ALL; 
 
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -68,6 +69,7 @@ use IEEE.STD_LOGIC_unsigned.ALL;
 
 entity just_measurement is
 	port( clk : in std_logic;
+			clk2 : in std_logic;
 			rst : in std_logic;
 			
 			msr_start : in std_logic; --measurement start
@@ -193,6 +195,7 @@ architecture measure of just_measurement is
 	component AD9851_ctrl is
 		port(
 			clk 		: 	in		std_logic;
+			clk_2		:	in		std_logic;
 			rst		:	in		std_logic;
 			data40 	: 	in		std_logic_vector(39 downto 0);
 			data	 	:	out	std_logic;
@@ -267,6 +270,8 @@ architecture measure of just_measurement is
 	signal f_data : std_logic_vector(39 downto 0); --first_data
 	signal dds_f : std_logic;
 	signal dds_s : std_logic; 
+	
+	signal not_clk : std_logic;
 	
 
 --	--fifo—p
@@ -371,7 +376,8 @@ architecture measure of just_measurement is
 				  enable_2	=> en_2);
 	
 	DDS1 : AD9851_ctrl 
-		port map( clk => clk,
+		port map( clk => clk2,
+					 clk_2 => clk, 
 					 rst	=> rst, 
 					 data40 	=> data40_1,	
 					 data	=> data1,
@@ -382,7 +388,8 @@ architecture measure of just_measurement is
 					 recieve => en_1);
 					 
 	DDS2 : AD9851_ctrl 
-		port map( clk => clk,
+		port map( clk => clk2,
+					 clk_2 => clk,
 					 rst	=> rst, 
 					 data40 	=> data40_2,	
 					 data	=> data2,

@@ -21,10 +21,13 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 use ieee.std_logic_unsigned.all;
+Library UNISIM;
+use UNISIM.vcomponents.all;
 
 entity AD9851_ctrl is
 	port(
 		clk 		: 	in		std_logic;
+		clk_2		:	in		std_logic;
 		rst		:	in		std_logic;
 		data40 	: 	in		std_logic_vector(39 downto 0);
 		data	 	:	out	std_logic;
@@ -48,6 +51,12 @@ architecture Behavioral of AD9851_ctrl is
 	--signal clk5		: std_logic:= '0';
 	signal counter3	: std_logic_vector(1 downto 0):=(others => '0');
 	signal data32		:	std_logic_vector(39 downto 0);
+	signal not_clk		:	std_logic;
+	
+	signal clk_count	:	std_logic_vector(11 downto 0):=X"000";
+	constant M50 : std_logic_vector(11 downto 0):=X"001";
+	constant M1 : std_logic_vector(11 downto 0):=X"064";
+	constant k500 : std_logic_vector(11 downto 0):=X"1F4";
 	
 	type reg is record
       rst_pend	   : std_logic;
@@ -74,10 +83,28 @@ begin
 	reset		<= p.rst_set when p.c_w = '1' else
 					'0'  when p.c_w = '0';
 	w_clk		<=	p.w_clk_set when p.c_w = '1' else
-					clk  after 5ns when p.c_w = '0';
+					clk after 5ns when p.c_w = '0';
+
+	not_clk <= not clk;
+					
+--	ODDR2_inst : ODDR2
+--   generic map(
+--      DDR_ALIGNMENT => "NONE", -- Sets output alignment to "NONE", "C0", "C1" 
+--      INIT => '0', -- Sets initial state of the Q output to '0' or '1'
+--      SRTYPE => "SYNC") -- Specifies "SYNC" or "ASYNC" set/reset
+--   port map (
+--      Q => w_clk, -- 1-bit output data
+--      C0 => clk, -- 1-bit clock input
+--      C1 => not_clk, -- 1-bit clock input
+--      CE => '1',  -- 1-bit clock enable input
+--      D0 => '1',   -- 1-bit data input (associated with C0)
+--      D1 => '0',   -- 1-bit data input (associated with C1)
+--      R => '0',    -- 1-bit reset input
+--      S => '0'     -- 1-bit set input
+--   );
+--	
 	
 	recieve <= p.rec;
-	
 	
 	process(state_p,data32,req_dds,state_n,data40,rst,req_dds,rst,p) begin
 
@@ -511,9 +538,17 @@ begin
 				p.w_clk_set	<= '0';
 				p.c_w			<= '1';
 				p.rec <= '0';
+				clk_count <= (others => '0');
 		elsif clk' event and clk = '0' then
-				state_p <= state_n;
-				p	<= n;
+			state_p <= state_n;
+			p	<= n;
+--			if clk_count = M50 then
+--				state_p <= state_n;
+--				p	<= n;
+--				clk_count <= (others => '0');
+--			else
+--				clk_count <= clk_count +1;
+--			end if;
 		end if;
 	end process;
 				
