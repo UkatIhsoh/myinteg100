@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-FRI 11 DEC 13:50:20 2020
+SUN 13 DEC 9:32:1 2020
 
 drc -z top.ncd top.pcf
 
@@ -10,11 +10,11 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   measure/data_save/dds1_data[7]_dds1_data[7]_OR_288_o is sourced by a
+   measure/data_save/dds2_data[7]_dds2_data[7]_OR_576_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   measure/data_save/dds2_data[7]_dds2_data[7]_OR_576_o is sourced by a
+   measure/data_save/dds1_data[7]_dds1_data[7]_OR_288_o is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs

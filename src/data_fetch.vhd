@@ -229,15 +229,19 @@ begin
 							n.data(47 downto 32) <= sdr_data(47 downto 32);
 							n.d_num <= "11";
 						elsif p.d_num = "11" then
-							n.data(62 downto 48) <= sdr_data(62 downto 48);
-							n.data(63) <= '1';
 							n.d_num <= "00";
 							n.f_fin <= '1';
 							if p.locount = X"0000000000000000" then
+								n.data(61 downto 48) <= sdr_data(61 downto 48);
+								n.data(62) <= '1';
+								n.data(63) <= '1';
 								n.start <= '0';
 								n.finish <= '1';
 								n.state <= idle;
 							else
+								n.data(61 downto 48) <= sdr_data(61 downto 48);
+								n.data(62) <= '0';
+								n.data(63) <= '1';
 								n.fresh_al <= '1';
 								n.locount <= p.locount - X"0000000000000001";
 								n.state <= prepare;

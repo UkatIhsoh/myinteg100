@@ -165,8 +165,12 @@
 					dst_1 <= '0';
 					counter <= counter +1;
 					full <= '0';
-					if p.t_1(63) = '1' then
+					if p.t_1(63 downto 62) = "10" then
 						counter <= (others => '0');
+					elsif p.t_1(63 downto 62) = "11" then
+						counter <= (others => '0');
+						preset <= '0';
+						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
 					end if;
  				elsif counter = p.t_2(31 downto 0) then		
  					rf_out <= p.t_2(34 downto 32);
@@ -176,8 +180,12 @@
 					dst_2 <= '0';
 					counter <= counter +1;
 					full <= '0';
-					if p.t_2(63) = '1' then
+					if p.t_2(63 downto 62) = "10" then
 						counter <= (others => '0');
+					elsif p.t_2(63 downto 62) = "11" then
+						counter <= (others => '0');
+						preset <= '0';
+						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
 					end if;
  				elsif counter = p.t_3(31 downto 0) then		
  					 rf_out <= p.t_3(34 downto 32);
@@ -187,9 +195,13 @@
 					 dst_3 <= '0';
 					 counter <= counter +1;
 					 full <= '0';
-					 if p.t_3(63) = '1' then
+					 if p.t_3(63 downto 62) = "10" then
 						counter <= (others => '0');
-					end if;
+					 elsif p.t_3(63 downto 62) = "11" then
+						counter <= (others => '0');
+						preset <= '0';
+						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
+					 end if;
  				elsif counter = p.t_4(31 downto 0) then		
  					 rf_out <= p.t_4(34 downto 32);
  					 dds_set_1 <= p.t_4(45 downto 38);
@@ -198,9 +210,13 @@
 					 dst_4 <= '0';
 					 counter <= counter +1;
 					 full <= '0';
-					 if p.t_4(63) = '1' then
+					 if p.t_4(63 downto 62) = "10" then
 						counter <= (others => '0');
-					end if;
+					 elsif p.t_4(63 downto 62) = "11" then
+						counter <= (others => '0');
+						preset <= '0';
+						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
+					 end if;
  				elsif counter = p.t_5(31 downto 0) then		
  					 rf_out <= p.t_5(34 downto 32);
  					 dds_set_1 <= p.t_5(45 downto 38);
@@ -209,9 +225,13 @@
 					 dst_5 <= '0';
 					 counter <= counter +1;
 					 full <= '0';
-					 if p.t_5(63) = '1' then
+					 if p.t_5(63 downto 62) = "10" then
 						counter <= (others => '0');
-					end if;
+					 elsif p.t_5(63 downto 62) = "11" then
+						counter <= (others => '0');
+						preset <= '0';
+						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
+					 end if;
  				elsif counter = p.t_6(31 downto 0) then	
  					 rf_out <= p.t_6(34 downto 32);
  				 	 dds_set_1 <= p.t_6(45 downto 38);
@@ -220,9 +240,13 @@
 					 dst_6 <= '0';
 					 counter <= counter +1;
 					 full <= '0';
-					 if p.t_6(63) = '1' then
+					 if p.t_6(63 downto 62) = "10" then
 						counter <= (others => '0');
-					end if;
+					 elsif p.t_6(63 downto 62) = "11" then
+						counter <= (others => '0');
+						preset <= '0';
+						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
+					 end if;
  				elsif counter = p.t_7(31 downto 0) then
  					rf_out <= p.t_7(34 downto 32);
  					dds_set_1 <= p.t_7(45 downto 38);
@@ -231,8 +255,12 @@
 					dst_7 <= '0';
  					counter <= counter +1;
 					full <= '0';
-					if p.t_7(63) = '1' then
+					if p.t_7(63 downto 62) = "10" then
 						counter <= (others => '0');
+					elsif p.t_7(63 downto 62) = "11" then
+						counter <= (others => '0');
+						preset <= '0';
+						dst_1 <= '0';	dst_2 <= '0';	dst_3 <= '0';	dst_4 <= '0';	dst_5 <= '0';	dst_6 <= '0';	dst_7 <= '0';
 					end if;							
  				else	--イベントが起きる時刻以外では、釈然とカウントを続ける
  					counter <= counter +1;
